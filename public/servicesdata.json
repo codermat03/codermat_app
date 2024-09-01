@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "image_url": "https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1725148800&semt=ais_hybrid",
+        "title": "Custom Web development",
+        "short_description": "Develop swift, feature-rich web solutions that innovate digital experiences. Employing the latest technologies, we deliver groundbreaking products that propel businesses into the future."
+    },
+    {
+        "id": 2,
+        "image_url": "https://cdn.pixabay.com/photo/2016/12/27/13/10/logo-1933884_640.png",
+        "title": "Front-End development",
+        "short_description": "Elevate your website's visual appeal with CoderMat's front-end development expertise. We specialize in creating responsive, interactive interfaces using HTML, CSS, and JavaScript for seamless user experiences across devices and browsers."
+    },
+    {
+        "id": 3,
+        "image_url": "https://cdn.pixabay.com/photo/2016/12/27/13/10/logo-1933884_640.png",
+        "title": "Backend Development",
+        "short_description": "Enhance your website's functionality with CoderMat's backend development proficiency. We specialize in crafting robust architectures and efficient databases to support seamless transactions, ensuring secure and reliable operations for your online business."
+    },
+    {
+        "id": 4,
+        "image_url": "https://cdn.pixabay.com/photo/2016/12/27/13/10/logo-1933884_640.png",
+        "title": "Web Portal Development",
+        "short_description": "Unlock your organization's potential with CoderMat's web portal development. Our custom platforms streamline workflows, enhance communication, and offer seamless integration for exceptional user experiences, empowering your business in the digital realm."
+    },
+    {
+        "id": 5,
+        "image_url": "https://cdn.pixabay.com/photo/2016/12/27/13/10/logo-1933884_640.png",
+        "title": "E-commerce Development",
+        "short_description": "Maximize your online sales potential with CoderMat's e-commerce development solutions. We create tailored platforms that optimize user experiences, drive conversions, and ensure secure transactions, empowering your brand's success in the digital marketplace."
+    },
+    {
+        "id": 6,
+        "image_url": "https://cdn.pixabay.com/photo/2016/12/27/13/10/logo-1933884_640.png",
+        "title": "WordPress Development",
+        "short_description": "Revitalize your online presence with CoderMat's WordPress development expertise. We tailor websites to your brand identity, harnessing WordPress's user-friendly interface for seamless functionality and impactful digital experiences."
+    }
+]

@@ -1,9 +1,11 @@
 import Image from "next/image";
+import Services from "./components/shared/services/services";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-7xl font-bold ">Welcome to CoderMat world!!</h1>
+    <main className="">
+      <h1 className="text-3xl font-bold ">Welcome to CoderMat world!!</h1>
+      <Services />
     </main>
   );
 }
