@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#1c0636] text-white py-10">
       <div className="max-w-7xl mx-auto px-4">
-        <div className=" mb-10 flex justify-between">
+        <div className="mb-10 flex justify-between">
           <div>
             <h3 className="text-lg font-semibold">
               SUBSCRIBE TO OUR NEWSLETTER
@@ -30,45 +30,69 @@ const Footer = () => {
           <div>
             <h4 className="text-sm font-semibold mb-4">SOLUTIONS</h4>
             <ul>
-              {["Marketing", "Analytics", "Commerce", "Insights"].map(
-                (item) => (
-                  <li key={item} className="mb-2">
-                    {item}
-                  </li>
-                )
-              )}
+              <li className="mb-2">
+                <a href="/marketing">Marketing</a>
+              </li>
+              <li className="mb-2">
+                <a href="/analytics">Analytics</a>
+              </li>
+              <li className="mb-2">
+                <a href="/commerce">Commerce</a>
+              </li>
+              <li className="mb-2">
+                <a href="/insights">Insights</a>
+              </li>
             </ul>
           </div>
           <div>
             <h4 className="text-sm font-semibold mb-4">SUPPORT</h4>
             <ul>
-              {["Pricing", "Documentation", "Guides", "API Status"].map(
-                (item) => (
-                  <li key={item} className="mb-2">
-                    {item}
-                  </li>
-                )
-              )}
+              <li className="mb-2">
+                <a href="/pricing">Pricing</a>
+              </li>
+              <li className="mb-2">
+                <a href="/documentation">Documentation</a>
+              </li>
+              <li className="mb-2">
+                <a href="/guides">Guides</a>
+              </li>
+              <li className="mb-2">
+                <a href="/api-status">API Status</a>
+              </li>
             </ul>
           </div>
           <div>
             <h4 className="text-sm font-semibold mb-4">COMPANY</h4>
             <ul>
-              {["About", "Blog", "Jobs", "Press", "Partners"].map((item) => (
-                <li key={item} className="mb-2">
-                  {item}
-                </li>
-              ))}
+              <li className="mb-2">
+                <a href="/about">About</a>
+              </li>
+              <li className="mb-2">
+                <a href="/blog">Blog</a>
+              </li>
+              <li className="mb-2">
+                <a href="/jobs">Jobs</a>
+              </li>
+              <li className="mb-2">
+                <a href="/press">Press</a>
+              </li>
+              <li className="mb-2">
+                <a href="/partners">Partners</a>
+              </li>
             </ul>
           </div>
           <div>
             <h4 className="text-sm font-semibold mb-4">LEGAL</h4>
             <ul>
-              {["Claim", "Privacy", "Terms"].map((item) => (
-                <li key={item} className="mb-2">
-                  {item}
-                </li>
-              ))}
+              <li className="mb-2">
+                <a href="/claim">Claim</a>
+              </li>
+              <li className="mb-2">
+                <a href="/privacy">Privacy</a>
+              </li>
+              <li className="mb-2">
+                <a href="/terms">Terms</a>
+              </li>
             </ul>
           </div>
           <div>
@@ -89,14 +113,26 @@ const Footer = () => {
         <div className="mt-10 text-center border-t border-gray-700 pt-6">
           <p className="text-sm">© 2024 Codermat, Inc. All rights reserved</p>
           <div className="mt-4 flex justify-center space-x-6">
-            {["facebook", "twitter", "instagram", "github"].map((platform) => (
-              <a
-                key={platform}
-                href="#"
-                className="w-6 h-6 bg-cover"
-                style={{ backgroundImage: `url('/icons/${platform}.svg')` }}
-              ></a>
-            ))}
+            <a
+              href="https://facebook.com"
+              className="w-6 h-6 bg-cover"
+              style={{ backgroundImage: `url('/icons/facebook.svg')` }}
+            ></a>
+            <a
+              href="https://twitter.com"
+              className="w-6 h-6 bg-cover"
+              style={{ backgroundImage: `url('/icons/twitter.svg')` }}
+            ></a>
+            <a
+              href="https://instagram.com"
+              className="w-6 h-6 bg-cover"
+              style={{ backgroundImage: `url('/icons/instagram.svg')` }}
+            ></a>
+            <a
+              href="https://github.com"
+              className="w-6 h-6 bg-cover"
+              style={{ backgroundImage: `url('/icons/github.svg')` }}
+            ></a>
           </div>
         </div>
       </div>
