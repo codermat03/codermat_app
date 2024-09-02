@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full transition-colors duration-300 ${
+      className={`fixed bg-black top-0 left-0 w-full transition-colors duration-300 ${
         scrolled ? "bg-gray-900 bg-opacity-50" : "bg-transparent"
       }`}
     >
@@ -29,7 +29,11 @@ export default function Navbar() {
         <div className="relative flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <img className="h-8 w-auto" src="/logo.svg" alt="CoderMat" />
+              <img
+                className=""
+                src="https://i.postimg.cc/pXrT6fkh/Rectangle-4.png"
+                alt="CoderMat"
+              />
             </div>
           </div>
 
@@ -48,7 +52,7 @@ export default function Navbar() {
               </a>
 
               <div
-                className="relative"
+                className="relative flex justify-center"
                 onMouseEnter={() => setDropdownOpenTech(true)}
                 onMouseLeave={() => setDropdownOpenTech(false)}
               >
@@ -68,12 +72,14 @@ export default function Navbar() {
                 </a>
                 {dropdownOpenTech && (
                   <div
-                    className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-max bg-white text-black rounded-md shadow-lg p-6 grid grid-cols-4 gap-4"
+                    className="absolute -left-[260px]  mt-9 w-max bg-white text-black rounded-md shadow-lg p-6 grid grid-cols-4 gap-4"
                     style={{ minWidth: "300px" }} // Adjust minWidth as needed
                   >
                     {/* Services Dropdown Content */}
                     <div>
-                      <h3 className="text-sm font-semibold">SALESFORCE</h3>
+                      <h3 className="text-sm font-semibold">
+                        Custom Web Application <br /> Development
+                      </h3>
                       <ul>
                         <li>
                           <a href="#" className="block py-1 text-sm">
@@ -113,7 +119,9 @@ export default function Navbar() {
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">AWS</h3>
+                      <h3 className="text-sm font-semibold">
+                        Web Portal Development
+                      </h3>
                       <ul>
                         <li>
                           <a href="#" className="block py-1 text-sm">
@@ -143,7 +151,9 @@ export default function Navbar() {
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">AZURE</h3>
+                      <h3 className="text-sm font-semibold">
+                        E-commerce Development
+                      </h3>
                       <ul>
                         <li>
                           <a href="#" className="block py-1 text-sm">
@@ -173,7 +183,9 @@ export default function Navbar() {
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">DELL BOOMI</h3>
+                      <h3 className="text-sm font-semibold">
+                        WordPress Development
+                      </h3>
                       <ul>
                         <li>
                           <a href="#" className="block py-1 text-sm">
@@ -208,7 +220,61 @@ export default function Navbar() {
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">NETSUITE</h3>
+                      <h3 className="text-sm font-semibold">UI & UX Design</h3>
+                      <ul>
+                        <li>
+                          <a href="#" className="block py-1 text-sm">
+                            Enterprise Resource Planning
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" className="block py-1 text-sm">
+                            Customer Relationship Management
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" className="block py-1 text-sm">
+                            Professional Services Automation
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" className="block py-1 text-sm">
+                            E-commerce
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-semibold">
+                        Front-end Web Development
+                      </h3>
+                      <ul>
+                        <li>
+                          <a href="#" className="block py-1 text-sm">
+                            Enterprise Resource Planning
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" className="block py-1 text-sm">
+                            Customer Relationship Management
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" className="block py-1 text-sm">
+                            Professional Services Automation
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" className="block py-1 text-sm">
+                            E-commerce
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-semibold">
+                        Back-end Web Development
+                      </h3>
                       <ul>
                         <li>
                           <a href="#" className="block py-1 text-sm">
@@ -237,7 +303,7 @@ export default function Navbar() {
               </div>
 
               <div
-                className="relative"
+                className="relative relative flex justify-center"
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
               >
@@ -257,7 +323,7 @@ export default function Navbar() {
                 </a>
                 {dropdownOpen && (
                   <div
-                    className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-max bg-white text-black rounded-md shadow-lg p-6 grid grid-cols-4 gap-4"
+                    className="absolute -left-[360px]  mt-9 w-max bg-white text-black rounded-md shadow-lg p-6 grid grid-cols-4 gap-4"
                     style={{ minWidth: "300px" }} // Adjust minWidth as needed
                   >
                     {/* Technologies Dropdown Content */}
