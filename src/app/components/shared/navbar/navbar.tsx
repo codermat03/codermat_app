@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed bg-black top-0 left-0 w-full transition-colors duration-300 ${
+      className={`fixed bg-[#1C0636] top-0 left-0 w-full transition-colors duration-300 ${
         scrolled ? "bg-gray-900 bg-opacity-50" : "bg-transparent"
       }`}
     >
@@ -328,161 +328,142 @@ export default function Navbar() {
                   >
                     {/* Technologies Dropdown Content */}
                     <div>
-                      <h3 className="text-sm font-semibold">SALESFORCE</h3>
+                      <h3 className="text-sm font-semibold">MERN-Stack</h3>
                       <ul>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            Implementation
+                            MongoDB
                           </a>
                         </li>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            Application Development
+                            Express JS
                           </a>
                         </li>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            Integration
+                            React JS
                           </a>
                         </li>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            Sales Marketing Cloud
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 text-sm">
-                            Community Enhancement
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 text-sm">
-                            Financial Services
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 text-sm">
-                            Support Services
+                            Node JS
                           </a>
                         </li>
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">AWS</h3>
+                      <h3 className="text-sm font-semibold">Front-End</h3>
                       <ul>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            DevOps
+                            React JS
                           </a>
                         </li>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            Solution Architecture
+                            Next JS
                           </a>
                         </li>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            Integration And Migration
+                            JavaScript
                           </a>
                         </li>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            Support Services
+                            TypeScript
                           </a>
                         </li>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            AWS Cognito
+                            Redux
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" className="block py-1 text-sm">
+                            Tailwind
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" className="block py-1 text-sm">
+                            Bootstrap
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" className="block py-1 text-sm">
+                            Material UI
                           </a>
                         </li>
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">AZURE</h3>
+                      <h3 className="text-sm font-semibold">Back-End</h3>
                       <ul>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            DevOps
+                            Node JS
                           </a>
                         </li>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            Solution Architecture
+                            Express JS
                           </a>
                         </li>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            Cloud Migration and Modernization
+                            JWT
                           </a>
                         </li>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            Active Directory
+                            Zod
                           </a>
                         </li>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            Support Services
+                            Cloudinary
                           </a>
                         </li>
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">DELL BOOMI</h3>
+                      <h3 className="text-sm font-semibold">Database</h3>
                       <ul>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            Application Integration
+                            MongoDB
                           </a>
                         </li>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            Consulting
+                            Mongoose
                           </a>
                         </li>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            Master Data Management
+                            PostgresQL
                           </a>
                         </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="text-sm font-semibold">UI/UX Design</h3>
+                      <ul>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            Boomi Mediate
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 text-sm">
-                            Boomi Flow
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 text-sm">
-                            Support Services
+                            Tell Us Your Requirments
                           </a>
                         </li>
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">NETSUITE</h3>
+                      <h3 className="text-sm font-semibold">WordPress</h3>
                       <ul>
                         <li>
                           <a href="#" className="block py-1 text-sm">
-                            Enterprise Resource Planning
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 text-sm">
-                            Customer Relationship Management
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 text-sm">
-                            Professional Services Automation
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 text-sm">
-                            E-commerce
+                            Tell Us Your Requirments
                           </a>
                         </li>
                       </ul>
