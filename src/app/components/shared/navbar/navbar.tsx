@@ -1,5 +1,20 @@
 "use client";
 import { useState, useEffect } from "react";
+import { FaBootstrap, FaNode, FaReact } from "react-icons/fa";
+import { IoIosArrowDown } from "react-icons/io";
+import {
+  SiCloudinary,
+  SiExpress,
+  SiMongodb,
+  SiMui,
+  SiNextdotjs,
+  SiNpm,
+  SiPostgresql,
+  SiRedux,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +36,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed bg-[#1C0636] top-0 left-0 w-full transition-colors duration-300 ${
-        scrolled ? "bg-gray-900 bg-opacity-50" : "bg-transparent"
+      className={`fixed top-0 left-0 w-full transition-colors duration-300 z-30 ${
+        scrolled ? "bg-gray-900 bg-opacity-75  " : "bg-transparent "
       }`}
     >
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -38,7 +53,7 @@ export default function Navbar() {
           </div>
 
           <div className="hidden sm:flex flex-1 justify-center sm:ml-6">
-            <div className="relative flex items-center space-x-4">
+            <div className="relative flex items-center space-x-4 z-40">
               <a
                 href="#"
                 onClick={() => setActiveLink("home")}
@@ -46,7 +61,7 @@ export default function Navbar() {
                   activeLink === "home"
                     ? "bg-gray-900 text-white"
                     : "text-gray-500 hover:bg-gray-700 hover:text-white"
-                } px-3 py-2 rounded-md text-sm font-medium`}
+                } px-3 py-2 rounded-md  font-medium`}
               >
                 Home
               </a>
@@ -66,9 +81,10 @@ export default function Navbar() {
                     activeLink === "services"
                       ? "bg-gray-900 text-white"
                       : "text-gray-500 hover:bg-gray-700 hover:text-white"
-                  } px-3 py-2 rounded-md text-sm font-medium`}
+                  } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
                 >
                   Services
+                  <IoIosArrowDown></IoIosArrowDown>
                 </a>
                 {dropdownOpenTech && (
                   <div
@@ -77,222 +93,222 @@ export default function Navbar() {
                   >
                     {/* Services Dropdown Content */}
                     <div>
-                      <h3 className="text-sm font-semibold">
+                      <h3 className=" font-bold text-xl">
                         Custom Web Application <br /> Development
                       </h3>
                       <ul>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Implementation
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Application Development
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Integration
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Sales Marketing Cloud
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Community Enhancement
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Financial Services
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Support Services
                           </a>
                         </li>
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">
+                      <h3 className=" font-bold text-xl">
                         Web Portal Development
                       </h3>
                       <ul>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             DevOps
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Solution Architecture
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Integration And Migration
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Support Services
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             AWS Cognito
                           </a>
                         </li>
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">
+                      <h3 className=" font-bold text-xl">
                         E-commerce Development
                       </h3>
                       <ul>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             DevOps
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Solution Architecture
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Cloud Migration and Modernization
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Active Directory
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Support Services
                           </a>
                         </li>
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">
+                      <h3 className=" font-bold text-xl">
                         WordPress Development
                       </h3>
                       <ul>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Application Integration
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Consulting
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Master Data Management
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Boomi Mediate
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Boomi Flow
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Support Services
                           </a>
                         </li>
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">UI & UX Design</h3>
+                      <h3 className=" font-bold text-xl">UI & UX Design</h3>
                       <ul>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Enterprise Resource Planning
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Customer Relationship Management
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Professional Services Automation
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             E-commerce
                           </a>
                         </li>
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">
+                      <h3 className=" font-bold text-xl">
                         Front-end Web Development
                       </h3>
                       <ul>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Enterprise Resource Planning
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Customer Relationship Management
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Professional Services Automation
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             E-commerce
                           </a>
                         </li>
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">
+                      <h3 className=" font-bold text-xl">
                         Back-end Web Development
                       </h3>
                       <ul>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Enterprise Resource Planning
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Customer Relationship Management
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Professional Services Automation
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             E-commerce
                           </a>
                         </li>
@@ -317,9 +333,10 @@ export default function Navbar() {
                     activeLink === "technologies"
                       ? "bg-gray-900 text-white"
                       : "text-gray-500 hover:bg-gray-700 hover:text-white"
-                  } px-3 py-2 rounded-md text-sm font-medium`}
+                  } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
                 >
                   Technologies
+                  <IoIosArrowDown />
                 </a>
                 {dropdownOpen && (
                   <div
@@ -328,120 +345,200 @@ export default function Navbar() {
                   >
                     {/* Technologies Dropdown Content */}
                     <div>
-                      <h3 className="text-sm font-semibold">MERN-Stack</h3>
+                      <h3 className=" font-bold text-xl">MERN-Stack</h3>
                       <ul>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <SiMongodb></SiMongodb>
                             MongoDB
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <SiExpress></SiExpress>
                             Express JS
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <FaReact></FaReact>
                             React JS
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <FaNode />
                             Node JS
                           </a>
                         </li>
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">Front-End</h3>
+                      <h3 className=" font-bold text-xl">Front-End</h3>
                       <ul>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <FaReact></FaReact>
                             React JS
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <SiNextdotjs></SiNextdotjs>
                             Next JS
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <IoLogoJavascript />
                             JavaScript
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <SiTypescript />
                             TypeScript
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <SiRedux />
                             Redux
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <SiTailwindcss />
                             Tailwind
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <FaBootstrap />
                             Bootstrap
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <SiMui />
                             Material UI
                           </a>
                         </li>
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">Back-End</h3>
+                      <h3 className=" font-bold text-xl">Back-End</h3>
                       <ul>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <FaNode />
                             Node JS
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <SiExpress />
                             Express JS
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <SiNpm />
                             JWT
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <SiNpm />
                             Zod
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <SiCloudinary />
                             Cloudinary
                           </a>
                         </li>
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">Database</h3>
+                      <h3 className=" font-bold text-xl">Database</h3>
                       <ul>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <SiMongodb />
                             MongoDB
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <SiNpm />
                             Mongoose
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a
+                            href="#"
+                            className="block py-1  flex items-center gap-2"
+                          >
+                            <SiPostgresql />
                             PostgresQL
                           </a>
                         </li>
@@ -449,20 +546,20 @@ export default function Navbar() {
                     </div>
 
                     <div>
-                      <h3 className="text-sm font-semibold">UI/UX Design</h3>
+                      <h3 className=" font-bold text-xl">UI/UX Design</h3>
                       <ul>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Tell Us Your Requirments
                           </a>
                         </li>
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold">WordPress</h3>
+                      <h3 className=" font-bold text-xl">WordPress</h3>
                       <ul>
                         <li>
-                          <a href="#" className="block py-1 text-sm">
+                          <a href="#" className="block py-1 ">
                             Tell Us Your Requirments
                           </a>
                         </li>
@@ -474,14 +571,14 @@ export default function Navbar() {
 
               <a
                 href="#"
-                onClick={() => setActiveLink("team")}
+                onClick={() => setActiveLink("About ")}
                 className={`${
-                  activeLink === "team"
+                  activeLink === "About "
                     ? "bg-gray-900 text-white"
                     : "text-gray-500 hover:bg-gray-700 hover:text-white"
-                } px-3 py-2 rounded-md text-sm font-medium`}
+                } px-3 py-2 rounded-md  font-medium`}
               >
-                Team
+                About
               </a>
               <a
                 href="#"
@@ -490,26 +587,26 @@ export default function Navbar() {
                   activeLink === "projects"
                     ? "bg-gray-900 text-white"
                     : "text-gray-500 hover:bg-gray-700 hover:text-white"
-                } px-3 py-2 rounded-md text-sm font-medium`}
+                } px-3 py-2 rounded-md  font-medium`}
               >
                 Projects
               </a>
               <a
                 href="#"
-                onClick={() => setActiveLink("calendar")}
+                onClick={() => setActiveLink("Blogs")}
                 className={`${
-                  activeLink === "calendar"
+                  activeLink === "Blogs"
                     ? "bg-gray-900 text-white"
                     : "text-gray-500 hover:bg-gray-700 hover:text-white"
-                } px-3 py-2 rounded-md text-sm font-medium`}
+                } px-3 py-2 rounded-md  font-medium`}
               >
-                Calendar
+                Blogs
               </a>
             </div>
           </div>
 
           <div className="hidden sm:flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <button className=" text-white px-4 py-2 rounded-md text-sm font-medium">
+            <button className=" text-white px-4 py-2 rounded-md  font-medium">
               Start Work With Us
             </button>
           </div>
@@ -561,14 +658,14 @@ export default function Navbar() {
           </a>
           <a
             href="#"
-            onClick={() => setActiveLink("team")}
+            onClick={() => setActiveLink("About ")}
             className={`${
-              activeLink === "team"
+              activeLink === "About "
                 ? "bg-gray-900 text-white"
                 : "text-gray-500 hover:bg-gray-700 hover:text-white"
             } block px-3 py-2 rounded-md text-base font-medium`}
           >
-            Team
+            About
           </a>
           <a
             href="#"
@@ -583,14 +680,14 @@ export default function Navbar() {
           </a>
           <a
             href="#"
-            onClick={() => setActiveLink("calendar")}
+            onClick={() => setActiveLink("Blogs")}
             className={`${
-              activeLink === "calendar"
+              activeLink === "Blogs"
                 ? "bg-gray-900 text-white"
                 : "text-gray-500 hover:bg-gray-700 hover:text-white"
             } block px-3 py-2 rounded-md text-base font-medium`}
           >
-            Calendar
+            Blogs
           </a>
         </div>
       </div>

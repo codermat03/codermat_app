@@ -1,12 +1,11 @@
 import Image from "next/image";
 import ContactForm from "./components/contact-form/contact-form";
+import HeroSection from "./components/hero-section/hero-section";
 
 export default function Home() {
   return (
     <>
-      <h1 className="text-7xl font-bold text-black mt-20 text-center">
-        Welcome to CoderMat world
-      </h1>
+      <HeroSection></HeroSection>
 
       <main className="mt-[500px]">
         <section className="text-black">
