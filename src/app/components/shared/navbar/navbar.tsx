@@ -1,6 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import { FaBootstrap, FaNode, FaReact } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 import { IoIosArrowDown } from "react-icons/io";
 import {
   SiCloudinary,
@@ -36,11 +38,11 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full transition-colors duration-300 z-30 ${
-        scrolled ? "bg-gray-900 bg-opacity-75  " : "bg-transparent "
+      className={`roboto-regular  py-3 fixed top-0 left-0 w-full transition-colors duration-300 z-30  ${
+        scrolled ? "bg-gray-900 bg-opacity-75 shadow-2xl " : "bg-transparent "
       }`}
     >
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
         <div className="relative flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
@@ -60,7 +62,7 @@ export default function Navbar() {
                 className={`${
                   activeLink === "home"
                     ? "bg-gray-900 text-white"
-                    : "text-gray-500 hover:bg-gray-700 hover:text-white"
+                    : "text-white hover:bg-gray-700 hover:text-white"
                 } px-3 py-2 rounded-md  font-medium`}
               >
                 Home
@@ -80,7 +82,7 @@ export default function Navbar() {
                   className={`${
                     activeLink === "services"
                       ? "bg-gray-900 text-white"
-                      : "text-gray-500 hover:bg-gray-700 hover:text-white"
+                      : "text-white hover:bg-gray-700 hover:text-white"
                   } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
                 >
                   Services
@@ -88,7 +90,7 @@ export default function Navbar() {
                 </a>
                 {dropdownOpenTech && (
                   <div
-                    className="absolute -left-[260px]  mt-9 w-max bg-white text-black rounded-md shadow-lg p-6 grid grid-cols-4 gap-4"
+                    className="absolute -left-[260px]  mt-12 w-max bg-white text-black rounded-md shadow-lg p-6 grid grid-cols-4 gap-4"
                     style={{ minWidth: "300px" }} // Adjust minWidth as needed
                   >
                     {/* Services Dropdown Content */}
@@ -332,7 +334,7 @@ export default function Navbar() {
                   className={`${
                     activeLink === "technologies"
                       ? "bg-gray-900 text-white"
-                      : "text-gray-500 hover:bg-gray-700 hover:text-white"
+                      : "text-white hover:bg-gray-700 hover:text-white"
                   } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
                 >
                   Technologies
@@ -340,7 +342,7 @@ export default function Navbar() {
                 </a>
                 {dropdownOpen && (
                   <div
-                    className="absolute -left-[360px]  mt-9 w-max bg-white text-black rounded-md shadow-lg p-6 grid grid-cols-4 gap-4"
+                    className="absolute -left-[360px]  mt-12 w-max bg-white text-black rounded-md shadow-lg p-6 grid grid-cols-4 gap-4"
                     style={{ minWidth: "300px" }} // Adjust minWidth as needed
                   >
                     {/* Technologies Dropdown Content */}
@@ -575,7 +577,7 @@ export default function Navbar() {
                 className={`${
                   activeLink === "About "
                     ? "bg-gray-900 text-white"
-                    : "text-gray-500 hover:bg-gray-700 hover:text-white"
+                    : "text-white hover:bg-gray-700 hover:text-white"
                 } px-3 py-2 rounded-md  font-medium`}
               >
                 About
@@ -586,7 +588,7 @@ export default function Navbar() {
                 className={`${
                   activeLink === "projects"
                     ? "bg-gray-900 text-white"
-                    : "text-gray-500 hover:bg-gray-700 hover:text-white"
+                    : "text-white hover:bg-gray-700 hover:text-white"
                 } px-3 py-2 rounded-md  font-medium`}
               >
                 Projects
@@ -597,10 +599,10 @@ export default function Navbar() {
                 className={`${
                   activeLink === "Blogs"
                     ? "bg-gray-900 text-white"
-                    : "text-gray-500 hover:bg-gray-700 hover:text-white"
+                    : "text-white hover:bg-gray-700 hover:text-white"
                 } px-3 py-2 rounded-md  font-medium`}
               >
-                Blogs
+                Blogs & News
               </a>
             </div>
           </div>
@@ -631,7 +633,11 @@ export default function Navbar() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
+                  d={
+                    isOpen
+                      ? "M6 18L18 6M6 6l12 12" // Cross (X) icon for the open state
+                      : "M4 6h16M4 12h16M4 18h16" // Three equal horizontal lines for the closed state
+                  }
                 />
               </svg>
             </button>
@@ -651,7 +657,7 @@ export default function Navbar() {
             className={`${
               activeLink === "dashboard"
                 ? "bg-gray-900 text-white"
-                : "text-gray-500 hover:bg-gray-700 hover:text-white"
+                : "text-white hover:bg-gray-700 hover:text-white"
             } block px-3 py-2 rounded-md text-base font-medium`}
           >
             Dashboard
@@ -662,7 +668,7 @@ export default function Navbar() {
             className={`${
               activeLink === "About "
                 ? "bg-gray-900 text-white"
-                : "text-gray-500 hover:bg-gray-700 hover:text-white"
+                : "text-white hover:bg-gray-700 hover:text-white"
             } block px-3 py-2 rounded-md text-base font-medium`}
           >
             About
@@ -673,7 +679,7 @@ export default function Navbar() {
             className={`${
               activeLink === "projects"
                 ? "bg-gray-900 text-white"
-                : "text-gray-500 hover:bg-gray-700 hover:text-white"
+                : "text-white hover:bg-gray-700 hover:text-white"
             } block px-3 py-2 rounded-md text-base font-medium`}
           >
             Projects
@@ -684,7 +690,7 @@ export default function Navbar() {
             className={`${
               activeLink === "Blogs"
                 ? "bg-gray-900 text-white"
-                : "text-gray-500 hover:bg-gray-700 hover:text-white"
+                : "text-white hover:bg-gray-700 hover:text-white"
             } block px-3 py-2 rounded-md text-base font-medium`}
           >
             Blogs

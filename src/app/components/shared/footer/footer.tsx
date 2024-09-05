@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#1c0636] text-white py-10">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="mb-10 flex justify-between">
+        <div className="mb-10 md:flex justify-between">
           <div>
             <h3 className="text-lg font-semibold">
               SUBSCRIBE TO OUR NEWSLETTER
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center md:text-left">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-left">
           <div>
             <h4 className="text-sm font-semibold mb-4">SOLUTIONS</h4>
             <ul>
