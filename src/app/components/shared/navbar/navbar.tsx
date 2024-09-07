@@ -39,7 +39,7 @@ export default function Navbar() {
   return (
     <nav
       className={`roboto-regular  py-3 fixed top-0 left-0 w-full transition-colors duration-300 z-30  ${
-        scrolled ? "bg-gray-900 bg-opacity-75 shadow-2xl " : "bg-transparent "
+        scrolled ? "bg-[#21112e] bg-opacity-85 shadow-2xl " : "bg-transparent "
       }`}
     >
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">

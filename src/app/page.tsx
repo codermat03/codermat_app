@@ -6,7 +6,7 @@ import FAQ from "./components/FAQ/faq";
 export default function Home() {
   return (
     <>
-      <section className="bg-gradient-to-bl from-[#93239d] via-[#190b34] to-[#280d42]">
+      <section className="bg-gradient-to-bl from-[#93239d] via-[#190b34] to-[#280d42] border-b ">
         <HeroSection></HeroSection>
       </section>
       <section className="bg-gradient-to-bl from-[#190b34] via-[#280d42] to-[#280d42]">

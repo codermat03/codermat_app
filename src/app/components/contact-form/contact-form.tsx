@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
 const ContactForm = () => {
   return (
@@ -12,23 +13,16 @@ const ContactForm = () => {
             sint.
           </p>
           <div className="flex items-center mb-4">
-            <img
-              src="/icons/email.svg"
-              alt="Email Icon"
-              className="w-6 h-6 mr-4"
-            />
+            <AiOutlineMail className="text-xl mr-2" />
             <a href="mailto:support@website.com" className="text-white">
-              support@website.com
+              codermatteam@gmail.com
             </a>
           </div>
           <div className="flex items-center">
-            <img
-              src="/icons/phone.svg"
-              alt="Phone Icon"
-              className="w-6 h-6 mr-4"
-            />
+            <AiOutlinePhone className="text-xl mr-2" />
+
             <a href="tel:+14805550103" className="text-white">
-              (480) 555-0103
+              +8801910882903{" "}
             </a>
           </div>
         </div>
