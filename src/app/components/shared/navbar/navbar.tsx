@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`roboto-regular  py-3 fixed top-0 left-0 w-full transition-colors duration-300 z-30  ${
+      className={`roboto-regular  md:py-3 fixed top-0 left-0 w-full transition-colors duration-300 z-30  ${
         scrolled ? "bg-[#21112e] bg-opacity-85 shadow-2xl " : "bg-transparent "
       }`}
     >
@@ -650,23 +650,311 @@ export default function Navbar() {
         className={`${isOpen ? "block" : "hidden"} sm:hidden`}
         id="mobile-menu"
       >
-        <div className="px-2 pt-2 pb-3 space-y-1">
+        <div className=" bg-black px-2 pt-2 pb-3 space-y-1">
           <a
             href="#"
-            onClick={() => setActiveLink("dashboard")}
+            onClick={() => setActiveLink("home")}
             className={`${
-              activeLink === "dashboard"
+              activeLink === "home"
                 ? "bg-gray-900 text-white"
                 : "text-white hover:bg-gray-700 hover:text-white"
             } block px-3 py-2 rounded-md text-base font-medium`}
           >
-            Dashboard
+            Home
           </a>
+          <div
+            className=""
+            onMouseEnter={() => setDropdownOpenTech(true)}
+            onMouseLeave={() => setDropdownOpenTech(false)}
+          >
+            <a
+              href="#"
+              onClick={() => {
+                setActiveLink("services");
+                setDropdownOpenTech(!dropdownOpenTech);
+              }}
+              className={`${
+                activeLink === "services"
+                  ? "bg-gray-900 text-white"
+                  : "text-white hover:bg-gray-700 hover:text-white"
+              } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
+            >
+              Services
+              <IoIosArrowDown></IoIosArrowDown>
+            </a>
+            {dropdownOpenTech && (
+              <div className="w-max bg-white text-black rounded-md shadow-lg p-6">
+                <div>
+                  <ul className="font-semibold">
+                    <li>Custom Web Application Development</li>
+                    <li>Web Portal Development</li>
+                    <li>E-commerce Development</li>
+                    <li>WordPress Development</li>
+                    <li>UI & UX Design</li>
+                    <li>Front-end Web Development</li>
+                    <li> Back-end Web Development</li>
+                  </ul>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <div
+            className=""
+            onMouseEnter={() => setDropdownOpen(true)}
+            onMouseLeave={() => setDropdownOpen(false)}
+          >
+            <a
+              href="#"
+              onClick={() => {
+                setActiveLink("technologies");
+                setDropdownOpen(!dropdownOpen);
+              }}
+              className={`${
+                activeLink === "technologies"
+                  ? "bg-gray-900 text-white"
+                  : "text-white hover:bg-gray-700 hover:text-white"
+              } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
+            >
+              Technologies
+              <IoIosArrowDown />
+            </a>
+            {dropdownOpen && (
+              <div
+                className=" bg-white text-black rounded-md shadow-lg p-6 grid grid-cols-3 gap-1"
+                style={{ minWidth: "300px" }} // Adjust minWidth as needed
+              >
+                {/* Technologies Dropdown Content */}
+                <div>
+                  <h3 className=" font-bold text-xl">MERN-Stack</h3>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <SiMongodb></SiMongodb>
+                        MongoDB
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <SiExpress></SiExpress>
+                        Express JS
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <FaReact></FaReact>
+                        React JS
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <FaNode />
+                        Node JS
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className=" font-bold text-xl">Front-End</h3>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <FaReact></FaReact>
+                        React JS
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <SiNextdotjs></SiNextdotjs>
+                        Next JS
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <IoLogoJavascript />
+                        JavaScript
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <SiTypescript />
+                        TypeScript
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <SiRedux />
+                        Redux
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <SiTailwindcss />
+                        Tailwind
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <FaBootstrap />
+                        Bootstrap
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <SiMui />
+                        Material UI
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className=" font-bold text-xl">Back-End</h3>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <FaNode />
+                        Node JS
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <SiExpress />
+                        Express JS
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <SiNpm />
+                        JWT
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <SiNpm />
+                        Zod
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <SiCloudinary />
+                        Cloudinary
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className=" font-bold text-xl">Database</h3>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <SiMongodb />
+                        MongoDB
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <SiNpm />
+                        Mongoose
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block py-1  flex items-center gap-2"
+                      >
+                        <SiPostgresql />
+                        PostgresQL
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className=" font-bold text-xl">UI/UX Design</h3>
+                  <ul>
+                    <li>
+                      <a href="#" className="block py-1 ">
+                        Tell Us Your Requirments
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className=" font-bold text-xl">WordPress</h3>
+                  <ul>
+                    <li>
+                      <a href="#" className="block py-1 ">
+                        Tell Us Your Requirments
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            )}
+          </div>
+
           <a
             href="#"
-            onClick={() => setActiveLink("About ")}
+            onClick={() => setActiveLink("about")}
             className={`${
-              activeLink === "About "
+              activeLink === "about"
                 ? "bg-gray-900 text-white"
                 : "text-white hover:bg-gray-700 hover:text-white"
             } block px-3 py-2 rounded-md text-base font-medium`}
@@ -693,8 +981,11 @@ export default function Navbar() {
                 : "text-white hover:bg-gray-700 hover:text-white"
             } block px-3 py-2 rounded-md text-base font-medium`}
           >
-            Blogs
+            Blogs & News
           </a>
+          <div className="flex justify-center border">
+            <button className="text-white ">Choose us</button>
+          </div>
         </div>
       </div>
     </nav>
