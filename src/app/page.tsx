@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ContactForm from "./components/contact-form/contact-form";
 import HeroSection from "./components/hero-section/hero-section";
+import FAQ from "./components/FAQ/faq";
 
 export default function Home() {
   return (
@@ -27,6 +28,10 @@ export default function Home() {
             Technology
           </h1>
         </div>
+      </section>
+
+      <section>
+        <FAQ></FAQ>
       </section>
 
       <main className="">
