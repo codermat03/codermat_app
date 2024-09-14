@@ -57,7 +57,7 @@ export default function Navbar() {
           <div className="hidden sm:flex flex-1 justify-center sm:ml-6">
             <div className="relative flex items-center space-x-4 z-40">
               <a
-                href="#"
+                href="/"
                 onClick={() => setActiveLink("home")}
                 className={`${
                   activeLink === "home"
@@ -74,7 +74,7 @@ export default function Navbar() {
                 onMouseLeave={() => setDropdownOpenTech(false)}
               >
                 <a
-                  href="#"
+                  href="/services"
                   onClick={() => {
                     setActiveLink("services");
                     setDropdownOpenTech(!dropdownOpenTech);
@@ -326,7 +326,7 @@ export default function Navbar() {
                 onMouseLeave={() => setDropdownOpen(false)}
               >
                 <a
-                  href="#"
+                  href="/Technologies"
                   onClick={() => {
                     setActiveLink("technologies");
                     setDropdownOpen(!dropdownOpen);
@@ -572,7 +572,7 @@ export default function Navbar() {
               </div>
 
               <a
-                href="#"
+                href="/about"
                 onClick={() => setActiveLink("About ")}
                 className={`${
                   activeLink === "About "
@@ -583,7 +583,7 @@ export default function Navbar() {
                 About
               </a>
               <a
-                href="#"
+                href="/projects"
                 onClick={() => setActiveLink("projects")}
                 className={`${
                   activeLink === "projects"
@@ -594,7 +594,7 @@ export default function Navbar() {
                 Projects
               </a>
               <a
-                href="#"
+                href="/blogs"
                 onClick={() => setActiveLink("Blogs")}
                 className={`${
                   activeLink === "Blogs"

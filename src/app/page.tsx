@@ -2,6 +2,7 @@ import Image from "next/image";
 import ContactForm from "./components/contact-form/contact-form";
 import HeroSection from "./components/hero-section/hero-section";
 import FAQ from "./components/FAQ/faq";
+import OurWebDevelopmentProcess from "./components/OurWebDevelopmentProcess/OurWebDevelopmentProcess";
 
 export default function Home() {
   return (
@@ -9,6 +10,13 @@ export default function Home() {
       <section className="bg-gradient-to-bl from-[#93239d] via-[#190b34] to-[#280d42] border-b ">
         <HeroSection></HeroSection>
       </section>
+
+      <section className="bg-gradient-to-bl from-[#190b34] via-[#280d42] to-[#280d42]">
+        <div className="">
+          <OurWebDevelopmentProcess></OurWebDevelopmentProcess>
+        </div>
+      </section>
+
       <section className="bg-gradient-to-bl from-[#190b34] via-[#280d42] to-[#280d42]">
         <div className="h-screen">
           <h1 className="text-4xl font-bold text-white text-center">

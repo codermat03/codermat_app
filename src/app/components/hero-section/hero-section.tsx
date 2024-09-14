@@ -4,7 +4,7 @@ import React from "react";
 export default function HeroSection() {
   return (
     <section className="pt-28 md:pt-0  min-h-screen flex items-center justify-center p-8 ">
-      <div className="flex flex-col md:flex-row max-w-6xl w-full text-white">
+      <div className="flex flex-col items-center justify-center md:flex-row max-w-6xl w-full text-white">
         {/* Left Section */}
         <div className="flex-1 mb-8 md:mb-0">
           <h1 className="text-3xl md:text-6xl font-bold">
