@@ -17,6 +17,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,11 +47,13 @@ export default function Navbar() {
         <div className="relative flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <img
-                className=""
-                src="https://i.postimg.cc/pXrT6fkh/Rectangle-4.png"
-                alt="CoderMat"
-              />
+              <Link href="/">
+                <img
+                  className=""
+                  src="https://i.postimg.cc/pXrT6fkh/Rectangle-4.png"
+                  alt="CoderMat"
+                />
+              </Link>
             </div>
           </div>
 
