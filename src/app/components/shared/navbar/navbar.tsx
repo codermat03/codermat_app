@@ -47,12 +47,12 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
-        <div className="relative flex items-center justify-between h-16">
+        <div className="relative flex items-center justify-between md:h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link href="/">
                 <img
-                  className=""
+                  className="w-28 md:w-full"
                   src="https://i.postimg.cc/pXrT6fkh/Rectangle-4.png"
                   alt="CoderMat"
                 />
