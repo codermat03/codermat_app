@@ -4,7 +4,7 @@ import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 const ContactForm = () => {
   return (
     <section className="bg-[#1b1521] text-white py-10">
-      <div className=" mx-auto max-w-7xl px-4 grid md:grid-cols-2 gap-8">
+      <div className=" mx-auto max-w-7xl px-4 grid md:grid-cols-2 content-center gap-8">
         {/* Contact Info Section */}
         <div>
           <h3 className="text-2xl font-semibold mb-4">Contact Info</h3>
@@ -24,6 +24,9 @@ const ContactForm = () => {
             <a href="tel:+14805550103" className="text-white">
               +8801910882903{" "}
             </a>
+          </div>
+          <div className="md:w-[400px]">
+            <img src="https://i.postimg.cc/BnhzgkBQ/ccccc.png" alt="" />
           </div>
         </div>
 
