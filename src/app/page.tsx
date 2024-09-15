@@ -4,4 +4,6 @@ export default function Home() {
       <h1 className="text-3xl font-bold ">Welcome to CoderMat world!!</h1>
     </main>
   );
+
+
 }
