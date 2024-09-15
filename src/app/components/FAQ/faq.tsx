@@ -44,18 +44,12 @@ const FAQ = () => {
         <h2 className="text-3xl font-bold mb-10 text-center">
           Frequently asked questions
         </h2>
-        <div className="flex items-center justify-between">
-          <div className="relative">
-            <div className="absolute -left-16">
-              <div className="w-24 h-24 bg-[#6E48FF] rounded-full absolute top-0 left-10"></div>
-              <div className="w-20 h-20 bg-[#D1B2FF] rounded-full absolute top-4"></div>
-              <div className="w-20 h-20 bg-[#6E48FF] rounded-full absolute left-16 top-12 flex items-center justify-center">
-                <span className="text-4xl text-white">?</span>
-              </div>
-            </div>
+        <div className="md:flex items-center justify-between">
+          <div className="">
+            <img src="https://i.postimg.cc/pX4LyG34/FAQ.png" alt="" />
           </div>
 
-          <div className="w-full md:w-3/5">
+          <div className="w-full ">
             {faqs.map((faq, index) => (
               <div key={index} className="mb-4 border-b">
                 <div

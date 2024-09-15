@@ -1,6 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import { FaBootstrap, FaNode, FaReact } from "react-icons/fa";
+import { FaAnglesRight } from "react-icons/fa6";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { IoIosArrowDown } from "react-icons/io";
@@ -17,13 +19,15 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [dropdownOpenTech, setDropdownOpenTech] = useState(false);
-  const [activeLink, setActiveLink] = useState("home"); // State for active link
+  const [dropdownOpenNav, setDropdownOpenNav] = useState(false);
+  const [activeLink, setActiveLink] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,14 +47,16 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
-        <div className="relative flex items-center justify-between h-16">
+        <div className="relative flex items-center justify-between md:h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <img
-                className=""
-                src="https://i.postimg.cc/pXrT6fkh/Rectangle-4.png"
-                alt="CoderMat"
-              />
+              <Link href="/">
+                <img
+                  className="w-28 md:w-full"
+                  src="https://i.postimg.cc/pXrT6fkh/Rectangle-4.png"
+                  alt="CoderMat"
+                />
+              </Link>
             </div>
           </div>
 
@@ -578,7 +584,7 @@ export default function Navbar() {
                   activeLink === "About "
                     ? "bg-gray-900 text-white"
                     : "text-white hover:bg-gray-700 hover:text-white"
-                } px-3 py-2 rounded-md  font-medium`}
+                } px-3 py-2 rounded-md  font-medium hidden lg:block`}
               >
                 About
               </a>
@@ -589,7 +595,7 @@ export default function Navbar() {
                   activeLink === "projects"
                     ? "bg-gray-900 text-white"
                     : "text-white hover:bg-gray-700 hover:text-white"
-                } px-3 py-2 rounded-md  font-medium`}
+                } px-3 py-2 rounded-md  font-medium hidden lg:block`}
               >
                 Projects
               </a>
@@ -600,11 +606,50 @@ export default function Navbar() {
                   activeLink === "Blogs"
                     ? "bg-gray-900 text-white"
                     : "text-white hover:bg-gray-700 hover:text-white"
-                } px-3 py-2 rounded-md  font-medium`}
+                } px-3 py-2 rounded-md  font-medium hidden lg:block`}
               >
                 Blogs & News
               </a>
             </div>
+          </div>
+
+          {/* Add this for mid-sized devices */}
+          <div className="hidden md:flex relative block lg:hidden">
+            <span
+              onClick={() => setDropdownOpenNav(!dropdownOpenNav)}
+              className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium cursor-pointer"
+            >
+              <FaAnglesRight />
+            </span>
+            {dropdownOpenNav && (
+              <div className="absolute top-12 bg-white text-black rounded-md w-40 shadow-lg p-2">
+                <a
+                  href="/about"
+                  onClick={() => setActiveLink("About ")}
+                  className={`${
+                    activeLink === "About "
+                      ? "bg-gray-900"
+                      : " hover:bg-gray-700 hover:text-white"
+                  } px-3 py-2 rounded-md  font-medium`}
+                >
+                  About
+                </a>
+                <a
+                  href="/projects"
+                  onClick={() => setActiveLink("projects")}
+                  className="block px-3 py-2 rounded-md font-medium text-black hover:bg-gray-200"
+                >
+                  Projects
+                </a>
+                <a
+                  href="/blogs"
+                  onClick={() => setActiveLink("Blogs")}
+                  className="block px-3 py-2 rounded-md font-medium text-black hover:bg-gray-200"
+                >
+                  Blogs & News
+                </a>
+              </div>
+            )}
           </div>
 
           <div className="hidden sm:flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
