@@ -4,8 +4,6 @@ import ServiceCard from './serviceCard';
 import { service } from '@/app/interface';
 import Image from 'next/image';
 
-
-
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
