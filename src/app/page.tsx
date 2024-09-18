@@ -8,19 +8,19 @@ export default function Home() {
   return (
     <>
       <section className="bg-gradient-to-bl from-[#93239d] via-[#190b34] to-[#280d42] border-b ">
-        <HeroSection></HeroSection>
+        <HeroSection />
       </section>
 
       <section className="bg-gradient-to-bl from-[#190b34] via-[#280d42] to-[#280d42]">
-        <div className="">
-          <OurWebDevelopmentProcess></OurWebDevelopmentProcess>
+        <div>
+          <OurWebDevelopmentProcess />
         </div>
       </section>
 
       <section className="bg-gradient-to-bl from-[#190b34] via-[#280d42] to-[#280d42]">
         <div className="h-screen">
           <h1 className="text-4xl font-bold text-white text-center">
-            Services seciton
+            Services section
           </h1>
         </div>
         <img
@@ -39,12 +39,12 @@ export default function Home() {
       </section>
 
       <section>
-        <FAQ></FAQ>
+        <FAQ />
       </section>
 
       <main className="">
         <section className="text-black">
-          <ContactForm></ContactForm>
+          <ContactForm />
         </section>
       </main>
     </>
