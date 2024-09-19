@@ -32,7 +32,7 @@ const ServiceDetails = ({ params }: { params: Params }) => {
       <h3 className="text-center text-2xl font-semibold pt-4">
         {service?.title || "Service not found"}
       </h3>
-      <div className=" grid grid-cols-2 justify-between gap-28 pt-20 max-w-7xl mx-auto ">
+      <div className=" grid grid-cols-2 justify-items-center gap-10 pt-20 max-w-6xl mx-auto ">
         <div>
           <p className="text-xl">{service?.service_details_description}</p>
         </div>
