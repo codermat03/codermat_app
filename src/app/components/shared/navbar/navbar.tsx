@@ -589,6 +589,17 @@ export default function Navbar() {
                 About
               </a>
               <a
+                href="/contactUs"
+                onClick={() => setActiveLink("contactUs ")}
+                className={`${
+                  activeLink === "contactUs "
+                    ? "bg-gray-900 text-white"
+                    : "text-white hover:bg-gray-700 hover:text-white"
+                } px-3 py-2 rounded-md  font-medium hidden lg:block`}
+              >
+                Contact
+              </a>
+              <a
                 href="/projects"
                 onClick={() => setActiveLink("projects")}
                 className={`${
