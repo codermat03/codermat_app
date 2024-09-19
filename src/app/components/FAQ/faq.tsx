@@ -39,9 +39,9 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="bg-[#1e1228] text-white py-16 px-8 md:px-20">
+    <div className="bg-[#1e1228] text-white py-20 px-8 md:px-20">
       <div className="max-w-7xl mx-auto mx-auto">
-        <h2 className="text-3xl font-bold mb-10 text-center">
+        <h2 className="text-3xl font-bold mb-14 text-center">
           Frequently asked questions
         </h2>
         <div className="md:flex items-center justify-between">

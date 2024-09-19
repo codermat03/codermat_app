@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectDiscuss = () => {
   return (
-    <div className="text-center z-10 py-20 text-white">
+    <div className="text-center z-10 pb-24 text-white">
       <h1 className="font-bold text-4xl">Let’s Discuss Your Project</h1>
       <p className="text-xl w-7/12 m-auto pt-4">
         We are happy to hear your project goals and turn them into a next-level

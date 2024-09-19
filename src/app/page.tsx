@@ -18,7 +18,7 @@ export default function Home() {
         <Services></Services>
       </section>
 
-      <section className="bg-gradient-to-t from-[#321544] to-[#21122F] border-b">
+      <section className="bg-gradient-to-t from-[#321544] to-[#20112E] border-b">
         <ProjectDiscuss></ProjectDiscuss>
       </section>
 
@@ -26,7 +26,7 @@ export default function Home() {
         <TechnologyStack></TechnologyStack>
       </section>
 
-      <section className="bg-gradient-to-t from-[#181819] to-[#21122F] border-b">
+      <section className="bg-gradient-to-t from-[#181819] to-[#21122F]">
         <div>
           <OurWebDevelopmentProcess />
         </div>

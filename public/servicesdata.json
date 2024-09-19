@@ -1,38 +1,44 @@
 [
-    {
-        "id": 1,
-        "image_url": "https://i.ibb.co.com/HNFYJKB/Group-1000002434.png",
-        "title": "Custom Web development",
-        "short_description": "Develop swift, feature-rich web solutions that innovate digital experiences. Employing the latest technologies, we deliver groundbreaking products that propel businesses into the future."
-    },
-    {
-        "id": 2,
-        "image_url": "https://i.ibb.co.com/sK3qbX1/Group-1000002435.png",
-        "title": "Front-End development",
-        "short_description": "Elevate your website's visual appeal with CoderMat's front-end development expertise. We specialize in creating responsive, interactive interfaces using HTML, CSS, and JavaScript for seamless user experiences across devices and browsers."
-    },
-    {
-        "id": 3,
-        "image_url": "https://i.ibb.co.com/MZ50jrL/Stacked-Area-Up.png",
-        "title": "Backend Development",
-        "short_description": "Enhance your website's functionality with CoderMat's backend development proficiency. We specialize in crafting robust architectures and efficient databases to support seamless transactions, ensuring secure and reliable operations for your online business."
-    },
-    {
-        "id": 4,
-        "image_url": "https://i.ibb.co.com/k6Kzs1s/Group-1000002436.png",
-        "title": "Web Portal Development",
-        "short_description": "Unlock your organization's potential with CoderMat's web portal development. Our custom platforms streamline workflows, enhance communication, and offer seamless integration for exceptional user experiences, empowering your business in the digital realm."
-    },
-    {
-        "id": 5,
-        "image_url": "https://i.ibb.co.com/nnLX4xR/Group-1000002437.png",
-        "title": "E-commerce Development",
-        "short_description": "Maximize your online sales potential with CoderMat's e-commerce development solutions. We create tailored platforms that optimize user experiences, drive conversions, and ensure secure transactions, empowering your brand's success in the digital marketplace."
-    },
-    {
-        "id": 6,
-        "image_url": "https://i.ibb.co.com/vZ1ggTS/Group-1000001638.png",
-        "title": "WordPress Development",
-        "short_description": "Revitalize your online presence with CoderMat's WordPress development expertise. We tailor websites to your brand identity, harnessing WordPress's user-friendly interface for seamless functionality and impactful digital experiences."
-    }
+  {
+    "id": 1,
+    "image_url": "https://i.ibb.co.com/HNFYJKB/Group-1000002434.png",
+    "title": "Custom Web Development",
+    "short_description": "Develop swift, feature-rich web solutions that innovate digital experiences. Employing the latest technologies, we deliver groundbreaking products that propel businesses into the future.",
+    "service_details_description": "Our custom web development services are designed to deliver cutting-edge solutions that address the unique needs of your business. We focus on creating websites that are not only visually appealing but also highly functional and efficient. By leveraging the latest technologies and development practices, we ensure that your site is both future-proof and scalable. Our approach starts with a deep understanding of your business goals and challenges, allowing us to craft a solution that aligns perfectly with your objectives. Whether you're looking to enhance your online presence, improve user engagement, or streamline operations, our team is equipped to build robust and adaptable websites that can grow with your business. We prioritize performance and security, ensuring that your website is optimized for speed, reliability, and protection against potential threats. Our custom web development services also include ongoing support and maintenance to keep your site up-to-date with the latest advancements and best practices. Partner with us to transform your digital vision into reality and achieve exceptional results in the competitive online landscape."
+  },
+  {
+    "id": 2,
+    "image_url": "https://i.ibb.co.com/sK3qbX1/Group-1000002435.png",
+    "title": "Front-End Development",
+    "short_description": "Elevate your website's visual appeal with CoderMat's front-end development expertise. We specialize in creating responsive, interactive interfaces using HTML, CSS, and JavaScript for seamless user experiences across devices and browsers.",
+    "service_details_description": "At CoderMat, our front-end development services are dedicated to enhancing the visual and interactive aspects of your website. We specialize in creating dynamic, user-friendly interfaces that are optimized for all devices and browsers. Our team employs advanced HTML, CSS, and JavaScript techniques to build responsive designs that adapt seamlessly to various screen sizes and resolutions. We focus on crafting intuitive navigation and engaging visual elements that improve user experience and drive engagement. By staying abreast of the latest trends and technologies, we ensure that your website not only meets current standards but also stands out in the crowded digital space. Our front-end development process includes meticulous attention to detail, from initial design concepts to final implementation, ensuring a polished and cohesive user experience. We also perform extensive testing to guarantee that your site functions flawlessly across different platforms. With our expertise, your website will offer a captivating and smooth experience that keeps visitors coming back."
+  },
+  {
+    "id": 3,
+    "image_url": "https://i.ibb.co.com/MZ50jrL/Stacked-Area-Up.png",
+    "title": "Backend Development",
+    "short_description": "Enhance your website's functionality with CoderMat's backend development proficiency. We specialize in crafting robust architectures and efficient databases to support seamless transactions, ensuring secure and reliable operations for your online business.",
+    "service_details_description": "Our backend development services at CoderMat are centered around creating a strong foundation for your website's functionality. We design and implement efficient server-side architectures and databases that support seamless and secure operations. Our team excels in building scalable solutions that handle complex processes and large volumes of data with ease. We focus on integrating robust APIs and services to enhance the functionality and performance of your site. Security is a top priority, and we implement best practices to protect your data and transactions from potential vulnerabilities. Our backend development process involves thorough analysis and optimization to ensure that your website performs at its best under varying loads. We provide comprehensive solutions that include server management, database design, and application development, ensuring that all aspects of your backend infrastructure are meticulously crafted and maintained. With our expertise, you can rely on a backend system that is both reliable and adaptable, supporting your business's growth and success."
+  },
+  {
+    "id": 4,
+    "image_url": "https://i.ibb.co.com/k6Kzs1s/Group-1000002436.png",
+    "title": "Web Portal Development",
+    "short_description": "Unlock your organization's potential with CoderMat's web portal development. Our custom platforms streamline workflows, enhance communication, and offer seamless integration for exceptional user experiences, empowering your business in the digital realm.",
+    "service_details_description": "CoderMat's web portal development services are designed to create comprehensive platforms that streamline your organization's operations and enhance communication. We build custom web portals that cater to specific business needs, whether for internal use or customer-facing interactions. Our solutions include features such as content management systems, user authentication, and integration with other business tools to create a cohesive digital environment. We prioritize user experience by designing intuitive interfaces that facilitate easy navigation and efficient workflow management. Our team ensures that each portal is scalable and adaptable, able to accommodate future growth and changes in your business requirements. We also focus on security, implementing measures to safeguard sensitive information and ensure reliable access control. With our expertise, you can expect a web portal that enhances productivity, improves communication, and supports your business goals effectively."
+  },
+  {
+    "id": 5,
+    "image_url": "https://i.ibb.co.com/nnLX4xR/Group-1000002437.png",
+    "title": "E-commerce Development",
+    "short_description": "Maximize your online sales potential with CoderMat's e-commerce development solutions. We create tailored platforms that optimize user experiences, drive conversions, and ensure secure transactions, empowering your brand's success in the digital marketplace.",
+    "service_details_description": "We specialize in creating custom e-commerce platforms that are designed to enhance your online sales and improve user experience. Our e-commerce development services focus on building tailored solutions that address the unique needs of your business, from intuitive product listings to streamlined checkout processes. We prioritize user engagement by designing interfaces that are easy to navigate and visually appealing, ensuring a pleasant shopping experience for your customers. Performance is a key aspect of our development process, and we implement strategies to optimize load times and responsiveness. Security is also a top concern, and we integrate advanced measures to protect sensitive customer information and transactions. Additionally, our e-commerce platforms are designed to be scalable, allowing you to easily expand your offerings and accommodate growth. By choosing our e-commerce development services, you can establish a strong digital presence that drives conversions and supports your brand's success in the competitive online marketplace."
+  },
+  {
+    "id": 6,
+    "image_url": "https://i.ibb.co.com/vZ1ggTS/Group-1000001638.png",
+    "title": "WordPress Development",
+    "short_description": "Revitalize your online presence with CoderMat's WordPress development expertise. We tailor websites to your brand identity, harnessing WordPress's user-friendly interface for seamless functionality and impactful digital experiences.",
+    "service_details_description": "Our WordPress development services offer comprehensive solutions to create a website that perfectly aligns with your brand identity. We specialize in customizing WordPress themes and plugins to deliver a unique and functional online presence. Our approach includes designing visually appealing layouts that reflect your brand's style while ensuring ease of use and functionality. We focus on creating websites that are user-friendly, secure, and optimized for search engines, enhancing both user experience and visibility. Our team handles all aspects of WordPress development, including theme customization, plugin integration, and performance optimization. We also provide ongoing support and maintenance to keep your site running smoothly and up-to-date with the latest WordPress updates and best practices. With our expertise, you can expect a WordPress website that is both visually stunning and highly functional, offering an impactful digital experience that engages your audience and supports your business goals."
+  }
 ]

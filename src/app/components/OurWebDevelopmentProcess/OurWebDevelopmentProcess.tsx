@@ -3,10 +3,10 @@ import React from "react";
 const OurWebDevelopmentProcess = () => {
   return (
     <main className="  bg-[url('https://i.postimg.cc/Y24H959r/pattern-developmen-process.png')] bg-no-repeat bg-left-top ">
-      <div className="min-h-screen flex items-center px-1 md:px-0 justify-center md:p-5 lg:p-10 bg-no-repeat lg:bg-contain	 bg-right	 bg-[url('https://i.postimg.cc/TYvK038H/Pattern-for-development-process.png')]">
+      <div className="min-h-screen flex items-center px-1 md:px-0 justify-center md:p-5 bg-no-repeat lg:bg-contain bg-right	 bg-[url('https://i.postimg.cc/TYvK038H/Pattern-for-development-process.png')]">
         <div className="max-w-5xl mx-auto text-white">
           {/* Title */}
-          <h1 className="text-3xl md:text-4xl font-bold text-center mt-5 md:mt-0 mb-5 md:mb-16">
+          <h1 className="text-3xl md:text-4xl font-bold text-center mt-5 md:mt-0 mb-5 md:py-20">
             Our Web Development Process
           </h1>
 
