@@ -4,6 +4,27 @@ import StackCard from "./StackCard";
 import Image from "next/image";
 import { Technology } from "@/app/interface";
 
+const SkeletonLoader = () => {
+  return (
+    <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 mt-20 justify-items-center z-10">
+      {Array.from({ length: 6 }).map((_, index) => (
+        <div
+          key={index}
+          className="bg-white/15 rounded-lg p-4 w-full max-w-[300px]"
+        >
+          <div className="animate-pulse flex flex-col space-y-4">
+            <div className="h-32 bg-white/15 rounded"></div>
+            <div className="h-4 bg-white/15 rounded w-3/4"></div>
+            <div className="h-4 bg-white/15 rounded w-1/2"></div>
+            <div className="h-4 bg-white/15 rounded w-1/2"></div>
+            <div className="h-4 bg-white/15 rounded w-1/2"></div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
 const TechnologyStack = () => {
   // State for tech stack data
   const [techStack, setTechStack] = useState<Technology[]>([]);
@@ -34,15 +55,14 @@ const TechnologyStack = () => {
         alt="Background"
       />
 
-      {/* Show loader when data is loading */}
+      {/* Show skeleton loader when data is loading */}
       {loading ? (
-        <div className="flex justify-center items-center py-20">
-          {/* Loader (spinner) */}
-          <div className="animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-purple-500"></div>
+        <div className="relative z-10">
+          <SkeletonLoader />
         </div>
       ) : (
         // Grid of technology stack
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 mt-20 justify-items-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 mt-20 justify-items-center z-0">
           {techStack.map((stack) => (
             <StackCard stack={stack} key={stack.id} />
           ))}

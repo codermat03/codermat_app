@@ -2,7 +2,27 @@
 import React, { useEffect, useState } from "react";
 import ServiceCard from "./serviceCard";
 import { service } from "@/app/interface";
-import Image from "next/image";
+
+const SkeletonLoader = () => {
+  return (
+    <div className="max-w-7xl mx-auto grid grid-cols-3 gap-y-12 mx-20 mt-20">
+      {Array.from({ length: 6 }).map((_, index) => (
+        <div
+          key={index}
+          className="bg-white/20 rounded-lg p-4 w-full max-w-[300px]"
+        >
+          <div className="animate-pulse flex flex-col space-y-4">
+            <div className="h-32 bg-white/20 rounded"></div>
+            <div className="h-4 bg-white/20 rounded w-3/4"></div>
+            <div className="h-4 bg-white/20 rounded w-1/2"></div>
+            <div className="h-4 bg-white/20 rounded w-1/2"></div>
+            <div className="h-4 bg-white/20 rounded w-1/2"></div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 const Services = () => {
   // State for services data
@@ -31,9 +51,7 @@ const Services = () => {
       </p>
 
       {loading ? (
-        <div className="flex justify-center items-center py-20">
-          <div className="animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-purple-500"></div>
-        </div>
+        <SkeletonLoader />
       ) : (
         // Services grid
         <div className="max-w-7xl mx-auto grid grid-cols-3 justify-center gap-y-12 mx-20 mt-20">
