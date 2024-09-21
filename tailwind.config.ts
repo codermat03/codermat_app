@@ -12,7 +12,8 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "tech-stack-bg": "url('https://i.ibb.co.com/9bBMgsX/Background.png')"
+        "tech-stack-bg": "url('https://i.ibb.co.com/9bBMgsX/Background.png')",
+        'choose-us-bg': "url('https://i.ibb.co.com/Bq50dx0/chooseusbg.png')",
       },
     },
   },

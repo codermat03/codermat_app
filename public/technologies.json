@@ -8,42 +8,42 @@
             {
                 "id": 1,
                 "name": "React Js",
-                "image": "https://example.com/images/react-js.png"
+                "image": "https://i.ibb.co.com/qkbXxXQ/postgres.png"
             },
             {
                 "id": 2,
                 "name": "Next Js",
-                "image": "https://example.com/images/next-js.png"
+                "image": "https://i.ibb.co.com/pdZYzYz/next.png"
             },
             {
                 "id": 3,
                 "name": "JavaScript",
-                "image": "https://example.com/images/javascript.png"
+                "image": "https://i.ibb.co.com/stCqzJf/js.png"
             },
             {
                 "id": 4,
                 "name": "TypeScript",
-                "image": "https://example.com/images/typescript.png"
+                "image": "https://i.ibb.co.com/NVBwFx0/ts.png"
             },
             {
                 "id": 5,
                 "name": "Redux",
-                "image": "https://example.com/images/redux.png"
+                "image": "https://i.ibb.co.com/3yc5XcL/redux.png"
             },
             {
                 "id": 6,
                 "name": "Tailwind",
-                "image": "https://example.com/images/tailwind.png"
+                "image": "https://i.ibb.co.com/SRkw3YQ/tailwind.png"
             },
             {
                 "id": 7,
                 "name": "Bootstrap",
-                "image": "https://example.com/images/bootstrap.png"
+                "image": "https://i.ibb.co.com/5s2qjVV/bootstrap.png"
             },
             {
                 "id": 8,
                 "name": "Material UI",
-                "image": "https://example.com/images/material-ui.png"
+                "image": "https://i.ibb.co.com/N6HNLmW/material.png"
             }
         ]
     },
@@ -56,27 +56,27 @@
             {
                 "id": 9,
                 "name": "Node Js",
-                "image": "https://example.com/images/node-js.png"
+                "image": "https://i.ibb.co.com/Gn88ZqR/node.png"
             },
             {
                 "id": 10,
                 "name": "Express Js",
-                "image": "https://example.com/images/express-js.png"
+                "image": "https://i.ibb.co.com/Dr93qHY/express.png"
             },
             {
                 "id": 11,
                 "name": "JWT",
-                "image": "https://example.com/images/jwt.png"
+                "image": "https://i.ibb.co.com/0mKGFSC/jwt.png"
             },
             {
                 "id": 12,
                 "name": "Zod",
-                "image": "https://example.com/images/zod.png"
+                "image": "https://i.ibb.co.com/phgH2C3/zod.png"
             },
             {
                 "id": 13,
                 "name": "Cloudinary",
-                "image": "https://example.com/images/cloudinary.png"
+                "image": "https://i.ibb.co.com/3rdP4Fc/cloudinary.png"
             }
         ]
     },
@@ -89,17 +89,17 @@
             {
                 "id": 14,
                 "name": "MongoDB",
-                "image": "https://example.com/images/mongodb.png"
+                "image": "https://i.ibb.co.com/SyRm9Hw/mongodb.png"
             },
             {
                 "id": 15,
                 "name": "Mongoose",
-                "image": "https://example.com/images/mongoose.png"
+                "image": "https://i.ibb.co.com/HgBb9vy/mongoose.png"
             },
             {
                 "id": 16,
                 "name": "PostgresQL",
-                "image": "https://example.com/images/postgresql.png"
+                "image": "https://i.ibb.co.com/qkbXxXQ/postgres.png"
             }
         ]
     },
@@ -112,22 +112,22 @@
             {
                 "id": 17,
                 "name": "MongoDB",
-                "image": "https://example.com/images/mongodb.png"
+                "image": "https://i.ibb.co.com/SyRm9Hw/mongodb.png"
             },
             {
                 "id": 18,
                 "name": "Express Js",
-                "image": "https://example.com/images/express-js.png"
+                "image": "https://i.ibb.co.com/Dr93qHY/express.png"
             },
             {
                 "id": 19,
                 "name": "React Js",
-                "image": "https://example.com/images/react-js.png"
+                "image": "https://i.ibb.co.com/wpSvMrb/react.png"
             },
             {
                 "id": 20,
                 "name": "Node Js",
-                "image": "https://example.com/images/node-js.png"
+                "image": "https://i.ibb.co.com/Gn88ZqR/node.png"
             }
         ]
     },
@@ -140,7 +140,7 @@
             {
                 "id": 21,
                 "name": "Tell Us Your Requirements",
-                "image": "https://example.com/images/ux-design.png"
+                "image": "https://www.freeiconspng.com/uploads/contact-icon-20.png"
             }
         ]
     },
@@ -153,7 +153,7 @@
             {
                 "id": 22,
                 "name": "Tell Us Your Requirements",
-                "image": "https://example.com/images/wordpress.png"
+                "image": "https://www.freeiconspng.com/uploads/contact-icon-20.png"
             }
         ]
     }

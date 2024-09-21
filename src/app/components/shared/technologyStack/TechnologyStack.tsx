@@ -12,7 +12,7 @@ const TechnologyStack = () => {
             .then(data => setTechStack(data))
     }, [])
     return (
-        <div className='py-24 bg-[#311542]'>
+        <div className='py-32 bg-[#311542]'>
             <h1 className='text-center font-bold text-4xl pb-8'>Our Technology stack</h1>
             <Image
                 className='absolute py-32'
@@ -21,7 +21,7 @@ const TechnologyStack = () => {
                 src="https://i.ibb.co/9bBMgsX/Background.png"
                 alt="Background"
             />
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 my-14 justify-items-center'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 my-14 mx-20 justify-items-center'>
                 {techStack.map(stack => <StackCard stack={stack} key={stack.id} />)}
             </div>
         </div>

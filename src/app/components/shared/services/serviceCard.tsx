@@ -3,7 +3,7 @@ import React from 'react';
 
 const ServiceCard = ({ service }: any) => {
     return (
-        <div className='w-[300px] backdrop-blur-md bg-[#2F1748] flex flex-col items-start border-l-0 border-t-0 border-[#5C099B] border-4 p-5 rounded-xl'>
+        <div className='w-[300px] mx-auto backdrop-blur-md bg-[#2F1748] flex flex-col items-start border-l-0 border-t-0 border-[#5C099B] border-4 p-5 rounded-xl'>
             <img
                 className='w-14 mt-6'
                 src={service.image_url}
