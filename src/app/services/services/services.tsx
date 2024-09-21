@@ -5,11 +5,21 @@ import { service } from "@/app/interface";
 import Image from "next/image";
 
 const Services = () => {
-  const [services, setServices] = useState([]);
+  // State for services data
+  const [services, setServices] = useState<service[]>([]);
+  // State for loading
+  const [loading, setLoading] = useState<boolean>(true);
+
   useEffect(() => {
-    fetch("/servicesdata.json")
-      .then((res) => res.json())
-      .then((data) => setServices(data));
+    // Simulate fetch delay to show loader for demo purposes
+    setTimeout(() => {
+      fetch("/servicesdata.json")
+        .then((res) => res.json())
+        .then((data) => {
+          setServices(data);
+          setLoading(false); // Set loading to false after data is fetched
+        });
+    }, 1000); // Adjust timeout as needed
   }, []);
 
   return (
@@ -19,11 +29,20 @@ const Services = () => {
         Get the software that will help you to grow your business. We have a lot
         of features that you will love.
       </p>
-      <div className="max-w-7xl mx-auto grid grid-cols-3 justify-center gap-y-12 mx-20 mt-20">
-        {services.map((service: service) => (
-          <ServiceCard service={service} key={service.id} />
-        ))}
-      </div>
+
+      {loading ? (
+        <div className="flex justify-center items-center py-20">
+          <div className="animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-purple-500"></div>
+        </div>
+      ) : (
+        // Services grid
+        <div className="max-w-7xl mx-auto grid grid-cols-3 justify-center gap-y-12 mx-20 mt-20">
+          {services.map((service: service) => (
+            <ServiceCard service={service} key={service.id} />
+          ))}
+        </div>
+      )}
+
       <img
         className="w-full pt-14"
         src="https://i.postimg.cc/kgGNMLQ8/home14-bg4.png"

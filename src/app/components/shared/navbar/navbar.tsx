@@ -62,24 +62,24 @@ export default function Navbar() {
 
           <div className="hidden sm:flex flex-1 justify-center sm:ml-6">
             <div className="relative flex items-center space-x-4 z-40">
-              <a
+              <Link
                 href="/"
                 onClick={() => setActiveLink("home")}
                 className={`${
                   activeLink === "home"
-                    ? "bg-gray-900 text-white"
-                    : "text-white hover:bg-gray-700 hover:text-white"
+                    ? "bg-white/20 text-white"
+                    : "text-white hover:bg-white/20 hover:text-white"
                 } px-3 py-2 rounded-md  font-medium`}
               >
                 Home
-              </a>
+              </Link>
 
               <div
                 className="relative flex justify-center"
                 onMouseEnter={() => setDropdownOpenTech(true)}
                 onMouseLeave={() => setDropdownOpenTech(false)}
               >
-                <a
+                <Link
                   href="/services"
                   onClick={() => {
                     setActiveLink("services");
@@ -87,13 +87,13 @@ export default function Navbar() {
                   }}
                   className={`${
                     activeLink === "services"
-                      ? "bg-gray-900 text-white"
-                      : "text-white hover:bg-gray-700 hover:text-white"
+                      ? "bg-white/20 text-white"
+                      : "text-white hover:bg-white/20 hover:text-white"
                   } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
                 >
                   Services
                   <IoIosArrowDown></IoIosArrowDown>
-                </a>
+                </Link>
                 {dropdownOpenTech && (
                   <div
                     className="absolute -left-[260px]  mt-12 w-max bg-white text-black rounded-md shadow-lg p-6 grid grid-cols-4 gap-4"
@@ -331,7 +331,7 @@ export default function Navbar() {
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
               >
-                <a
+                <Link
                   href="/Technologies"
                   onClick={() => {
                     setActiveLink("technologies");
@@ -339,13 +339,13 @@ export default function Navbar() {
                   }}
                   className={`${
                     activeLink === "technologies"
-                      ? "bg-gray-900 text-white"
-                      : "text-white hover:bg-gray-700 hover:text-white"
+                      ? "bg-white/20 text-white"
+                      : "text-white hover:bg-white/20 hover:text-white"
                   } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
                 >
                   Technologies
                   <IoIosArrowDown />
-                </a>
+                </Link>
                 {dropdownOpen && (
                   <div
                     className="absolute -left-[360px]  mt-12 w-max bg-white text-black rounded-md shadow-lg p-6 grid grid-cols-4 gap-4"
@@ -577,50 +577,50 @@ export default function Navbar() {
                 )}
               </div>
 
-              <a
+              <Link
                 href="/about"
                 onClick={() => setActiveLink("About ")}
                 className={`${
                   activeLink === "About "
-                    ? "bg-gray-900 text-white"
-                    : "text-white hover:bg-gray-700 hover:text-white"
+                    ? "bg-white/20 text-white"
+                    : "text-white hover:bg-white/20 hover:text-white"
                 } px-3 py-2 rounded-md  font-medium hidden lg:block`}
               >
                 About
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/contactUs"
                 onClick={() => setActiveLink("contactUs ")}
                 className={`${
                   activeLink === "contactUs "
-                    ? "bg-gray-900 text-white"
-                    : "text-white hover:bg-gray-700 hover:text-white"
+                    ? "bg-white/20 text-white"
+                    : "text-white hover:bg-white/20 hover:text-white"
                 } px-3 py-2 rounded-md  font-medium hidden lg:block`}
               >
                 Contact
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/projects"
                 onClick={() => setActiveLink("projects")}
                 className={`${
                   activeLink === "projects"
-                    ? "bg-gray-900 text-white"
-                    : "text-white hover:bg-gray-700 hover:text-white"
+                    ? "bg-white/20 text-white"
+                    : "text-white hover:bg-white/20 hover:text-white"
                 } px-3 py-2 rounded-md  font-medium hidden lg:block`}
               >
                 Projects
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/blogs"
                 onClick={() => setActiveLink("Blogs")}
                 className={`${
                   activeLink === "Blogs"
-                    ? "bg-gray-900 text-white"
-                    : "text-white hover:bg-gray-700 hover:text-white"
+                    ? "bg-white/20 text-white"
+                    : "text-white hover:bg-white/20 hover:text-white"
                 } px-3 py-2 rounded-md  font-medium hidden lg:block`}
               >
                 Blogs & News
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -634,17 +634,17 @@ export default function Navbar() {
             </span>
             {dropdownOpenNav && (
               <div className="absolute top-12 bg-white text-black rounded-md w-40 shadow-lg p-2">
-                <a
+                <Link
                   href="/about"
                   onClick={() => setActiveLink("About ")}
                   className={`${
                     activeLink === "About "
-                      ? "bg-gray-900"
-                      : " hover:bg-gray-700 hover:text-white"
+                      ? "bg-white/20 text-white"
+                      : "text-white hover:bg-white/20 hover:text-white"
                   } px-3 py-2 rounded-md  font-medium`}
                 >
                   About
-                </a>
+                </Link>
                 <a
                   href="/projects"
                   onClick={() => setActiveLink("projects")}
@@ -652,13 +652,13 @@ export default function Navbar() {
                 >
                   Projects
                 </a>
-                <a
+                <Link
                   href="/blogs"
                   onClick={() => setActiveLink("Blogs")}
                   className="block px-3 py-2 rounded-md font-medium text-black hover:bg-gray-200"
                 >
                   Blogs & News
-                </a>
+                </Link>
               </div>
             )}
           </div>
