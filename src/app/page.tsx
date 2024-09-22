@@ -6,16 +6,14 @@ import WhyChooseUs from './components/shared/whychooseus/WhyChooseUs';
 import Pricing from './components/pricing/Pricing';
 
 const page = () => {
-    return (
-        <div className='text-white bg-[#22122E]'>
-            <Services />
-            <ProjectDiscuss />
-            <div className='p-[1px] bg-[#ffffff58]'></div>
-            <TechnologyStack />
-            <WhyChooseUs />
-            <Pricing />
-        </div>
-    );
-};
-
-export default page;
+  return (
+    <div className='text-white bg-[#22122E]'>
+      <Services />
+      <ProjectDiscuss />
+      <div className='p-[1px] bg-[#ffffff58]'></div>
+      <TechnologyStack />
+      <WhyChooseUs />
+      <Pricing />
+    </div>
+  );
+}
