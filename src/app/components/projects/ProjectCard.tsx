@@ -1,11 +1,26 @@
+import { Project } from '@/app/interface';
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const ProjectCard = ({ project }) => {
+interface ProjectCardProps {
+    project: Project;
+}
+
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     const { id, description, image, project_name, technologies } = project
     return (
         <div className="w-[390px] h-[650px] mx-auto backdrop-blur-3xl bg-[#3e2a4b70] flex flex-col items-start rounded-2xl">
-            <img className="" src={image} alt={project_name} />
+            <Image
+                src={image}
+                alt={project_name}
+                width={390}
+                height={260}
+                className="rounded-t-2xl"
+                objectFit="cover"
+                priority
+            />
             <div className='p-7'>
                 <h2 className="py-4 text-xl font-bold">{project_name}</h2>
                 <div>
@@ -23,13 +38,13 @@ const ProjectCard = ({ project }) => {
                     className="flex items-center gap-2"
                 >
                     Show Live{" "}
-                    <div>
-                        <img
-                            className="w-4"
-                            src="https://i.ibb.co.com/gVjzd78/line-1.png"
-                            alt=""
-                        />
-                    </div>
+                    <Image
+                        className="w-4"
+                        src="https://i.ibb.co/gVjzd78/line-1.png"
+                        alt="icon"
+                        width={16}
+                        height={16}
+                    />
                 </Link>
             </button>
         </div>

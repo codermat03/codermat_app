@@ -1,9 +1,10 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import ProjectCard from './ProjectCard';
+import { Project } from '@/app/interface';
 
 const Projetcs = () => {
-    const [projects, setProjects] = useState([])
+    const [projects, setProjects] = useState<Project[]>([]);
     useEffect(() => {
         fetch("ourProjects.json")
             .then(res => res.json())
