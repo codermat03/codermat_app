@@ -3,7 +3,6 @@ import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const FAQ = () => {
-  // Set the initial state to 0 to open the first FAQ by default
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
 
   const toggleFAQ = (index: number) => {
@@ -40,16 +39,16 @@ const FAQ = () => {
 
   return (
     <div className="bg-[#1e1228] text-white py-16 px-8 md:px-20">
-      <div className="max-w-7xl mx-auto mx-auto">
+      <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold mb-10 text-center">
           Frequently asked questions
         </h2>
         <div className="md:flex items-center justify-between">
-          <div className="">
-            <img src="https://i.postimg.cc/pX4LyG34/FAQ.png" alt="" />
+          <div>
+            <img src="https://i.postimg.cc/pX4LyG34/FAQ.png" alt="FAQ illustration" />
           </div>
 
-          <div className="w-full ">
+          <div className="w-full">
             {faqs.map((faq, index) => (
               <div key={index} className="mb-4 border-b">
                 <div
@@ -61,11 +60,15 @@ const FAQ = () => {
                     {openFAQ === index ? <FaChevronUp /> : <FaChevronDown />}
                   </span>
                 </div>
-                {openFAQ === index && (
+                <div
+                  className={`overflow-hidden transition-all duration-1000 ease-in-out ${openFAQ === index ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+                    }`}
+                  style={{ maxHeight: openFAQ === index ? "1000px" : "0", opacity: openFAQ === index ? 1 : 0 }}
+                >
                   <div className="p-4 mt-2 rounded-lg text-sm leading-relaxed">
                     {faq.answer}
                   </div>
-                )}
+                </div>
               </div>
             ))}
           </div>
