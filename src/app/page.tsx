@@ -7,8 +7,9 @@ import TechnologyStack from "./components/shared/technologyStack/TechnologyStack
 import ProjectDiscuss from "./components/shared/projectdiscuss/ProjectDiscuss";
 import Pricing from "./components/pricing/Pricing";
 import Testimonials from "./components/testimonials/Testimonials";
-import Services from "./services/page";
 import WhyChooseUs from "./components/shared/whychooseus/WhyChooseUs";
+import Projetcs from "./components/projects/Projetcs";
+import Services from "./components/shared/services/services";
 
 export default function Home() {
   return (
@@ -42,6 +43,9 @@ export default function Home() {
       </section>
       <section className="text-white  bg-[#1E1228]">
         <Testimonials />
+      </section>
+      <section className="text-white  bg-[#1E1228]">
+        <Projetcs />
       </section>
       <section>
         <FAQ />

@@ -18,7 +18,7 @@ const Pricing = () => {
                         <h1><span className='text-4xl font-bold'>${600}</span>/month</h1>
                         <p className='text-[#ffffff4c]'>Billed monthly</p>
                         <div className="divide-y divide-dashed grid gap-5">
-                            <button className="mb-2 mt-auto border-2 text-lg gap-2 border-[#ffffff5e] bg-gradient-to-r from-[#49156D] to-[#49165C] px- py-4 rounded-xl">
+                            <button className="mb-2 mt-auto border-2 text-lg gap-2 border-[#ffffff5e] bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px- py-4 rounded-xl">
                                 Try for free
                             </button>
                             <div className='flex flex-col gap-3'>
@@ -39,12 +39,12 @@ const Pricing = () => {
                         </div>
 
                         {/* Content inside the card */}
-                        <h1 className='text-lg mt-8'>Basic</h1>
+                        <h1 className='text-lg mt-8'>Premium</h1>
                         <h1><span className='text-4xl font-bold'>${600}</span>/month</h1>
                         <p className='text-[#ffffff4c]'>Billed monthly</p>
 
                         <div className="divide-y divide-dashed grid gap-5">
-                            <button className="mb-2 mt-auto border-2 text-lg gap-2 border-[#ffffff5e] bg-gradient-to-r from-[#49156D] to-[#49165C] px-4 py-4 rounded-xl">
+                            <button className="mb-2 mt-auto border-2 text-lg gap-2 border-[#ffffff5e] bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-4 py-4 rounded-xl">
                                 Try for free
                             </button>
 
@@ -61,11 +61,11 @@ const Pricing = () => {
                     </div>
 
                     <div className='grid gap-3 mx-auto bg-[#2D1B38] p-12 rounded-3xl w-[390px]'>
-                        <h1 className='text-lg'>Basic</h1>
+                        <h1 className='text-lg'>Plus</h1>
                         <h1><span className='text-4xl font-bold'>${600}</span>/month</h1>
                         <p className='text-[#ffffff4c]'>Billed monthly</p>
                         <div className="divide-y divide-dashed grid gap-5">
-                            <button className="mb-2 mt-auto border-2 text-lg gap-2 border-[#ffffff5e] bg-gradient-to-r from-[#49156D] to-[#49165C] px- py-4 rounded-xl">
+                            <button className="mb-2 mt-auto border-2 text-lg gap-2 border-[#ffffff5e] bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-200 px- py-4 rounded-xl">
                                 Try for free
                             </button>
                             <div className='flex flex-col gap-3'>

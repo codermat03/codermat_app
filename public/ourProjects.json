@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "project_name": "E-commerce Website",
+        "image": "https://i.ibb.co.com/L1xBxbr/Rectangle-19-5.png",
+        "description": "A responsive e-commerce platform with user authentication, product filtering, and integrated payment gateway.",
+        "technologies": [
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Stripe API"
+        ]
+    },
+    {
+        "id": 2,
+        "project_name": "Social Media App",
+        "image": "https://i.ibb.co.com/3y5tQdC/Rectangle-19-4.png",
+        "description": "A social networking app featuring user profiles, real-time messaging, and media sharing.",
+        "technologies": [
+            "Flutter",
+            "Firebase",
+            "Cloud Firestore",
+            "Push Notifications"
+        ]
+    },
+    {
+        "id": 3,
+        "project_name": "Portfolio Website",
+        "image": "https://i.ibb.co.com/7ycJpvS/Rectangle-19-3.png",
+        "description": "A personal portfolio showcasing projects, blogs, and contact information with a sleek design.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Bootstrap"
+        ]
+    },
+    {
+        "id": 4,
+        "project_name": "Task Management Tool",
+        "image": "https://i.ibb.co.com/9qmJJWP/Rectangle-19-2.png",
+        "description": "A task management application with features like project boards, deadlines, and team collaboration.",
+        "technologies": [
+            "Vue.js",
+            "Django",
+            "SQLite",
+            "REST API"
+        ]
+    },
+    {
+        "id": 5,
+        "project_name": "Weather Forecast App",
+        "image": "https://i.ibb.co.com/g7Bppfc/Rectangle-19-1.png",
+        "description": "A weather application that provides real-time updates and forecasts for locations worldwide.",
+        "technologies": [
+            "React Native",
+            "OpenWeather API",
+            "Redux",
+            "Axios"
+        ]
+    },
+    {
+        "id": 6,
+        "project_name": "Blog Platform",
+        "image": "https://i.ibb.co.com/0QLtcbf/Rectangle-19.png",
+        "description": "A blogging platform with markdown support, content management, and user engagement through comments.",
+        "technologies": [
+            "Ruby on Rails",
+            "PostgreSQL",
+            "Tailwind CSS",
+            "Heroku"
+        ]
+    }
+]
