@@ -6,6 +6,10 @@ import OurWebDevelopmentProcess from "./components/OurWebDevelopmentProcess/OurW
 import TechnologyStack from "./components/shared/technologyStack/TechnologyStack";
 import Services from "./services/services/services";
 import ProjectDiscuss from "./components/shared/projectdiscuss/ProjectDiscuss";
+import Testimonials from "./components/Testimonials/Testimonials";
+import Pricing from "./components/Pricing/Pricing";
+import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
+import Projetcs from "./components/OurLatestProjects/Projetcs";
 
 export default function Home() {
   return (
@@ -31,8 +35,22 @@ export default function Home() {
           <OurWebDevelopmentProcess />
         </div>
       </section>
+      <section className="text-white">
+        <WhyChooseUs></WhyChooseUs>
+      </section>
+      <section className="text-white">
+        <Pricing></Pricing>
+      </section>
+      <section className="bg-gradient-to-t from-[#240f35]  to-[#181819] text-white">
+        <div>
+          <Testimonials></Testimonials>
+        </div>
+      </section>
+      <section className="bg-gradient-to-t from-[#181819] to-[#240f35] text-white">
+        <Projetcs></Projetcs>
+      </section>
 
-      <section>
+      <section className="bg-gradient-to-t from-[#21122F] to-[#181819] text-white">
         <FAQ />
       </section>
 

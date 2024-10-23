@@ -2,7 +2,7 @@
   {
     "id": 1,
     "project_name": "E-commerce Website",
-    "image": "ecommerce-website.jpg",
+    "image": "https://i.postimg.cc/QN0MvbdC/Shutterstock-ysa-G9-Kj-VPW.jpg",
     "description": "A responsive e-commerce platform with user authentication, product filtering, and integrated payment gateway.",
     "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe API"]
   },
