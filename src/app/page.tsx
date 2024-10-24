@@ -30,18 +30,18 @@ export default function Home() {
         <TechnologyStack></TechnologyStack>
       </section>
 
-      <section className="bg-gradient-to-t from-[#181819] to-[#21122F]">
+      <section className="bg-gradient-to-t from-[#181819] to-[#21122F] border-b">
         <div>
           <OurWebDevelopmentProcess />
         </div>
       </section>
-      <section className="text-white">
+      <section className="text-white bg-gradient-to-b from-[#181819] to-[#1F122A]">
         <WhyChooseUs></WhyChooseUs>
       </section>
-      <section className="text-white">
+      <section className="text-white bg-gradient-to-b from-[#181619] to-[#1F122A]">
         <Pricing></Pricing>
       </section>
-      <section className="bg-gradient-to-t from-[#240f35]  to-[#181819] text-white">
+      <section className="bg-gradient-to-t from-[#240f35]  to-[#1F122A] text-white">
         <div>
           <Testimonials></Testimonials>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className="pt-20 pb-20 bg-gradient-to-b from-[#181619] to-[#1F122A]">
+    <div className="pt-20 pb-20 ">
       <h1 className="text-center font-bold text-4xl">
         Pricing Options for Our Services
       </h1>

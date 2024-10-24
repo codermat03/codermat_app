@@ -8,6 +8,11 @@ const Projects = () => {
         <div>
           <Projetcs></Projetcs>
         </div>
+        <img
+          className="w-full pt-14"
+          src="https://i.postimg.cc/kgGNMLQ8/home14-bg4.png"
+          alt=""
+        />
       </div>
     </main>
   );

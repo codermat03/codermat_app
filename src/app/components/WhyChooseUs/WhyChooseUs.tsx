@@ -3,7 +3,7 @@ import React from "react";
 
 const WhyChooseUs = () => {
   return (
-    <div className="bg-gradient-to-b from-[#181619] to-[#1F122A]">
+    <div className="">
       <div className="py-32 bg-[url('https://i.ibb.co.com/Bq50dx0/chooseusbg.png')] bg-cover">
         <h1 className="text-center font-bold text-4xl">Why choose CoderMat?</h1>
         <p className="text-center text-xl w-3/5 m-auto pt-4">
