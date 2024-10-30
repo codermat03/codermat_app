@@ -22,7 +22,7 @@ const Projetcs = () => {
       <div className="pt-24">
         <h1 className="text-center font-bold text-4xl">Our Latest Projects</h1>
         <p className="text-center text-xl w-1/2 m-auto pt-4">
-          Find our projects here!
+          Find our projects here!!!
         </p>
       </div>
       <div className="grid grid-cols-3 items-center justify-center gap-x-8 gap-y-20 py-10 relative">
