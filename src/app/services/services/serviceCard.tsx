@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import PrimaryBtn from "@/app/components/shared/customized-component/PrimaryBtn";
 import Link from "next/link";
 import React from "react";
 import { FaArrowDown } from "react-icons/fa";
@@ -9,7 +10,7 @@ const ServiceCard = ({ service }: any) => {
       <img className="w-14 mt-6" src={service.image_url} alt={service.title} />
       <h2 className="py-4 text-xl font-bold">{service.title}</h2>
       <p className="text-lg my-2 text-[#a8a8a8]">{service.short_description}</p>
-      <button className="mt-auto border flex items-center gap-2 border-[#7272723c] bg-gradient-to-r from-[#49156D] to-[#49165C] px-5 py-2 rounded-md">
+      <PrimaryBtn className="px-5 py-2 rounded-md">
         <Link
           href={`services/${service.id}`}
           className="flex items-center gap-2"
@@ -23,7 +24,7 @@ const ServiceCard = ({ service }: any) => {
             />
           </div>
         </Link>
-      </button>
+      </PrimaryBtn>
     </div>
   );
 };
