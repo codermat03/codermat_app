@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import { Project } from "@/app/interface";
+import PrimaryBtn from "../shared/customized-component/PrimaryBtn";
 
 const Projetcs = () => {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -22,7 +23,7 @@ const Projetcs = () => {
       <div className="pt-24">
         <h1 className="text-center font-bold text-4xl">Our Latest Projects</h1>
         <p className="text-center text-xl w-1/2 m-auto pt-4">
-          Find our projects here!
+          Find our projects here!!!
         </p>
       </div>
       <div className="grid grid-cols-3 items-center justify-center gap-x-8 gap-y-20 py-10 relative">
@@ -32,12 +33,8 @@ const Projetcs = () => {
       </div>
       {visibleProjects < projects.length && (
         <div className="text-center pb-20">
-          <button
-            className=" px-6 py-2 bg-gradient-to-r from-[#6C00A5] to-[#49165C] hover:from-[#49156D] hover:to-[#49165C] text-white font-semibold rounded-md"
-            onClick={showMoreProjects}
-          >
-            Show More
-          </button>
+          <PrimaryBtn className="px-6 py-2 rounded-xl">Show More</PrimaryBtn>
+
         </div>
       )}
     </div>
