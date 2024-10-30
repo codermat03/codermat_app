@@ -136,6 +136,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div>
+        <h1>Shakil</h1>
+      </div>
     </footer>
   );
 };
