@@ -54,7 +54,7 @@ const Services = () => {
         <SkeletonLoader />
       ) : (
         // Services grid
-        <div className="max-w-7xl mx-auto grid grid-cols-3 justify-center gap-y-12 mx-20 mt-20">
+        <div className="max-w-7xl mx-auto grid grid-cols-3 justify-center gap-8 mt-20">
           {services.map((service: service) => (
             <ServiceCard service={service} key={service.id} />
           ))}

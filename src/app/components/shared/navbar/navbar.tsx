@@ -3,8 +3,6 @@ import { useState, useEffect } from "react";
 import { FaBootstrap, FaNode, FaReact } from "react-icons/fa";
 import { FaAnglesRight } from "react-icons/fa6";
 
-import { GiHamburgerMenu } from "react-icons/gi";
-
 import { IoIosArrowDown } from "react-icons/io";
 import {
   SiCloudinary,
@@ -42,9 +40,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`roboto-regular  md:py-3 fixed top-0 left-0 w-full transition-colors duration-300 z-30  ${
-        scrolled ? "bg-[#21112e] bg-opacity-85 shadow-2xl " : "bg-transparent "
-      }`}
+      className={`roboto-regular  md:py-3 fixed top-0 left-0 w-full transition-colors duration-300 z-30  ${scrolled ? "bg-[#21112e] bg-opacity-85 shadow-2xl " : "bg-transparent "
+        }`}
     >
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
         <div className="relative flex items-center justify-between md:h-16">
@@ -65,11 +62,10 @@ export default function Navbar() {
               <Link
                 href="/"
                 onClick={() => setActiveLink("home")}
-                className={`${
-                  activeLink === "home"
-                    ? "bg-white/20 text-white"
-                    : "text-white hover:bg-white/20 hover:text-white"
-                } px-3 py-2 rounded-md  font-medium`}
+                className={`${activeLink === "home"
+                  ? "bg-white/20 text-white"
+                  : "text-white hover:bg-white/20 hover:text-white"
+                  } px-3 py-2 rounded-md  font-medium`}
               >
                 Home
               </Link>
@@ -85,11 +81,10 @@ export default function Navbar() {
                     setActiveLink("services");
                     setDropdownOpenTech(!dropdownOpenTech);
                   }}
-                  className={`${
-                    activeLink === "services"
-                      ? "bg-white/20 text-white"
-                      : "text-white hover:bg-white/20 hover:text-white"
-                  } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
+                  className={`${activeLink === "services"
+                    ? "bg-white/20 text-white"
+                    : "text-white hover:bg-white/20 hover:text-white"
+                    } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
                 >
                   Services
                   <IoIosArrowDown></IoIosArrowDown>
@@ -337,11 +332,10 @@ export default function Navbar() {
                     setActiveLink("technologies");
                     setDropdownOpen(!dropdownOpen);
                   }}
-                  className={`${
-                    activeLink === "technologies"
-                      ? "bg-white/20 text-white"
-                      : "text-white hover:bg-white/20 hover:text-white"
-                  } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
+                  className={`${activeLink === "technologies"
+                    ? "bg-white/20 text-white"
+                    : "text-white hover:bg-white/20 hover:text-white"
+                    } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
                 >
                   Technologies
                   <IoIosArrowDown />
@@ -580,44 +574,30 @@ export default function Navbar() {
               <Link
                 href="/about"
                 onClick={() => setActiveLink("About ")}
-                className={`${
-                  activeLink === "About "
-                    ? "bg-white/20 text-white"
-                    : "text-white hover:bg-white/20 hover:text-white"
-                } px-3 py-2 rounded-md  font-medium hidden lg:block`}
+                className={`${activeLink === "About "
+                  ? "bg-white/20 text-white"
+                  : "text-white hover:bg-white/20 hover:text-white"
+                  } px-3 py-2 rounded-md  font-medium hidden lg:block`}
               >
                 About
               </Link>
               <Link
-                href="/contactUs"
-                onClick={() => setActiveLink("contactUs ")}
-                className={`${
-                  activeLink === "contactUs "
-                    ? "bg-white/20 text-white"
-                    : "text-white hover:bg-white/20 hover:text-white"
-                } px-3 py-2 rounded-md  font-medium hidden lg:block`}
-              >
-                Contact
-              </Link>
-              <Link
                 href="/projects"
                 onClick={() => setActiveLink("projects")}
-                className={`${
-                  activeLink === "projects"
-                    ? "bg-white/20 text-white"
-                    : "text-white hover:bg-white/20 hover:text-white"
-                } px-3 py-2 rounded-md  font-medium hidden lg:block`}
+                className={`${activeLink === "projects"
+                  ? "bg-white/20 text-white"
+                  : "text-white hover:bg-white/20 hover:text-white"
+                  } px-3 py-2 rounded-md  font-medium hidden lg:block`}
               >
                 Projects
               </Link>
               <Link
                 href="/blogs"
                 onClick={() => setActiveLink("Blogs")}
-                className={`${
-                  activeLink === "Blogs"
-                    ? "bg-white/20 text-white"
-                    : "text-white hover:bg-white/20 hover:text-white"
-                } px-3 py-2 rounded-md  font-medium hidden lg:block`}
+                className={`${activeLink === "Blogs"
+                  ? "bg-white/20 text-white"
+                  : "text-white hover:bg-white/20 hover:text-white"
+                  } px-3 py-2 rounded-md  font-medium hidden lg:block`}
               >
                 Blogs & News
               </Link>
@@ -637,11 +617,10 @@ export default function Navbar() {
                 <Link
                   href="/about"
                   onClick={() => setActiveLink("About ")}
-                  className={`${
-                    activeLink === "About "
-                      ? "bg-white/20 text-white"
-                      : "text-white hover:bg-white/20 hover:text-white"
-                  } px-3 py-2 rounded-md  font-medium`}
+                  className={`${activeLink === "About "
+                    ? "bg-white/20 text-white"
+                    : "text-white hover:bg-white/20 hover:text-white"
+                    } px-3 py-2 rounded-md  font-medium`}
                 >
                   About
                 </Link>
@@ -664,9 +643,19 @@ export default function Navbar() {
           </div>
 
           <div className="hidden sm:flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <button className=" text-white px-4 py-2 rounded-md  font-medium">
-              Start Work With Us
-            </button>
+            <Link
+              href={`/contactUs`}
+              className="flex items-center text-base py-1 gap-2 text-white mt-auto ml-5 border-2 border-[#c1c1c13c]  bg-gradient-to-r hover:bg-gradient-to-l hover:from-[#49156D] hover:to-[#691a86] hover:border-[#a33ed2] from-[#6C00A5] to-[#6A0170] duration-150 px-5 rounded-md"
+            >
+              Contact Us{" "}
+              <div>
+                <img
+                  className="w-4"
+                  src="https://i.ibb.co.com/gVjzd78/line-1.png"
+                  alt=""
+                />
+              </div>
+            </Link>
           </div>
 
           <div className="sm:hidden flex items-center">
@@ -710,11 +699,10 @@ export default function Navbar() {
           <a
             href="#"
             onClick={() => setActiveLink("home")}
-            className={`${
-              activeLink === "home"
-                ? "bg-gray-900 text-white"
-                : "text-white hover:bg-gray-700 hover:text-white"
-            } block px-3 py-2 rounded-md text-base font-medium`}
+            className={`${activeLink === "home"
+              ? "bg-gray-900 text-white"
+              : "text-white hover:bg-gray-700 hover:text-white"
+              } block px-3 py-2 rounded-md text-base font-medium`}
           >
             Home
           </a>
@@ -729,11 +717,10 @@ export default function Navbar() {
                 setActiveLink("services");
                 setDropdownOpenTech(!dropdownOpenTech);
               }}
-              className={`${
-                activeLink === "services"
-                  ? "bg-gray-900 text-white"
-                  : "text-white hover:bg-gray-700 hover:text-white"
-              } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
+              className={`${activeLink === "services"
+                ? "bg-gray-900 text-white"
+                : "text-white hover:bg-gray-700 hover:text-white"
+                } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
             >
               Services
               <IoIosArrowDown></IoIosArrowDown>
@@ -766,11 +753,10 @@ export default function Navbar() {
                 setActiveLink("technologies");
                 setDropdownOpen(!dropdownOpen);
               }}
-              className={`${
-                activeLink === "technologies"
-                  ? "bg-gray-900 text-white"
-                  : "text-white hover:bg-gray-700 hover:text-white"
-              } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
+              className={`${activeLink === "technologies"
+                ? "bg-gray-900 text-white"
+                : "text-white hover:bg-gray-700 hover:text-white"
+                } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
             >
               Technologies
               <IoIosArrowDown />
@@ -1009,33 +995,30 @@ export default function Navbar() {
           <a
             href="#"
             onClick={() => setActiveLink("about")}
-            className={`${
-              activeLink === "about"
-                ? "bg-gray-900 text-white"
-                : "text-white hover:bg-gray-700 hover:text-white"
-            } block px-3 py-2 rounded-md text-base font-medium`}
+            className={`${activeLink === "about"
+              ? "bg-gray-900 text-white"
+              : "text-white hover:bg-gray-700 hover:text-white"
+              } block px-3 py-2 rounded-md text-base font-medium`}
           >
             About
           </a>
           <a
             href="#"
             onClick={() => setActiveLink("projects")}
-            className={`${
-              activeLink === "projects"
-                ? "bg-gray-900 text-white"
-                : "text-white hover:bg-gray-700 hover:text-white"
-            } block px-3 py-2 rounded-md text-base font-medium`}
+            className={`${activeLink === "projects"
+              ? "bg-gray-900 text-white"
+              : "text-white hover:bg-gray-700 hover:text-white"
+              } block px-3 py-2 rounded-md text-base font-medium`}
           >
             Projects
           </a>
           <a
             href="#"
             onClick={() => setActiveLink("Blogs")}
-            className={`${
-              activeLink === "Blogs"
-                ? "bg-gray-900 text-white"
-                : "text-white hover:bg-gray-700 hover:text-white"
-            } block px-3 py-2 rounded-md text-base font-medium`}
+            className={`${activeLink === "Blogs"
+              ? "bg-gray-900 text-white"
+              : "text-white hover:bg-gray-700 hover:text-white"
+              } block px-3 py-2 rounded-md text-base font-medium`}
           >
             Blogs & News
           </a>
