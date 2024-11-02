@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       <main className="">
-        <section className="text-black bg-[#181819] ">
+        <section className="text-black bg-gradient-to-b from-[#21122F] to-[#181819] ">
           <ContactForm />
         </section>
       </main>

@@ -38,7 +38,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="text-white py-20 px-8 md:px-20">
+    <div className="py-20 px-8 md:px-20">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold mb-14 text-center">
           Frequently asked questions
@@ -55,7 +55,7 @@ const FAQ = () => {
                   className="flex justify-between items-center p-4 rounded-lg cursor-pointer hover:bg-[#44475a] transition duration-300"
                   onClick={() => toggleFAQ(index)}
                 >
-                  <h3 className="text-lg font-medium">{faq.question}</h3>
+                  <h3 className="text-lg text-white font-medium">{faq.question}</h3>
                   <span>
                     {openFAQ === index ? <FaChevronUp /> : <FaChevronDown />}
                   </span>
@@ -64,7 +64,7 @@ const FAQ = () => {
                   className={`overflow-hidden transition-[max-height] duration-700 ${openFAQ === index ? "max-h-screen" : "max-h-0"
                     }`}
                 >
-                  <div className="p-4 mt-2 rounded-lg text-sm leading-relaxed">
+                  <div className="p-4 pt-1 mt-0 text-[#919191] rounded-lg text-sm leading-relaxed">
                     {faq.answer}
                   </div>
                 </div>
