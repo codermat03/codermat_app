@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Link from "next/link";
 import React from "react";
 
 const Blogs = () => {
@@ -30,67 +31,76 @@ const Blogs = () => {
                   Creativity is a highfalutin word for the work I have to <br />{" "}
                   do between now and Tuesday.
                 </p>
-                <a
+                <Link
                   href="#"
-                  className="inline-block bg-purple-500 hover:bg-purple-600 text-white px-6 py-2 rounded-lg transition mt-5"
+                  className="py-[10px] w-36 text-center border-2 flex items-center justify-center gap-2 border-[#7272723c]  bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 rounded-md"
                 >
                   Read more →
-                </a>
+                </Link>
               </div>
             </div>
 
             {/* Right Blog Section */}
             <div className="space-y-4">
-              <div className="bg-[#a545b2]/25 backdrop-blur-md p-4 rounded-lg flex gap-7">
-                <div>
-                  <img
-                    className="w-[300px] h-[150px] rounded-xl"
-                    src="https://blog.feedspot.com/wp-content/uploads/2018/04/react.jpg"
-                    alt=""
-                  />
+              <div>
+                <div className="bg-[#a545b2]/25 rounded-tl-xl h-[170px] backdrop-blur-md ps-0 pt-0 p-4 flex gap-7">
+                  <div>
+                    <img
+                      className="w-[350px] h-[140px] rounded-tl-xl"
+                      src="https://cdn.mos.cms.futurecdn.net/xCSAEp8DjjrT2UQB87AoFN.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="p-4">
+                    <p className="text-sm bg-pink-400 w-16 rounded-xl text-center">
+                      Design
+                    </p>
+                    <h3 className="text-lg font-semibold mt-7">
+                      Guide for designing better mobile apps typography
+                    </h3>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm bg-pink-400 w-16 rounded-xl text-center">
-                    Design
-                  </p>
-                  <h3 className="text-lg font-semibold mt-7">
-                    Guide for designing better mobile apps typography
-                  </h3>
-                </div>
+                <div className="bg-[#ffffff4e] p-[1.5px] mb-12" />
               </div>
-              <div className="bg-[#a545b2]/25 backdrop-blur-md p-4 rounded-lg flex gap-7">
-                <div>
-                  <img
-                    className="w-[300px] h-[150px] rounded-xl"
-                    src="https://blog.feedspot.com/wp-content/uploads/2018/04/react.jpg"
-                    alt=""
-                  />
+              <div>
+                <div className="bg-[#a545b2]/25 rounded-tl-xl h-[170px] backdrop-blur-md ps-0 pt-0 p-4 flex gap-7">
+                  <div>
+                    <img
+                      className="w-[350px] h-[140px] rounded-tl-xl"
+                      src="https://lh7-us.googleusercontent.com/iIS_pCALWqGScsc4M5t3IcZHcFbnSffzfRBXKGdywbzuDe6BwJmQsx72GYdc2KRLRUUPSbIFg98t3FEL_QWeAdiXpg0l1MQpb6FJOiZU0JNlaE1Jr8zDLeCsHl6qdkidePxxLRnFXJT3dMk3U_NuWNA"
+                      alt=""
+                    />
+                  </div>
+                  <div className="p-4">
+                    <p className="text-sm bg-pink-400 w-16 rounded-xl text-center">
+                      Design
+                    </p>
+                    <h3 className="text-lg font-semibold mt-7">
+                      Guide for designing better mobile apps typography
+                    </h3>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm bg-pink-400 w-16 rounded-xl text-center">
-                    Design
-                  </p>
-                  <h3 className="text-lg font-semibold mt-7">
-                    Guide for designing better mobile apps typography
-                  </h3>
-                </div>
+                <div className="bg-[#ffffff4e] p-[1.5px] mb-12" />
               </div>
-              <div className="bg-[#a545b2]/25 backdrop-blur-md p-4 rounded-lg flex gap-7">
-                <div>
-                  <img
-                    className="w-[300px] h-[150px] rounded-xl"
-                    src="https://blog.feedspot.com/wp-content/uploads/2018/04/react.jpg"
-                    alt=""
-                  />
+              <div>
+                <div className="bg-[#a545b2]/25 rounded-tl-xl h-[170px] backdrop-blur-md ps-0 pt-0 p-4 flex gap-7">
+                  <div>
+                    <img
+                      className="w-[350px] h-[140px] rounded-tl-xl"
+                      src="https://aaftonline.com/blog/wp-content/uploads/2024/01/What-are-the-Benefits-of-Photography-Complete-Overview.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="p-4">
+                    <p className="text-sm bg-pink-400 w-16 rounded-xl text-center">
+                      Design
+                    </p>
+                    <h3 className="text-lg font-semibold mt-7">
+                      Guide for designing better mobile apps typography
+                    </h3>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm bg-pink-400 w-16 rounded-xl text-center">
-                    Design
-                  </p>
-                  <h3 className="text-lg font-semibold mt-7">
-                    Guide for designing better mobile apps typography
-                  </h3>
-                </div>
+                <div className="bg-[#ffffff4e] p-[1.5px] mb-12" />
               </div>
             </div>
           </div>
