@@ -645,7 +645,7 @@ export default function Navbar() {
           <div className="hidden sm:flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <Link
               href={`/contactUs`}
-              className="flex items-center text-base py-1 gap-2 text-white mt-auto ml-5 border-2 border-[#c1c1c13c]  bg-gradient-to-r hover:bg-gradient-to-l hover:from-[#49156D] hover:to-[#691a86] hover:border-[#a33ed2] from-[#6C00A5] to-[#6A0170] duration-150 px-5 rounded-md"
+              className="flex items-center text-base py-2 gap-2 text-white mt-auto ml-5 border-2 border-[#c1c1c13c]  bg-gradient-to-r hover:bg-gradient-to-l hover:from-[#49156D] hover:to-[#691a86] hover:border-[#a33ed2] from-[#6C00A5] to-[#6A0170] duration-150 px-5 rounded-md"
             >
               Contact Us{" "}
               <div>

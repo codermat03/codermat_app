@@ -3,7 +3,6 @@ import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const FAQ = () => {
-  // Set the initial state to 0 to open the first FAQ by default
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
 
   const toggleFAQ = (index: number) => {
@@ -39,33 +38,36 @@ const FAQ = () => {
   ];
 
   return (
-    <div className=" text-white py-20 px-8 md:px-20">
-      <div className="max-w-7xl mx-auto mx-auto">
+    <div className="py-20 px-8 md:px-20">
+      <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold mb-14 text-center">
           Frequently asked questions
         </h2>
         <div className="md:flex items-center justify-between">
-          <div className="">
+          <div>
             <img src="https://i.postimg.cc/pX4LyG34/FAQ.png" alt="" />
           </div>
 
-          <div className="w-full ">
+          <div className="w-full">
             {faqs.map((faq, index) => (
               <div key={index} className="mb-4 border-b">
                 <div
-                  className="flex justify-between items-center p-4 rounded-lg cursor-pointer hover:bg-[#44475a] transition duration-200"
+                  className="flex justify-between items-center p-4 rounded-lg cursor-pointer hover:bg-[#44475a] transition duration-300"
                   onClick={() => toggleFAQ(index)}
                 >
-                  <h3 className="text-lg font-medium">{faq.question}</h3>
+                  <h3 className="text-lg text-white font-medium">{faq.question}</h3>
                   <span>
                     {openFAQ === index ? <FaChevronUp /> : <FaChevronDown />}
                   </span>
                 </div>
-                {openFAQ === index && (
-                  <div className="p-4 mt-2 rounded-lg text-sm leading-relaxed">
+                <div
+                  className={`overflow-hidden transition-[max-height] duration-700 ${openFAQ === index ? "max-h-screen" : "max-h-0"
+                    }`}
+                >
+                  <div className="p-4 pt-1 mt-0 text-[#919191] rounded-lg text-sm leading-relaxed">
                     {faq.answer}
                   </div>
-                )}
+                </div>
               </div>
             ))}
           </div>
