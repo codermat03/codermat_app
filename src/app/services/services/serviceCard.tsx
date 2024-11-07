@@ -6,7 +6,7 @@ import { FaArrowDown } from "react-icons/fa";
 
 const ServiceCard = ({ service }: any) => {
   return (
-    <div className="md:w-[390px] mx-auto backdrop-blur-md bg-[#2F1748] flex flex-col items-start border-l-0 border-t-0 border-[#5C099B] border-4 p-5 rounded-xl">
+    <div className="md:w-[390px] md:h-auto mx-7 md:mx-auto backdrop-blur-md bg-[#2F1748] flex flex-col items-start border-l-0 border-t-0 border-[#5C099B] border-4 p-5 rounded-xl">
       <img className="w-14" src={service.image_url} alt={service.title} />
       <h2 className="py-2 text-lg font-bold">{service.title}</h2>
       <p className="text-md text-[#a8a8a8] mb-3">{service.short_description}</p>

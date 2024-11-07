@@ -9,7 +9,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const { id, description, image, project_name, technologies } = project;
   return (
-    <div className="w-[390px] h-[650px] mx-auto backdrop-blur-3xl bg-[#2b1d34] flex flex-col items-start rounded-2xl text-white">
+    <div className="md:w-[390px] md:h-[660px] w-[320px] mx-auto backdrop-blur-3xl bg-[#2b1d34] flex flex-col items-start rounded-2xl text-white">
       <img
         src="https://i.postimg.cc/QN0MvbdC/Shutterstock-ysa-G9-Kj-VPW.jpg"
         alt={project_name}
@@ -37,7 +37,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </p>
         </div>
       </div>
-      <button className="mt-auto ml-5 border-2 flex items-center gap-2 border-[#7272723c]  bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 py-2 rounded-md absolute bottom-5">
+      <button className="mt-auto mb-5 ml-5 border-2 flex items-center gap-2 border-[#7272723c]  bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 py-2 rounded-md bottom-5">
         <Link href={`details/${id}`} className="flex items-center gap-2 ">
           Show Live{" "}
           <img

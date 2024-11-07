@@ -4,14 +4,14 @@ import React from "react";
 const WhyChooseUs = () => {
   return (
     <div className="">
-      <div className="py-32 bg-[url('https://i.ibb.co.com/Bq50dx0/chooseusbg.png')] bg-cover">
-        <h1 className="text-center font-bold text-4xl">Why choose CoderMat?</h1>
-        <p className="text-center text-xl w-3/5 m-auto pt-4">
+      <div className="md:py-32 py-20 bg-[url('https://i.ibb.co.com/Bq50dx0/chooseusbg.png')] bg-cover">
+        <h1 className="text-center font-bold md:text-4xl text-2xl">Why choose CoderMat?</h1>
+        <p className="text-center md:text-xl text-lg md:px-0 px-4 md:w-3/5 m-auto pt-4">
           Unlike other development companies, you’ll get to know our experts
           face-to-face. We go the distance to understand your business and
           integrate with your teams and workflows.
         </p>
-        <div className="grid grid-cols-3 items-center justify-center my-28 mx-20 gap-20">
+        <div className="grid md:grid-cols-3 items-center justify-center md:my-28 my-10 md:mx-20 mx-10 gap-20">
           <div className="relative">
             <Image
               className=""

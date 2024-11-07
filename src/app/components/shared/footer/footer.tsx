@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-[#22102F] text-white">
-      <div className="bg-[#6461616d] p-[1px] mb-12" />
+      <div className="bg-[#6461616d] p-[1px] md:mb-12 mb-8" />
       <div className="max-w-7xl mx-auto px-4">
         <div className="md:flex justify-between">
           <div>
@@ -96,15 +96,15 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="md:col-span-1 col-span-2">
             <h4 className="text-sm font-semibold mb-4 text-[#5C4F67]">LANGUAGE & CURRENCY</h4>
             <div className="mb-2">
-              <select className="w-full resize-none p-3 bg-[#ffffff00] border-[1px] border-[#6461616d] rounded-lg text-white focus:outline-none">
+              <select className="w-full p-3 bg-[#ffffff00] border-[1px] border-[#6461616d] rounded-lg text-white focus:outline-none">
                 <option className="">English</option>
               </select>
             </div>
             <div>
-              <select className="w-full resize-none p-3 bg-[#ffffff00] border-[1px] border-[#6461616d] rounded-lg text-white focus:outline-none">
+              <select className="w-full p-3 bg-[#ffffff00] border-[1px] border-[#6461616d] rounded-lg text-white focus:outline-none">
                 <option>USD</option>
               </select>
             </div>

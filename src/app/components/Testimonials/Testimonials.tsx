@@ -3,16 +3,16 @@ import { FaStar, FaRegStar } from "react-icons/fa";
 
 const Testimonials = () => {
   return (
-    <div className="mx-20">
-      <div className="py-20">
-        <h1 className="text-center font-bold text-4xl">
+    <div className="md:mx-20 mx-8">
+      <div className="md:py-20 py-10">
+        <h1 className="text-center font-bold md:text-4xl text-2xl">
           What People Are Saying
         </h1>
-        <p className="text-center text-xl w-1/2 m-auto pt-4">
+        <p className="text-center text-xl md:w-1/2 m-auto pt-4">
           We provide support for more than 15K+ Businesses.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-8 py-20">
+      <div className="grid md:grid-cols-3 gap-8 md:py-20">
         <div className="h-[300px] bg-[#5c347d41] backdrop-blur-md p-10 rounded-xl border-b-4 border-r-4 border-[#a033b1]">
           <div className="flex items-center gap-4">
             <img

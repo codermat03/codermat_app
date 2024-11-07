@@ -10,7 +10,7 @@ export default function HeroSection() {
           <h1 className="text-2xl md:text-4xl lg:text-6xl text-center md:text-start font-bold">
             Let's Build Something <br /> Extraordinary
           </h1>
-          <p className="mt-2 md:mt-4 text-sm md:text-xl text-center md:text-start md:max-w-md py-5">
+          <p className="mt-2 md:mt-4 text-sm md:text-xl text-center md:text-start md:max-w-md md:px-0 px-7 py-5">
             Are you ready to bring your vision to life? Let's set sail on a
             journey together and build something extraordinary. Get in touch
             with us today, and let's turn your dreams into digital reality.
@@ -28,7 +28,7 @@ export default function HeroSection() {
           <div className="md:h-[530px] md:w-[390px] absolute bg-gradient-to-br from-[#350da5] via-[#7b0ea0] to-[#99058d] rounded-3xl transform -rotate-12  opacity-75"></div>
 
           {/* Front Static Card */}
-          <div className=" relative bg-gradient-to-br from-[#350da5] via-[#7b0ea0] to-[#99058d] opacity-80 p-8 rounded-3xl shadow-lg w-[350px] md:h-[530px] md:w-[390px] max-w-md">
+          <div className=" relative bg-gradient-to-br from-[#350da5] via-[#7b0ea0] to-[#99058d] opacity-80 p-8 rounded-3xl shadow-lg w-[330px] md:h-[530px] md:w-[390px] max-w-md">
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">
               Let’s start a <br /> Project Together
             </h2>
