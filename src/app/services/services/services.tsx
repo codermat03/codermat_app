@@ -44,8 +44,8 @@ const Services = () => {
 
   return (
     <div className="pt-20 text-white">
-      <h1 className="text-center font-bold text-4xl">Services We Provide</h1>
-      <p className="text-center text-xl w-1/2 mx-auto pt-4">
+      <h1 className="text-center font-bold md:text-4xl text-2xl">Services We Provide</h1>
+      <p className="text-center text-xl md:w-1/2 mx-auto pt-4">
         Get the software that will help you to grow your business. We have a lot
         of features that you will love.
       </p>
@@ -54,7 +54,7 @@ const Services = () => {
         <SkeletonLoader />
       ) : (
         // Services grid
-        <div className="max-w-7xl mx-auto grid grid-cols-3 justify-center gap-8 mt-20">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-3 justify-center gap-8 mt-20">
           {services.map((service: service) => (
             <ServiceCard service={service} key={service.id} />
           ))}
