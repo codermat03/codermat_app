@@ -91,7 +91,7 @@ export default function Navbar() {
                 </Link>
                 {dropdownOpenTech && (
                   <div
-                    className="absolute -left-[260px]  mt-12 w-max backdrop-blur-lg bg-[#41204f89] border-[#72006A] border-2 rounded-xl text-white shadow-lg p-6 grid grid-cols-4 gap-4"
+                    className="absolute -left-[260px]  mt-12 w-max backdrop-blur-3xl bg-[#381c4489] border-[#72006A] border-2 rounded-xl text-white shadow-lg p-6 grid grid-cols-4 gap-4"
                     style={{ minWidth: "300px" }} // Adjust minWidth as needed
                   >
                     {/* Services Dropdown Content */}
@@ -342,7 +342,7 @@ export default function Navbar() {
                 </Link>
                 {dropdownOpen && (
                   <div
-                    className="absolute -left-[360px]  mt-12 w-max backdrop-blur-lg bg-[#41204f89] border-[#72006A] border-2 rounded-xl text-white shadow-lg p-6 grid grid-cols-4 gap-4"
+                    className="absolute -left-[360px]  mt-12 w-max backdrop-blur-3xl bg-[#381c4489] border-[#72006A] border-2 rounded-xl text-white shadow-lg p-6 grid grid-cols-4 gap-4"
                     style={{ minWidth: "300px" }} // Adjust minWidth as needed
                   >
                     {/* Technologies Dropdown Content */}
@@ -763,7 +763,7 @@ export default function Navbar() {
             </a>
             {dropdownOpen && (
               <div
-                className=" backdrop-blur-lg bg-[#41204f89] border-[#72006A] border-4 rounded-xl text-white shadow-lg p-6 grid grid-cols-3 gap-1"
+                className="backdrop-blur-3xl bg-[#381c4489] border-[#72006A] border-4 rounded-xl text-white shadow-lg p-6 grid grid-cols-3 gap-1"
                 style={{ minWidth: "300px" }} // Adjust minWidth as needed
               >
                 {/* Technologies Dropdown Content */}
@@ -773,7 +773,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <SiMongodb></SiMongodb>
                         MongoDB
@@ -782,7 +782,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <SiExpress></SiExpress>
                         Express JS
@@ -791,7 +791,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <FaReact></FaReact>
                         React JS
@@ -800,7 +800,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <FaNode />
                         Node JS
@@ -814,7 +814,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <FaReact></FaReact>
                         React JS
@@ -823,7 +823,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <SiNextdotjs></SiNextdotjs>
                         Next JS
@@ -832,7 +832,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <IoLogoJavascript />
                         JavaScript
@@ -841,7 +841,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <SiTypescript />
                         TypeScript
@@ -850,7 +850,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <SiRedux />
                         Redux
@@ -859,7 +859,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <SiTailwindcss />
                         Tailwind
@@ -868,7 +868,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <FaBootstrap />
                         Bootstrap
@@ -877,7 +877,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <SiMui />
                         Material UI
@@ -891,7 +891,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <FaNode />
                         Node JS
@@ -900,7 +900,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <SiExpress />
                         Express JS
@@ -909,7 +909,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <SiNpm />
                         JWT
@@ -918,7 +918,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <SiNpm />
                         Zod
@@ -927,7 +927,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <SiCloudinary />
                         Cloudinary
@@ -941,7 +941,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <SiMongodb />
                         MongoDB
@@ -950,7 +950,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <SiNpm />
                         Mongoose
@@ -959,7 +959,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block py-1  flex items-center gap-2"
+                        className="py-1  flex items-center gap-2"
                       >
                         <SiPostgresql />
                         PostgresQL
