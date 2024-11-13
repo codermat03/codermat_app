@@ -40,8 +40,9 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`roboto-regular  md:py-3 fixed top-0 left-0 w-full transition-colors duration-300 z-30  ${scrolled ? "bg-[#21112e] bg-opacity-85 shadow-2xl " : "bg-transparent "
-        }`}
+      className={`roboto-regular  md:py-3 fixed top-0 left-0 w-full transition-colors duration-300 z-30  ${
+        scrolled ? "bg-[#21112e] bg-opacity-85 shadow-2xl " : "bg-transparent "
+      }`}
     >
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
         <div className="relative flex items-center justify-between md:h-16">
@@ -62,10 +63,11 @@ export default function Navbar() {
               <Link
                 href="/"
                 onClick={() => setActiveLink("home")}
-                className={`${activeLink === "home"
-                  ? "bg-white/20 text-white"
-                  : "text-white hover:bg-white/20 hover:text-white"
-                  } px-3 py-2 rounded-md  font-medium`}
+                className={`${
+                  activeLink === "home"
+                    ? "bg-white/20 text-white"
+                    : "text-white hover:bg-white/20 hover:text-white"
+                } px-3 py-2 rounded-md  font-medium`}
               >
                 Home
               </Link>
@@ -81,10 +83,11 @@ export default function Navbar() {
                     setActiveLink("services");
                     setDropdownOpenTech(!dropdownOpenTech);
                   }}
-                  className={`${activeLink === "services"
-                    ? "bg-white/20 text-white"
-                    : "text-white hover:bg-white/20 hover:text-white"
-                    } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
+                  className={`${
+                    activeLink === "services"
+                      ? "bg-white/20 text-white"
+                      : "text-white hover:bg-white/20 hover:text-white"
+                  } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
                 >
                   Services
                   <IoIosArrowDown></IoIosArrowDown>
@@ -96,225 +99,175 @@ export default function Navbar() {
                   >
                     {/* Services Dropdown Content */}
                     <div>
-                      <h3 className=" font-bold text-xl">
+                      <h3 className="font-bold text-xl mb-4">
                         Custom Web Application <br /> Development
                       </h3>
-                      <ul>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Implementation
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Application Development
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Integration
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Sales Marketing Cloud
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Community Enhancement
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Financial Services
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Support Services
-                          </a>
-                        </li>
+                      <ul className="space-y-2">
+                        {[
+                          "Custom Web Design",
+                          "Responsive Layouts",
+                          "User-Friendly Interfaces",
+                          "Scalable Solutions",
+                          "Fast Load Times",
+                          "SEO Optimization",
+                          "Advanced Security",
+                          "Ongoing Support",
+                        ].map((item, index) => (
+                          <li key={index} className="flex items-center">
+                            <span className="flex-shrink-0 w-3 h-3 bg-white rounded-full mr-3"></span>
+                            <a href="#" className=" font-semibold">
+                              {item}
+                            </a>
+                          </li>
+                        ))}
                       </ul>
                     </div>
+
                     <div>
-                      <h3 className=" font-bold text-xl">
+                      <h3 className="font-bold text-xl mb-4">
                         Web Portal Development
                       </h3>
-                      <ul>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            DevOps
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Solution Architecture
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Integration And Migration
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Support Services
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            AWS Cognito
-                          </a>
-                        </li>
+                      <ul className="space-y-2">
+                        {[
+                          "Custom Portal Solutions",
+                          "Responsive Layouts",
+                          "Secure User Authentication",
+                          "Multi-Device Compatibility",
+                          "User-Friendly Interfaces",
+                          "Real-Time Analytics",
+                          "Advanced Search Features",
+                          "Ongoing Maintenance",
+                        ].map((item, index) => (
+                          <li key={index} className="flex items-center">
+                            <span className="flex-shrink-0 w-3 h-3 bg-white rounded-full mr-3"></span>
+                            <a href="#" className="font-semibold">
+                              {item}
+                            </a>
+                          </li>
+                        ))}
                       </ul>
                     </div>
+
                     <div>
-                      <h3 className=" font-bold text-xl">
+                      <h3 className="font-bold text-xl mb-4">
                         E-commerce Development
                       </h3>
-                      <ul>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            DevOps
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Solution Architecture
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Cloud Migration and Modernization
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Active Directory
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Support Services
-                          </a>
-                        </li>
+                      <ul className="space-y-2">
+                        {[
+                          "Custom Online Stores",
+                          "Payment Gateway Integration",
+                          "Product Management",
+                          "Secure Transactions",
+                          "Mobile-Friendly Design",
+                          "User Account Management",
+                          "SEO-Friendly Features",
+                          "Order Tracking Systems",
+                        ].map((item, index) => (
+                          <li key={index} className="flex items-center">
+                            <span className="flex-shrink-0 w-3 h-3 bg-white rounded-full mr-3"></span>
+                            <a href="#" className="font-semibold">
+                              {item}
+                            </a>
+                          </li>
+                        ))}
                       </ul>
                     </div>
+
                     <div>
-                      <h3 className=" font-bold text-xl">
+                      <h3 className="font-bold text-xl mb-4">
                         WordPress Development
                       </h3>
-                      <ul>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Application Integration
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Consulting
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Master Data Management
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Boomi Mediate
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Boomi Flow
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Support Services
-                          </a>
-                        </li>
+                      <ul className="space-y-2">
+                        {[
+                          "Custom Themes",
+                          "Plugin Integration",
+                          "Responsive Design",
+                          "SEO Optimization",
+                          "Content Management",
+                          "E-commerce Solutions",
+                          "Speed Optimization",
+                          "Ongoing Support",
+                        ].map((item, index) => (
+                          <li key={index} className="flex items-center">
+                            <span className="flex-shrink-0 w-3 h-3 bg-white rounded-full mr-3"></span>
+                            <a href="#" className="font-semibold">
+                              {item}
+                            </a>
+                          </li>
+                        ))}
                       </ul>
                     </div>
+
                     <div>
-                      <h3 className=" font-bold text-xl">UI & UX Design</h3>
-                      <ul>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Enterprise Resource Planning
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Customer Relationship Management
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Professional Services Automation
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            E-commerce
-                          </a>
-                        </li>
+                      <h3 className="font-bold text-xl mb-4">UI & UX Design</h3>
+                      <ul className="space-y-2">
+                        {[
+                          "User-Centered Design",
+                          "Intuitive Interfaces",
+                          "Responsive Layouts",
+                          "Wireframing & Prototyping",
+                          "Visual Consistency",
+                          "Engaging User Experience",
+                          "Cross-Platform Compatibility",
+                          "Usability Testing",
+                        ].map((item, index) => (
+                          <li key={index} className="flex items-center">
+                            <span className="flex-shrink-0 w-3 h-3 bg-white rounded-full mr-3"></span>
+                            <a href="#" className=" font-semibold">
+                              {item}
+                            </a>
+                          </li>
+                        ))}
                       </ul>
                     </div>
+
                     <div>
-                      <h3 className=" font-bold text-xl">
+                      <h3 className="font-bold text-xl mb-4">
                         Front-end Web Development
                       </h3>
-                      <ul>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Enterprise Resource Planning
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Customer Relationship Management
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Professional Services Automation
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            E-commerce
-                          </a>
-                        </li>
+                      <ul className="space-y-2">
+                        {[
+                          "Custom UI/UX Design",
+                          "Interactive Interfaces",
+                          "Responsive Design",
+                          "HTML/CSS/JavaScript Expertise",
+                          "Fast Load Times",
+                          "Mobile Optimization",
+                          "SEO-Friendly Code",
+                          "User-Focused Layouts",
+                        ].map((item, index) => (
+                          <li key={index} className="flex items-center">
+                            <span className="flex-shrink-0 w-3 h-3 bg-white rounded-full mr-3"></span>
+                            <a href="#" className="font-semibold">
+                              {item}
+                            </a>
+                          </li>
+                        ))}
                       </ul>
                     </div>
+
                     <div>
-                      <h3 className=" font-bold text-xl">
+                      <h3 className="font-bold text-xl mb-4">
                         Back-end Web Development
                       </h3>
-                      <ul>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Enterprise Resource Planning
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Customer Relationship Management
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            Professional Services Automation
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="block py-1 ">
-                            E-commerce
-                          </a>
-                        </li>
+                      <ul className="space-y-2">
+                        {[
+                          "Database Integration",
+                          "Server-Side Scripting",
+                          "API Development",
+                          "Secure Data Handling",
+                          "Scalable Architecture",
+                          "Performance Optimization",
+                          "Content Management Systems",
+                          "Third-Party Integrations",
+                        ].map((item, index) => (
+                          <li key={index} className="flex items-center">
+                            <span className="flex-shrink-0 w-3 h-3 bg-white rounded-full mr-3"></span>
+                            <a href="#" className="font-semibold">
+                              {item}
+                            </a>
+                          </li>
+                        ))}
                       </ul>
                     </div>
                   </div>
@@ -332,10 +285,11 @@ export default function Navbar() {
                     setActiveLink("technologies");
                     setDropdownOpen(!dropdownOpen);
                   }}
-                  className={`${activeLink === "technologies"
-                    ? "bg-white/20 text-white"
-                    : "text-white hover:bg-white/20 hover:text-white"
-                    } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
+                  className={`${
+                    activeLink === "technologies"
+                      ? "bg-white/20 text-white"
+                      : "text-white hover:bg-white/20 hover:text-white"
+                  } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
                 >
                   Technologies
                   <IoIosArrowDown />
@@ -345,181 +299,15 @@ export default function Navbar() {
                     className="absolute -left-[360px]  mt-12 w-max backdrop-blur-3xl bg-[#381c4489] border-[#72006A] border-2 rounded-xl text-white shadow-lg p-6 grid grid-cols-4 gap-4"
                     style={{ minWidth: "300px" }} // Adjust minWidth as needed
                   >
-                    {/* Technologies Dropdown Content */}
+                    {/* MERN-Stack Dropdown Content */}
                     <div>
-                      <h3 className=" font-bold text-xl">MERN-Stack</h3>
+                      <h3 className="font-bold text-xl">MERN-Stack</h3>
                       <ul>
                         <li>
                           <a
-                            href="#"
-                            className=" py-1  flex items-center gap-2"
-                          >
-                            <SiMongodb></SiMongodb>
-                            MongoDB
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="py-1  flex items-center gap-2"
-                          >
-                            <SiExpress></SiExpress>
-                            Express JS
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="py-1  flex items-center gap-2"
-                          >
-                            <FaReact></FaReact>
-                            React JS
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="py-1  flex items-center gap-2"
-                          >
-                            <FaNode />
-                            Node JS
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h3 className=" font-bold text-xl">Front-End</h3>
-                      <ul>
-                        <li>
-                          <a
-                            href="#"
-                            className="py-1  flex items-center gap-2"
-                          >
-                            <FaReact></FaReact>
-                            React JS
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="py-1  flex items-center gap-2"
-                          >
-                            <SiNextdotjs></SiNextdotjs>
-                            Next JS
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="py-1  flex items-center gap-2"
-                          >
-                            <IoLogoJavascript />
-                            JavaScript
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="py-1  flex items-center gap-2"
-                          >
-                            <SiTypescript />
-                            TypeScript
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="py-1  flex items-center gap-2"
-                          >
-                            <SiRedux />
-                            Redux
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="py-1  flex items-center gap-2"
-                          >
-                            <SiTailwindcss />
-                            Tailwind
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="py-1  flex items-center gap-2"
-                          >
-                            <FaBootstrap />
-                            Bootstrap
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="py-1  flex items-center gap-2"
-                          >
-                            <SiMui />
-                            Material UI
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h3 className=" font-bold text-xl">Back-End</h3>
-                      <ul>
-                        <li>
-                          <a
-                            href="#"
-                            className="py-1  flex items-center gap-2"
-                          >
-                            <FaNode />
-                            Node JS
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="py-1  flex items-center gap-2"
-                          >
-                            <SiExpress />
-                            Express JS
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="py-1  flex items-center gap-2"
-                          >
-                            <SiNpm />
-                            JWT
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="py-1  flex items-center gap-2"
-                          >
-                            <SiNpm />
-                            Zod
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="py-1  flex items-center gap-2"
-                          >
-                            <SiCloudinary />
-                            Cloudinary
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h3 className=" font-bold text-xl">Database</h3>
-                      <ul>
-                        <li>
-                          <a
-                            href="#"
+                            href="https://www.mongodb.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="py-1  flex items-center gap-2"
                           >
                             <SiMongodb />
@@ -528,7 +316,217 @@ export default function Navbar() {
                         </li>
                         <li>
                           <a
-                            href="#"
+                            href="https://expressjs.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <SiExpress />
+                            Express JS
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://reactjs.org"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <FaReact />
+                            React JS
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://nodejs.org"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <FaNode />
+                            Node JS
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* Front-End Dropdown Content */}
+                    <div>
+                      <h3 className="font-bold text-xl">Front-End</h3>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://reactjs.org"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <FaReact />
+                            React JS
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://nextjs.org"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <SiNextdotjs />
+                            Next JS
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <IoLogoJavascript />
+                            JavaScript
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.typescriptlang.org"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <SiTypescript />
+                            TypeScript
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://redux.js.org"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <SiRedux />
+                            Redux
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://tailwindcss.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <SiTailwindcss />
+                            Tailwind
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://getbootstrap.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <FaBootstrap />
+                            Bootstrap
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://mui.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <SiMui />
+                            Material UI
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* Back-End Dropdown Content */}
+                    <div>
+                      <h3 className="font-bold text-xl">Back-End</h3>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://nodejs.org"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <FaNode />
+                            Node JS
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://expressjs.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <SiExpress />
+                            Express JS
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://jwt.io"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <SiNpm />
+                            JWT
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://zod.dev"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <SiNpm />
+                            Zod
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://cloudinary.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <SiCloudinary />
+                            Cloudinary
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* Database Dropdown Content */}
+                    <div>
+                      <h3 className="font-bold text-xl">Database</h3>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://www.mongodb.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-1  flex items-center gap-2"
+                          >
+                            <SiMongodb />
+                            MongoDB
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://mongoosejs.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="py-1  flex items-center gap-2"
                           >
                             <SiNpm />
@@ -537,7 +535,9 @@ export default function Navbar() {
                         </li>
                         <li>
                           <a
-                            href="#"
+                            href="https://www.postgresql.org"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="py-1  flex items-center gap-2"
                           >
                             <SiPostgresql />
@@ -547,22 +547,25 @@ export default function Navbar() {
                       </ul>
                     </div>
 
+                    {/* UI/UX Design Dropdown Content */}
                     <div>
-                      <h3 className=" font-bold text-xl">UI/UX Design</h3>
+                      <h3 className="font-bold text-xl">UI/UX Design</h3>
                       <ul>
                         <li>
                           <a href="#" className="block py-1 ">
-                            Tell Us Your Requirments
+                            Tell Us Your Requirements
                           </a>
                         </li>
                       </ul>
                     </div>
+
+                    {/* WordPress Dropdown Content */}
                     <div>
-                      <h3 className=" font-bold text-xl">WordPress</h3>
+                      <h3 className="font-bold text-xl">WordPress</h3>
                       <ul>
                         <li>
                           <a href="#" className="block py-1 ">
-                            Tell Us Your Requirments
+                            Tell Us Your Requirements
                           </a>
                         </li>
                       </ul>
@@ -574,30 +577,33 @@ export default function Navbar() {
               <Link
                 href="/about"
                 onClick={() => setActiveLink("About ")}
-                className={`${activeLink === "About "
-                  ? "bg-white/20 text-white"
-                  : "text-white hover:bg-white/20 hover:text-white"
-                  } px-3 py-2 rounded-md  font-medium hidden lg:block`}
+                className={`${
+                  activeLink === "About "
+                    ? "bg-white/20 text-white"
+                    : "text-white hover:bg-white/20 hover:text-white"
+                } px-3 py-2 rounded-md  font-medium hidden lg:block`}
               >
                 About
               </Link>
               <Link
                 href="/projects"
                 onClick={() => setActiveLink("projects")}
-                className={`${activeLink === "projects"
-                  ? "bg-white/20 text-white"
-                  : "text-white hover:bg-white/20 hover:text-white"
-                  } px-3 py-2 rounded-md  font-medium hidden lg:block`}
+                className={`${
+                  activeLink === "projects"
+                    ? "bg-white/20 text-white"
+                    : "text-white hover:bg-white/20 hover:text-white"
+                } px-3 py-2 rounded-md  font-medium hidden lg:block`}
               >
                 Projects
               </Link>
               <Link
                 href="/blogs"
                 onClick={() => setActiveLink("Blogs")}
-                className={`${activeLink === "Blogs"
-                  ? "bg-white/20 text-white"
-                  : "text-white hover:bg-white/20 hover:text-white"
-                  } px-3 py-2 rounded-md  font-medium hidden lg:block`}
+                className={`${
+                  activeLink === "Blogs"
+                    ? "bg-white/20 text-white"
+                    : "text-white hover:bg-white/20 hover:text-white"
+                } px-3 py-2 rounded-md  font-medium hidden lg:block`}
               >
                 Blogs & News
               </Link>
@@ -617,10 +623,11 @@ export default function Navbar() {
                 <Link
                   href="/about"
                   onClick={() => setActiveLink("About ")}
-                  className={`${activeLink === "About "
-                    ? "bg-white/20 text-white"
-                    : "text-white hover:bg-white/20 hover:text-white"
-                    } px-3 py-2 rounded-md  font-medium`}
+                  className={`${
+                    activeLink === "About "
+                      ? "bg-white/20 text-white"
+                      : "text-white hover:bg-white/20 hover:text-white"
+                  } px-3 py-2 rounded-md  font-medium`}
                 >
                   About
                 </Link>
@@ -699,10 +706,11 @@ export default function Navbar() {
           <a
             href="#"
             onClick={() => setActiveLink("home")}
-            className={`${activeLink === "home"
-              ? "bg-gray-900 text-white"
-              : "text-white hover:bg-gray-700 hover:text-white"
-              } block px-3 py-2 rounded-md text-base font-medium`}
+            className={`${
+              activeLink === "home"
+                ? "bg-gray-900 text-white"
+                : "text-white hover:bg-gray-700 hover:text-white"
+            } block px-3 py-2 rounded-md text-base font-medium`}
           >
             Home
           </a>
@@ -717,10 +725,11 @@ export default function Navbar() {
                 setActiveLink("services");
                 setDropdownOpenTech(!dropdownOpenTech);
               }}
-              className={`${activeLink === "services"
-                ? "bg-gray-900 text-white"
-                : "text-white hover:bg-gray-700 hover:text-white"
-                } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
+              className={`${
+                activeLink === "services"
+                  ? "bg-gray-900 text-white"
+                  : "text-white hover:bg-gray-700 hover:text-white"
+              } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
             >
               Services
               <IoIosArrowDown></IoIosArrowDown>
@@ -753,10 +762,11 @@ export default function Navbar() {
                 setActiveLink("technologies");
                 setDropdownOpen(!dropdownOpen);
               }}
-              className={`${activeLink === "technologies"
-                ? "bg-gray-900 text-white"
-                : "text-white hover:bg-gray-700 hover:text-white"
-                } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
+              className={`${
+                activeLink === "technologies"
+                  ? "bg-gray-900 text-white"
+                  : "text-white hover:bg-gray-700 hover:text-white"
+              } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
             >
               Technologies
               <IoIosArrowDown />
@@ -771,37 +781,25 @@ export default function Navbar() {
                   <h3 className=" font-bold text-xl">MERN-Stack</h3>
                   <ul>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <SiMongodb></SiMongodb>
                         MongoDB
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <SiExpress></SiExpress>
                         Express JS
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <FaReact></FaReact>
                         React JS
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <FaNode />
                         Node JS
                       </a>
@@ -812,73 +810,49 @@ export default function Navbar() {
                   <h3 className=" font-bold text-xl">Front-End</h3>
                   <ul>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <FaReact></FaReact>
                         React JS
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <SiNextdotjs></SiNextdotjs>
                         Next JS
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <IoLogoJavascript />
                         JavaScript
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <SiTypescript />
                         TypeScript
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <SiRedux />
                         Redux
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <SiTailwindcss />
                         Tailwind
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <FaBootstrap />
                         Bootstrap
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <SiMui />
                         Material UI
                       </a>
@@ -889,46 +863,31 @@ export default function Navbar() {
                   <h3 className=" font-bold text-xl">Back-End</h3>
                   <ul>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <FaNode />
                         Node JS
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <SiExpress />
                         Express JS
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <SiNpm />
                         JWT
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <SiNpm />
                         Zod
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <SiCloudinary />
                         Cloudinary
                       </a>
@@ -939,28 +898,19 @@ export default function Navbar() {
                   <h3 className=" font-bold text-xl">Database</h3>
                   <ul>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <SiMongodb />
                         MongoDB
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <SiNpm />
                         Mongoose
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="py-1  flex items-center gap-2"
-                      >
+                      <a href="#" className="py-1  flex items-center gap-2">
                         <SiPostgresql />
                         PostgresQL
                       </a>
@@ -995,30 +945,33 @@ export default function Navbar() {
           <a
             href="#"
             onClick={() => setActiveLink("about")}
-            className={`${activeLink === "about"
-              ? "bg-gray-900 text-white"
-              : "text-white hover:bg-gray-700 hover:text-white"
-              } block px-3 py-2 rounded-md text-base font-medium`}
+            className={`${
+              activeLink === "about"
+                ? "bg-gray-900 text-white"
+                : "text-white hover:bg-gray-700 hover:text-white"
+            } block px-3 py-2 rounded-md text-base font-medium`}
           >
             About
           </a>
           <a
             href="#"
             onClick={() => setActiveLink("projects")}
-            className={`${activeLink === "projects"
-              ? "bg-gray-900 text-white"
-              : "text-white hover:bg-gray-700 hover:text-white"
-              } block px-3 py-2 rounded-md text-base font-medium`}
+            className={`${
+              activeLink === "projects"
+                ? "bg-gray-900 text-white"
+                : "text-white hover:bg-gray-700 hover:text-white"
+            } block px-3 py-2 rounded-md text-base font-medium`}
           >
             Projects
           </a>
           <a
             href="#"
             onClick={() => setActiveLink("Blogs")}
-            className={`${activeLink === "Blogs"
-              ? "bg-gray-900 text-white"
-              : "text-white hover:bg-gray-700 hover:text-white"
-              } block px-3 py-2 rounded-md text-base font-medium`}
+            className={`${
+              activeLink === "Blogs"
+                ? "bg-gray-900 text-white"
+                : "text-white hover:bg-gray-700 hover:text-white"
+            } block px-3 py-2 rounded-md text-base font-medium`}
           >
             Blogs & News
           </a>

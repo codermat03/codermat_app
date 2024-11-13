@@ -7,13 +7,19 @@ export default function HeroSection() {
       <div className="flex flex-col gap-2 lg:gap-0 items-center justify-center md:flex-row max-w-6xl w-full text-white">
         {/* Left Section */}
         <div className="flex-1 mb-8 md:mb-0  ">
-          <h1 className="text-2xl md:text-4xl lg:text-6xl text-center md:text-start font-bold">
+          <h1 className="text-2xl md:text-4xl lg:text-6xl text-center md:text-start font-bold hidden">
             Let's Build Something <br /> Extraordinary
           </h1>
-          <p className="mt-2 md:mt-4 text-sm md:text-xl text-center md:text-start md:max-w-md md:px-0 px-7 py-5">
-            Are you ready to bring your vision to life? Let's set sail on a
-            journey together and build something extraordinary. Get in touch
-            with us today, and let's turn your dreams into digital reality.
+          <h1 className="text-2xl md:text-4xl lg:text-6xl text-center md:text-start font-bold">
+            Bring Your Tech Ideas into Reality.
+          </h1>
+          <p className="mt-2 md:mt-4 text-sm md:text-xl text-center md:text-start md:max-w-md md:px-0 px-7 py-2">
+            <span className="font-bold text-2xl">
+              Your Vision, Our Expertise
+            </span>
+            —CoderMat connects your vision with expert web development
+            solutions, driving project success through innovation, precision,
+            and collaboration.
           </p>
           <div className="flex md:justify-start justify-center">
             <button className="border-2 gap-2 border-[#7272723c]  bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 py-2 rounded-md mt-5 bottom-5">
