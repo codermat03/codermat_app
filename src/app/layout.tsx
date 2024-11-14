@@ -14,16 +14,15 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode; // Using a more concise type definition
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/logo1.png" />
-      </head>
       <body>
         <Navbar />
-        {children}
+        <div className="min-h-screen bg-[#240D3E]">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

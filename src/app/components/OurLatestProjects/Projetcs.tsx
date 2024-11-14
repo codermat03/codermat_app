@@ -5,14 +5,36 @@ import { Project } from "@/app/interface";
 import PrimaryBtn from "../shared/customized-component/PrimaryBtn";
 import Image from "next/image";
 
+// Skeleton Loader
+const ProjectCardSkeleton = () => {
+  return (
+    <div className="md:w-[390px] md:h-[660px] w-[320px] mx-auto backdrop-blur-md bg-[#2b1d3469] flex flex-col items-start rounded-2xl text-white animate-pulse">
+      <div className="w-full h-[260px] bg-white/20 rounded-t-2xl"></div>
+      <div className="h-8 my-6 bg-white/20 rounded w-3/4 mb-5 mx-4"></div>
+
+      <div className="h-6 bg-white/20 rounded w-1/2 mb-5 mx-4"></div>
+      <div className="h-5 bg-white/20 rounded w-[350px] mb-5 mx-4"></div>
+      <div className="h-5 bg-white/20 rounded w-[350px] mb-5 mx-4"></div>
+      <div className="h-6 bg-white/20 rounded w-1/2 mb-5 mx-4"></div>
+      <div className="h-5 bg-white/20 rounded w-[350px] mb-5 mx-4"></div>
+      <div className="h-12 bg-white/20 rounded w-[130px] mt-auto mb-5 mx-4"></div>
+    </div>
+  );
+};
+
+
 const Projetcs = () => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [visibleProjects, setVisibleProjects] = useState(3); // Initial number of visible projects
+  const [loading, setLoading] = useState(true); // Loading state
 
   useEffect(() => {
     fetch("ourProjects.json")
       .then((res) => res.json())
-      .then((data) => setProjects(data));
+      .then((data) => {
+        setProjects(data);
+        setLoading(false); // Set loading to false after data is fetched
+      });
   }, []);
 
   const showMoreProjects = () => {
@@ -37,11 +59,21 @@ const Projetcs = () => {
             Explore Our Successful Projects: See How We Bring Ideas to Life!!!!
           </p>
         </div>
+
+        {/* Grid of project cards */}
         <div className="grid md:grid-cols-3 items-center justify-center md:gap-x-8 md:gap-y-20 gap-y-10 py-10 relative">
-          {projects.slice(0, visibleProjects).map((project) => (
-            <ProjectCard project={project} key={project.id} />
-          ))}
+          {loading
+            ? // Render skeleton loader while loading
+            Array.from({ length: visibleProjects }).map((_, index) => (
+              <ProjectCardSkeleton key={index} />
+            ))
+            : // Render actual project cards after data is fetched
+            projects.slice(0, visibleProjects).map((project) => (
+              <ProjectCard project={project} key={project.id} />
+            ))}
         </div>
+
+        {/* Show more projects button */}
         {visibleProjects < projects.length && (
           <div className="text-center pb-20">
             <PrimaryBtn

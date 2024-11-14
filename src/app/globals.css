@@ -29,3 +29,38 @@
 .underline-animation a:hover::after {
   transform: scaleX(1);
 }
+
+/* Customize scrollbar for Webkit browsers (Chrome, Safari, Edge, etc.) */
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the vertical scrollbar */
+  height: 12px; /* Set the height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6a0f8e; /* Thumb color */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 3px solid #6d0098; /* Optional border around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #c90089; /* Change thumb color on hover */
+}
+
+::-webkit-scrollbar-track {
+  background: #2c1d3a; /* Track color */
+  border-radius: 0px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #1b1025; /* Track color on hover */
+}
+
+::-webkit-scrollbar-button {
+  display: none; /* Hide the scrollbar buttons */
+}
+
+/* Customize scrollbar for Firefox */
+scrollbar {
+  width: 12px;
+}
+

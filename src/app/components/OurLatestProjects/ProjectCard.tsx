@@ -1,4 +1,5 @@
 import { Project } from "@/app/interface";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -12,7 +13,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
   return (
     <div className="md:w-[390px] md:h-[660px] w-[320px] mx-auto backdrop-blur-md bg-[#2b1d3469] flex flex-col items-start rounded-2xl text-white">
-      <img
+      <Image
         src={image}
         alt={project_name}
         width={390}
@@ -45,7 +46,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           className="flex items-center gap-2"
         >
           Show Live
-          <img
+          <Image
             className="w-4"
             src="https://i.ibb.co/gVjzd78/line-1.png"
             alt="icon"
