@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
@@ -7,10 +8,12 @@ const ContactForm = () => {
       <div className="mx-auto max-w-7xl px-4 grid md:grid-cols-2 content-center gap-8">
         {/* Contact Info Section */}
         <div>
-          <h3 className="md:text-left text-center text-2xl font-semibold mb-4">Contact Info</h3>
+          <h3 className="md:text-left text-center text-2xl font-semibold mb-4">
+            Contact Info
+          </h3>
           <p className="mb-6 text-[#898989]">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint.
+            Reach Out to Us for Your Next Project or Inquiry. We're Here to
+            Help!
           </p>
           <div className="flex items-center mb-4">
             <AiOutlineMail className="text-xl mr-2" />

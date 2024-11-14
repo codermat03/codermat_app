@@ -19,11 +19,13 @@ const Projetcs = () => {
   };
 
   return (
-    <div className="md:mx-20">
+    <div className="md:mx-20 text-white">
       <div className="pt-24">
-        <h1 className="text-center font-bold md:text-4xl text-2xl">Our Latest Projects</h1>
+        <h1 className="text-center font-bold md:text-4xl text-2xl">
+          Our Latest Projects
+        </h1>
         <p className="text-center text-xl md:w-1/2 m-auto pt-4">
-          Find our projects here!!!
+          Explore Our Successful Projects: See How We Bring Ideas to Life!!!!
         </p>
       </div>
       <div className="grid md:grid-cols-3 items-center justify-center md:gap-x-8 md:gap-y-20 gap-y-10 py-10 relative">
@@ -33,8 +35,12 @@ const Projetcs = () => {
       </div>
       {visibleProjects < projects.length && (
         <div className="text-center pb-20">
-          <PrimaryBtn className="px-6 py-2 rounded-xl">Show More</PrimaryBtn>
-
+          <PrimaryBtn
+            className="px-6 py-2 rounded-xl"
+            onClick={showMoreProjects}
+          >
+            Show More
+          </PrimaryBtn>
         </div>
       )}
     </div>

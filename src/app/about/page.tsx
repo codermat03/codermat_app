@@ -4,7 +4,9 @@ import React from "react";
 const AboutUs = () => {
   return (
     <main className="text-white  bg-gradient-to-bl from-[#93239d] via-[#190b34] to-[#280d42]">
-      <h1 className="text-center font-bold text-4xl pt-32">About Us</h1>
+      <h1 className="text-center font-bold text-4xl pt-32">
+        Our Story: Connecting Global Technology <br /> Needs with Expertise
+      </h1>
 
       <div className=" py-20 px-8 max-w-7xl mx-auto">
         {/* Top section */}
@@ -13,36 +15,46 @@ const AboutUs = () => {
           <div className="bg-white/10 p-6 rounded-lg max-w-md">
             <div className="flex items-center mb-4">
               <img
-                src="https://scontent.fjsr13-1.fna.fbcdn.net/v/t39.30808-6/350638671_793054565712230_366404522768911357_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=G8Qd-w52pfAQ7kNvgGIRHDO&_nc_ht=scontent.fjsr13-1.fna&oh=00_AYBifBZycCmsJWt_1xwBsFhL_B-_D7rsde-qFEwuf9sgKA&oe=66F1C65D"
+                src="https://www.infomazeelite.com/wp-content/uploads/2022/03/Hire-Dedicated-Development-Team.png"
                 alt="Discord Logo"
               />
             </div>
-            <p className="font-bold">Nayem / CEO, CoderMat</p>
+            <p className="font-bold text-xl">
+              <span className="font-bold text-xl">Nayem</span> / CEO,{" "}
+              <span className="font-bold text-xl">CoderMat</span>
+            </p>
           </div>
 
           {/* Mission */}
           <div className="max-w-xl">
             <h1 className="text-4xl font-bold mb-6">
-              On a mission to <br /> empower teams
+              On a mission to empower teams
             </h1>
             <p className="mb-4">
-              Sales copywriting is all about getting users to make a purchase or
-              sign up for a product or service. UX copywriting, on the other
-              hand, is all about helping users reach a goal efficiently and
-              effectively.
+              At <span className="font-bold text-xl">CoderMat</span>, we are
+              committed to equipping businesses with the essential tools to
+              thrive in the digital landscape. Our primary focus is on creating
+              intuitive and user-friendly websites that establish a strong
+              online presence and facilitate easy interactions between your
+              customers and your brand. We believe that technology should serve
+              your needs, not complicate them. Our aim is to help your team
+              achieve its full potential by delivering a seamless digital
+              experience that promotes growth and engagement.
             </p>
             <p className="mb-4">
-              There are overlaps between the two, for sure. But while sales
-              copywriting is often about convincing a customer to do something,
-              UX copywriting is about helping them do something they're already
-              trying to do. You don't have to sell them on the goal, just help
-              them achieve it.
+              Our primary goal is to create engaging, high-quality websites. We
+              also recognize the importance of making every interaction
+              meaningful. Through compelling design and streamlined
+              functionality, we ensure that your website enables users to
+              achieve their goals easily, without confusion or frustration.
             </p>
             <p className="mb-4">
-              Believe it or not, copywriting is one of the most important
-              content-creation skills a designer can possess. If you think about
-              it, design exists to support and deliver content—not the other way
-              around.
+              At <span className="font-bold text-xl">CoderMat</span>, we
+              prioritize both aesthetics and performance. We believe that a
+              well-crafted design should enhance the content, which we see as
+              the core of every design decision. By understanding your business
+              and your customers, we create websites that are not only visually
+              appealing but also functional and purpose-driven.
             </p>
 
             {/* Statistics */}
@@ -70,50 +82,103 @@ const AboutUs = () => {
         {/* Bottom section */}
         <section className="flex flex-col lg:flex-row items-start justify-items-end gap-10">
           <div className="max-w-xl">
+            <div>
+              <h2 className="text-3xl font-bold mb-6">Why Choose Us</h2>
+              <p className="mb-6 hidden">
+                We believe that collaboration is key to the success of any
+                project. Our process starts with understanding your goals,
+                audience, and objectives. From there, we combine design,
+                functionality, and usability to create digital solutions that
+                work seamlessly and deliver measurable results. Every step of
+                our process is guided by a desire to solve your problems, not
+                just create a website.
+              </p>
+
+              <ul className="list-disc pl-6 mb-6">
+                <li>
+                  <span className="font-bold text-xl">
+                    Custom Design & Development:
+                  </span>{" "}
+                  Every project is unique. We don’t rely on templates but create
+                  custom, responsive designs that reflect your brand and meet
+                  your specific needs.
+                </li>
+                <li>
+                  <span className="font-bold text-xl">
+                    User-Centered Approach:
+                  </span>{" "}
+                  Whether you need to build a brand-new website or revamp an
+                  existing one, we ensure that your users have a seamless and
+                  satisfying experience.
+                </li>
+                <li>
+                  <span className="font-bold text-xl">
+                    Results-Driven Strategy:
+                  </span>{" "}
+                  Our work isn’t just about looking good; it’s about achieving
+                  the business goals that matter. From boosting conversion rates
+                  to improving engagement, we focus on results that directly
+                  impact your bottom line.
+                </li>
+              </ul>
+            </div>
             <h2 className="text-3xl font-bold mb-6">Our Process</h2>
             <p className="mb-6">
-              Believe it or not, copywriting is one of the most important
-              content-creation skills a designer can possess. If you think about
-              it, design exists to support and deliver content—not the other way
-              around.
-            </p>
-            <p className="mb-6">
-              As a designer, content should be the driving force behind many of
-              your decisions, whether you’re creating the content or someone
-              else is. So if you can understand how to write effective copy (and
-              understand the purpose that it serves), you'll be able to better
-              serve your clients and ultimately create better designs.
+              We believe that collaboration is essential for the success of any
+              project. Our process begins with understanding your goals,
+              audience, and objectives. From there, we integrate design,
+              functionality, and usability to create digital solutions that work
+              seamlessly and deliver measurable results. Every step of our
+              process is driven by the desire to address your challenges, not
+              just to create a website.
             </p>
 
-            <h3 className="text-xl font-bold mb-2">
-              Sales Copywriting vs. UX Copywriting
-            </h3>
             <ul className="list-disc pl-6 mb-6">
-              <li>Why consistent writing makes you a better designer</li>
-              <li>5 soft skills every product designer should master</li>
-              <li>The UX Writing Starter-Kit</li>
+              <li>
+                <span className="font-bold text-xl">Discovery & Strategy:</span>{" "}
+                We begin by understanding your business, industry, and goals so
+                we can develop a strategy that works for you.
+              </li>
+              <li>
+                <span className="font-bold text-xl">Design & Development:</span>{" "}
+                Our design team creates custom, user-friendly designs that
+                reflect your brand, while our developers ensure that the website
+                is fast, secure, and scalable.
+              </li>
+              <li>
+                <span className="font-bold text-xl">Testing & Launch:</span>{" "}
+                Before going live, we test everything to ensure it’s perfect.
+                From performance to usability, we ensure your website works
+                flawlessly.
+              </li>
+              <li>
+                <span className="font-bold text-xl">
+                  Support & Optimization:
+                </span>{" "}
+                After launch, we continue to support and optimize your website
+                to ensure it remains up-to-date and effective in achieving your
+                goals.
+              </li>
             </ul>
+
             <p className="mb-6">
-              As a designer, content should be the driving force behind many of
-              your decisions, whether you’re creating the content or someone
-              else is. So if you can understand how to write effective copy (and
-              understand the purpose that it serves), you'll be able to better
-              serve your clients and ultimately create better designs.
-            </p>
-            <p className="mb-6">
-              As a designer, content should be the driving force behind many of
-              your decisions, whether you’re creating the content or someone
-              else is. So if you can understand how to write effective copy (and
-              understand the purpose that it serves), you'll be able to better
-              serve your clients and ultimately create better designs.
+              With <span className="font-bold text-xl">CoderMat</span>, you are
+              not just getting a website — you are gaining a partner devoted to
+              your business's success. Allow us to assist you in elevating your
+              digital presence to the next level.
             </p>
           </div>
-          <div className="flex-shrink-0">
-            <img
-              className="w-[450px] rounded-2xl"
-              src="https://scontent.fjsr13-1.fna.fbcdn.net/v/t39.30808-6/333512058_932828284386738_1785459851647311778_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=-3dY0j4T1IQQ7kNvgHVkUAr&_nc_ht=scontent.fjsr13-1.fna&oh=00_AYDAeHqtTEOIrcLhityt2lGC6yToB0RMtdJInJ44wNeTeQ&oe=66F1CDF1"
-              alt="Team Working"
-            />
+          <div className="bg-white/10 p-6 rounded-lg max-w-md">
+            <div className="flex items-center mb-4">
+              <img
+                src="https://www.infomazeelite.com/wp-content/uploads/2022/03/Hire-Dedicated-Development-Team.png"
+                alt="Discord Logo"
+              />
+            </div>
+            <p className="font-bold text-xl">
+              <span className="font-bold text-xl">Nayem</span> / CEO,{" "}
+              <span className="font-bold text-xl">CoderMat</span>
+            </p>
           </div>
         </section>
       </div>
