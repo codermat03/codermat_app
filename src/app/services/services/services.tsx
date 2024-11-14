@@ -5,11 +5,11 @@ import { service } from "@/app/interface";
 
 const SkeletonLoader = () => {
   return (
-    <div className="max-w-7xl mx-auto grid grid-cols-3 gap-y-12 mt-20">
+    <div className="max-w-7xl mx-auto grid grid-cols-3 gap-y-8 mt-20">
       {Array.from({ length: 6 }).map((_, index) => (
         <div
           key={index}
-          className="md:w-[390px] md:h-auto mx-7 md:mx-auto backdrop-blur-md bg-[#2F1748] flex flex-col items-start border-l-0 border-t-0 border-[#5C099B] border-4 p-5 rounded-xl"
+          className="md:w-[390px] md:h-auto mx-7 md:mx-auto backdrop-blur-md bg-[#2F1748] flex flex-col items-start border-l-0 border-t-0 border-[#5C099B] border-4 p-8 rounded-xl"
         >
           <div className="animate-pulse flex flex-col space-y-4 w-full">
             {/* Skeleton for the image */}
