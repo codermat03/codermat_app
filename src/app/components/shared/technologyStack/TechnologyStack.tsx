@@ -45,7 +45,12 @@ const TechnologyStack = () => {
 
   return (
     <div className="py-20 text-white relative">
-      <h1 className="text-center font-bold md:text-4xl text-2xl">Our Technology Stack</h1>
+      <h1 className="text-center font-bold md:text-4xl text-2xl">
+        Our Technology Stack
+      </h1>
+      <p className="text-center text-xl md:w-1/2 mx-auto pt-4">
+        Building the Future with Innovative and Reliable Technologies
+      </p>
 
       <Image
         className="absolute py-32"

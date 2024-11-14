@@ -4,7 +4,9 @@ import React from "react";
 const AboutUs = () => {
   return (
     <main className="text-white  bg-gradient-to-bl from-[#93239d] via-[#190b34] to-[#280d42]">
-      <h1 className="text-center font-bold text-4xl pt-32">About Us</h1>
+      <h1 className="text-center font-bold text-4xl pt-32">
+        Our Story: Connecting Global Technology <br /> Needs with Expertise
+      </h1>
 
       <div className=" py-20 px-8 max-w-7xl mx-auto">
         {/* Top section */}
@@ -30,29 +32,29 @@ const AboutUs = () => {
             </h1>
             <p className="mb-4">
               At <span className="font-bold text-xl">CoderMat</span>, we are
-              dedicated to providing businesses with the tools they need to
-              thrive in the digital world. Our focus is on building intuitive,
-              user-friendly websites that not only help you establish a strong
-              online presence but also enable your customers to easily interact
-              with your brand. We believe that technology should work for you,
-              not the other way around. Our goal is to help your team reach its
-              full potential by providing a seamless digital experience that
-              drives growth and engagement.
+              committed to equipping businesses with the essential tools to
+              thrive in the digital landscape. Our primary focus is on creating
+              intuitive and user-friendly websites that establish a strong
+              online presence and facilitate easy interactions between your
+              customers and your brand. We believe that technology should serve
+              your needs, not complicate them. Our aim is to help your team
+              achieve its full potential by delivering a seamless digital
+              experience that promotes growth and engagement.
             </p>
             <p className="mb-4">
-              While our main goal is to create engaging, high-quality websites,
-              we also understand the importance of making every interaction
-              count. Whether it's through compelling design or streamlined
-              functionality, we ensure that your website helps users easily
-              achieve their goals without confusion or frustration.
+              Our primary goal is to create engaging, high-quality websites. We
+              also recognize the importance of making every interaction
+              meaningful. Through compelling design and streamlined
+              functionality, we ensure that your website enables users to
+              achieve their goals easily, without confusion or frustration.
             </p>
             <p className="mb-4">
-              At <span className="font-bold text-xl">CoderMat</span>, we focus
-              on both aesthetics and performance. Just as a well-crafted design
-              can support content, we ensure that the content is the driving
-              force behind every design decision. By understanding both your
-              business and your customers, we create websites that are not only
-              beautiful but also functional and purpose-driven.
+              At <span className="font-bold text-xl">CoderMat</span>, we
+              prioritize both aesthetics and performance. We believe that a
+              well-crafted design should enhance the content, which we see as
+              the core of every design decision. By understanding your business
+              and your customers, we create websites that are not only visually
+              appealing but also functional and purpose-driven.
             </p>
 
             {/* Statistics */}
@@ -122,13 +124,13 @@ const AboutUs = () => {
             </div>
             <h2 className="text-3xl font-bold mb-6">Our Process</h2>
             <p className="mb-6">
-              We believe that collaboration is key to the success of any
-              project. Our process starts with understanding your goals,
-              audience, and objectives. From there, we combine design,
+              We believe that collaboration is essential for the success of any
+              project. Our process begins with understanding your goals,
+              audience, and objectives. From there, we integrate design,
               functionality, and usability to create digital solutions that work
               seamlessly and deliver measurable results. Every step of our
-              process is guided by a desire to solve your problems, not just
-              create a website.
+              process is driven by the desire to address your challenges, not
+              just to create a website.
             </p>
 
             <ul className="list-disc pl-6 mb-6">
@@ -160,10 +162,10 @@ const AboutUs = () => {
             </ul>
 
             <p className="mb-6">
-              With <span className="font-bold text-xl">CoderMat</span>, you're
-              not just getting a website — you're getting a partner committed to
-              your business's success. Let us help you take your digital
-              presence to the next level.
+              With <span className="font-bold text-xl">CoderMat</span>, you are
+              not just getting a website — you are gaining a partner devoted to
+              your business's success. Allow us to assist you in elevating your
+              digital presence to the next level.
             </p>
           </div>
           <div className="bg-white/10 p-6 rounded-lg max-w-md">

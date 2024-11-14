@@ -29,7 +29,9 @@ const Footer = () => {
         <div className="bg-[#6461616d] p-[0.3px] my-10" />
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-left">
           <div>
-            <h4 className="text-sm font-semibold mb-4 text-[#5C4F67]">SOLUTIONS</h4>
+            <h4 className="text-sm font-semibold mb-4 text-[#5C4F67]">
+              SOLUTIONS
+            </h4>
             <ul>
               <li className="mb-2 underline-animation hover:text-[#acacac] duration-300">
                 <a href="/marketing">Marketing</a>
@@ -46,7 +48,9 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="text-sm font-semibold mb-4 text-[#5C4F67]">SUPPORT</h4>
+            <h4 className="text-sm font-semibold mb-4 text-[#5C4F67]">
+              SUPPORT
+            </h4>
             <ul>
               <li className="mb-2 underline-animation hover:text-[#acacac] duration-300">
                 <a href="/pricing">Pricing</a>
@@ -63,7 +67,9 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="text-sm font-semibold mb-4 text-[#5C4F67]">COMPANY</h4>
+            <h4 className="text-sm font-semibold mb-4 text-[#5C4F67]">
+              COMPANY
+            </h4>
             <ul>
               <li className="mb-2 underline-animation hover:text-[#acacac] duration-300">
                 <a href="/about">About</a>
@@ -97,7 +103,9 @@ const Footer = () => {
             </ul>
           </div>
           <div className="md:col-span-1 col-span-2">
-            <h4 className="text-sm font-semibold mb-4 text-[#5C4F67]">LANGUAGE & CURRENCY</h4>
+            <h4 className="text-sm font-semibold mb-4 text-[#5C4F67]">
+              LANGUAGE & CURRENCY
+            </h4>
             <div className="mb-2">
               <select className="w-full p-3 bg-[#ffffff00] border-[1px] border-[#6461616d] rounded-lg text-white focus:outline-none">
                 <option className="">English</option>
@@ -137,9 +145,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div>
-        <h1>Shakil</h1>
-      </div>
+      <div></div>
     </footer>
   );
 };

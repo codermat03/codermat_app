@@ -9,7 +9,7 @@ const Testimonials = () => {
           What People Are Saying
         </h1>
         <p className="text-center text-xl md:w-1/2 m-auto pt-4">
-          We provide support for more than 15K+ Businesses.
+          Your Success is Our Mission from Day One{" "}
         </p>
       </div>
       <div className="grid md:grid-cols-3 gap-8 md:py-20">

@@ -25,7 +25,7 @@ const Projetcs = () => {
           Our Latest Projects
         </h1>
         <p className="text-center text-xl md:w-1/2 m-auto pt-4">
-          Find our projects here!!!
+          Explore Our Successful Projects: See How We Bring Ideas to Life!!!!
         </p>
       </div>
       <div className="grid md:grid-cols-3 items-center justify-center md:gap-x-8 md:gap-y-20 gap-y-10 py-10 relative">

@@ -6,9 +6,17 @@ const OurWebDevelopmentProcess = () => {
       <div className="min-h-screen flex items-center px-3 md:px-0 justify-center md:p-5 bg-no-repeat lg:bg-contain bg-right	 bg-[url('https://i.postimg.cc/TYvK038H/Pattern-for-development-process.png')]">
         <div className="max-w-5xl mx-auto text-white">
           {/* Title */}
-          <h1 className="text-2xl md:px-0 px-8 md:text-4xl font-bold text-center mt-5 md:mt-0 mb-5 md:py-20">
-            Our Web Development Process
-          </h1>
+          <div className=" text-center mt-5 md:mt-0 mb-5 md:py-20">
+            <h1 className="text-2xl md:px-0 px-8 md:text-4xl font-bold">
+              {" "}
+              Our Web Development Process
+            </h1>
+
+            <p className="mt-4">
+              From Idea to Implementation: Our Seamless Web Development Process
+              to Bring Your Vision to Life
+            </p>
+          </div>
 
           {/* Process Steps */}
           <div className="relative">
