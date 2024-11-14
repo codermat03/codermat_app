@@ -5,24 +5,33 @@ import { service } from "@/app/interface";
 
 const SkeletonLoader = () => {
   return (
-    <div className="max-w-7xl mx-auto grid grid-cols-3 gap-y-12 mx-20 mt-20">
+    <div className="max-w-7xl mx-auto grid grid-cols-3 gap-y-12 mt-20">
       {Array.from({ length: 6 }).map((_, index) => (
         <div
           key={index}
-          className="bg-white/20 rounded-lg p-4 w-full max-w-[300px]"
+          className="md:w-[390px] md:h-auto mx-7 md:mx-auto backdrop-blur-md bg-[#2F1748] flex flex-col items-start border-l-0 border-t-0 border-[#5C099B] border-4 p-5 rounded-xl"
         >
-          <div className="animate-pulse flex flex-col space-y-4">
-            <div className="h-32 bg-white/20 rounded"></div>
+          <div className="animate-pulse flex flex-col space-y-4 w-full">
+            {/* Skeleton for the image */}
+            <div className="h-14 bg-white/20 rounded w-14"></div>
+            {/* Skeleton for the title */}
             <div className="h-4 bg-white/20 rounded w-3/4"></div>
+            {/* Skeleton for the description */}
             <div className="h-4 bg-white/20 rounded w-1/2"></div>
+            <div className="h-4 bg-white/20 rounded w-full"></div>
             <div className="h-4 bg-white/20 rounded w-1/2"></div>
-            <div className="h-4 bg-white/20 rounded w-1/2"></div>
+            {/* Skeleton for the button */}
+            <div className="flex items-center gap-2 mt-3">
+              <div className="h-9 bg-white/20 rounded w-32"></div>
+            </div>
           </div>
         </div>
       ))}
     </div>
   );
 };
+
+
 
 const Services = () => {
   // State for services data

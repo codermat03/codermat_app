@@ -2,11 +2,19 @@
 
 import { useEffect, useState } from "react";
 
+interface ServiceFeature {
+  id: number;
+  title: string;
+  description: string;
+}
+
 interface Service {
   id: number;
   title: string;
   service_details_description: string;
   image_url: string;
+  service_features: ServiceFeature[];
+  short_description: string
 }
 
 interface Params {
@@ -24,22 +32,44 @@ const ServiceDetails = ({ params }: { params: Params }) => {
 
   const service = services.find((data) => data.id === Number(params.id));
 
-  console.log(service, params.id);
-
   return (
     <main className="bg-gradient-to-bl from-[#93239d] via-[#190b34] to-[#280d42] min-h-screen pt-32 text-white">
       <h1 className="text-center font-bold text-4xl">Service Details</h1>
       <h3 className="text-center text-2xl font-semibold pt-4">
         {service?.title || "Service not found"}
       </h3>
-      <div className=" grid grid-cols-2 justify-items-center gap-10 pt-20 max-w-6xl mx-auto ">
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-10 pt-20 max-w-6xl mx-auto">
         <div>
-          <p className="text-xl">{service?.service_details_description}</p>
+          {/* Service Details Section */}
+          <div>
+            <p className="text-[#d735ff] uppercase font-bold pb-3">Your vision our expertise</p>
+            <p className="text-xl">{service?.short_description}</p>
+          </div>
+          {/* Service Features */}
+          {service?.service_features && service.service_features.length > 0 && (
+            <div className="pt-10 max-w-6xl mx-auto">
+              <p className="text-[#d735ff] uppercase font-bold pb-3">Service Details:</p>
+              <ul className="space-y-6 text-md">
+                {service.service_features.map((feature) => (
+                  <li key={feature.id} className="">
+                    <p className="text-lg"><span className="font-semibold">{feature.id}. {feature.title}:</span> {feature.description}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
+
+        {/* Service Image */}
         <div>
-          <img src={service?.image_url} alt="" />
+          <img
+            src={service?.image_url || "/default-image.jpg"}
+            alt={service?.title}
+            className="w-full h-auto"
+          />
         </div>
       </div>
+      <p className="max-w-6xl mx-auto py-10">{service?.service_details_description}</p>
     </main>
   );
 };
