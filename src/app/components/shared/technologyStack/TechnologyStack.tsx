@@ -10,20 +10,31 @@ const SkeletonLoader = () => {
       {Array.from({ length: 6 }).map((_, index) => (
         <div
           key={index}
-          className="bg-white/15 rounded-lg p-4 w-full max-w-[300px]"
+          className="bg-white/15 md:h-[400px] rounded-2xl p-4 w-full max-w-[300px] backdrop-blur-lg border-[#72006A] border-2"
         >
           <div className="animate-pulse flex flex-col space-y-4">
-            <div className="h-32 bg-white/15 rounded"></div>
-            <div className="h-4 bg-white/15 rounded w-3/4"></div>
-            <div className="h-4 bg-white/15 rounded w-1/2"></div>
-            <div className="h-4 bg-white/15 rounded w-1/2"></div>
-            <div className="h-4 bg-white/15 rounded w-1/2"></div>
+            {/* Stack name */}
+            <div className="h-6 bg-white/15 rounded w-3/4 mx-auto"></div>
+
+            {/* Divider line */}
+            <div className="p-[0.2px] bg-[#ffffff58] mx-10"></div>
+
+            {/* Technologies */}
+            <div className="ms-10 my-6 text-sm space-y-3">
+              {Array.from({ length: 3 }).map((_, index) => (
+                <div key={index} className="py-1 flex items-center">
+                  <div className="h-6 w-6 bg-white/20 rounded-full mr-2"></div>
+                  <div className="h-4 bg-white/20 w-3/4 rounded"></div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       ))}
     </div>
   );
 };
+
 
 const TechnologyStack = () => {
   // State for tech stack data
