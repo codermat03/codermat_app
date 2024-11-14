@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import { Project } from "@/app/interface";
 import PrimaryBtn from "../shared/customized-component/PrimaryBtn";
+import Link from "next/link";
 
 const Projetcs = () => {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -33,16 +34,12 @@ const Projetcs = () => {
           <ProjectCard project={project} key={project.id} />
         ))}
       </div>
-      {visibleProjects < projects.length && (
-        <div className="text-center pb-20">
-          <PrimaryBtn
-            className="px-6 py-2 rounded-xl"
-            onClick={showMoreProjects}
-          >
-            Show More
-          </PrimaryBtn>
-        </div>
-      )}
+      <Link href="allProjects">
+        {" "}
+        <PrimaryBtn className="px-6 py-2 rounded-xl" onClick={showMoreProjects}>
+          Show More
+        </PrimaryBtn>
+      </Link>
     </div>
   );
 };

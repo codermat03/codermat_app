@@ -1,9 +1,22 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
-import Link from "next/link";
-import React, { useState } from "react";
 
-const Blogs = () => {
+import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
+import { useEffect, useState } from "react";
+
+interface Article {
+  [x: string]: any;
+  id: number;
+  title: string;
+  description: string;
+  category: string;
+  subTitle: string;
+  cardImage: string;
+}
+
+const BlogSingle = ({ params }: { params: Params }) => {
+  const [article, setArticle] = useState<Article | null>(null);
+
+  // Fake data of articles
   const articles = [
     {
       id: 1,
@@ -253,33 +266,30 @@ const Blogs = () => {
         "This guide will help you understand the basics of UI/UX design for mobile apps and how to create user-friendly interfaces that enhance the user experience.",
       subTitle:
         "Create intuitive and user-friendly interfaces for mobile apps.",
-      content: [
-        {
-          sectionTitle: "1. Understand User Needs",
-          sectionContent:
-            "Effective UI/UX design begins with understanding your users’ needs. Research your target audience to ensure the app is aligned with their preferences and pain points.",
+      content: {
+        introduction:
+          "Effective UI/UX design begins with understanding your users’ needs. Research your target audience to ensure the app is aligned with their preferences and pain points.",
+        section1: {
+          title: "1. Understand User Needs",
+          body: "Effective UI/UX design begins with understanding your users’ needs. Research your target audience to ensure the app is aligned with their preferences and pain points.",
         },
-        {
-          sectionTitle: "2. Simplify Navigation",
-          sectionContent:
-            "Make navigation intuitive. Use a clear layout with easily accessible buttons, simple menus, and a logical flow to guide users through the app effortlessly.",
+        section2: {
+          title: "2. Simplify Navigation",
+          body: "Make navigation intuitive. Use a clear layout with easily accessible buttons, simple menus, and a logical flow to guide users through the app effortlessly.",
         },
-        {
-          sectionTitle: "3. Focus on Consistency",
-          sectionContent:
-            "Consistency is key to creating a seamless user experience. Use consistent design elements like color schemes, fonts, and icons to avoid confusion and ensure usability.",
+        section3: {
+          title: "3. Focus on Consistency",
+          body: "Consistency is key to creating a seamless user experience. Use consistent design elements like color schemes, fonts, and icons to avoid confusion and ensure usability.",
         },
-        {
-          sectionTitle: "4. Prioritize Performance",
-          sectionContent:
-            "Good UI/UX design isn't just about appearance; it also affects app performance. Optimize loading times, reduce lag, and ensure smooth transitions to keep users engaged.",
+        section4: {
+          title: "4. Prioritize Performance",
+          body: "Good UI/UX design isn't just about appearance; it also affects app performance. Optimize loading times, reduce lag, and ensure smooth transitions to keep users engaged.",
         },
-        {
-          sectionTitle: "5. Test Your Designs",
-          sectionContent:
-            "Conduct usability testing to gather feedback on your design. Iterate based on real user interactions to refine and improve the app's overall user experience.",
+        section5: {
+          title: "5. Test Your Designs",
+          body: "Conduct usability testing to gather feedback on your design. Iterate based on real user interactions to refine and improve the app's overall user experience.",
         },
-      ],
+      },
     },
     {
       id: "12",
@@ -289,33 +299,30 @@ const Blogs = () => {
       description:
         "In today’s digital world, security is paramount. Learn key tips to build a secure mobile app and protect user data from potential threats.",
       subTitle: "Secure your app and safeguard user data from cyber threats.",
-      content: [
-        {
-          sectionTitle: "1. Use Strong Encryption",
-          sectionContent:
-            "Encrypt sensitive data both at rest and in transit to prevent unauthorized access. Use industry-standard encryption algorithms like AES for robust protection.",
+      content: {
+        introduction:
+          "In today’s digital world, security is paramount. Learn key tips to build a secure mobile app and protect user data from potential threats.",
+        section1: {
+          title: "1. Use Strong Encryption",
+          body: "Encrypt sensitive data both at rest and in transit to prevent unauthorized access. Use industry-standard encryption algorithms like AES for robust protection.",
         },
-        {
-          sectionTitle: "2. Secure User Authentication",
-          sectionContent:
-            "Implement multi-factor authentication (MFA) and strong password policies to ensure only authorized users can access your app. Consider biometric authentication for added security.",
+        section2: {
+          title: "2. Secure User Authentication",
+          body: "Implement multi-factor authentication (MFA) and strong password policies to ensure only authorized users can access your app. Consider biometric authentication for added security.",
         },
-        {
-          sectionTitle: "3. Regularly Update Your App",
-          sectionContent:
-            "Keep your app updated with the latest security patches. Vulnerabilities are often discovered over time, so it’s important to release updates to fix any potential security flaws.",
+        section3: {
+          title: "3. Regularly Update Your App",
+          body: "Keep your app updated with the latest security patches. Vulnerabilities are often discovered over time, so it’s important to release updates to fix any potential security flaws.",
         },
-        {
-          sectionTitle: "4. Implement Secure API Communication",
-          sectionContent:
-            "Ensure that all API endpoints used in your app are secure. Use secure communication protocols like HTTPS and authenticate API calls to prevent unauthorized access.",
+        section4: {
+          title: "4. Implement Secure API Communication",
+          body: "Ensure that all API endpoints used in your app are secure. Use secure communication protocols like HTTPS and authenticate API calls to prevent unauthorized access.",
         },
-        {
-          sectionTitle: "5. Perform Security Audits",
-          sectionContent:
-            "Conduct regular security audits and penetration testing to identify potential vulnerabilities and address them before they can be exploited.",
+        section5: {
+          title: "5. Perform Security Audits",
+          body: "Conduct regular security audits and penetration testing to identify potential vulnerabilities and address them before they can be exploited.",
         },
-      ],
+      },
     },
     {
       id: "13",
@@ -327,303 +334,125 @@ const Blogs = () => {
         "A slow app can drive users away. Learn how to optimize your mobile app's performance to ensure fast load times and smooth interactions.",
       subTitle:
         "Optimize your app’s performance to boost user engagement and retention.",
-      content: [
-        {
-          sectionTitle: "1. Optimize Images and Media Files",
-          sectionContent:
-            "Reduce the size of images and media files without compromising quality. Use formats like WebP for images and compress video files to speed up loading times.",
+      content: {
+        introduction:
+          "A slow app can drive users away. Learn how to optimize your mobile app's performance to ensure fast load times and smooth interactions.",
+        section1: {
+          title: "1. Optimize Images and Media Files",
+          body: "Reduce the size of images and media files without compromising quality. Use formats like WebP for images and compress video files to speed up loading times.",
         },
-        {
-          sectionTitle: "2. Minimize HTTP Requests",
-          sectionContent:
-            "Reduce the number of HTTP requests made by your app to decrease load times. Combine scripts and stylesheets, and use caching to minimize server requests.",
+        section2: {
+          title: "2. Minimize HTTP Requests",
+          body: "Reduce the number of HTTP requests made by your app to decrease load times. Combine scripts and stylesheets, and use caching to minimize server requests.",
         },
-        {
-          sectionTitle: "3. Optimize Code and Algorithms",
-          sectionContent:
-            "Ensure your app’s code is clean and efficient. Review algorithms to optimize performance, remove redundant code, and refactor inefficient sections to improve speed.",
+        section3: {
+          title: "3. Optimize Code and Algorithms",
+          body: "Ensure your app’s code is clean and efficient. Review algorithms to optimize performance, remove redundant code, and refactor inefficient sections to improve speed.",
         },
-        {
-          sectionTitle: "4. Leverage Lazy Loading",
-          sectionContent:
-            "Implement lazy loading for images, videos, and other resources. Load only what is necessary at the time and load other elements in the background to save resources.",
+        section4: {
+          title: "4. Leverage Lazy Loading",
+          body: "Implement lazy loading for images, videos, and other resources. Load only what is necessary at the time and load other elements in the background to save resources.",
         },
-        {
-          sectionTitle: "5. Monitor and Analyze Performance",
-          sectionContent:
-            "Use performance monitoring tools to track the app’s performance and identify areas for improvement. Regular analysis allows you to fix issues before they impact user experience.",
+        section5: {
+          title: "5. Monitor and Analyze Performance",
+          body: "Use performance monitoring tools to track the app’s performance and identify areas for improvement. Regular analysis allows you to fix issues before they impact user experience.",
         },
-      ],
+      },
     },
   ];
-  // const articlesTwo = [
-  //   {
-  //     id: "1",
-  //     title: "A Beginner’s Guide to Mobile App UI/UX Design",
-  //     category: "Design",
-  //     cardImage: "https://via.placeholder.com/400x200.png?text=UI+UX+Design",
-  //     description:
-  //       "This guide will help you understand the basics of UI/UX design for mobile apps and how to create user-friendly interfaces that enhance the user experience.",
-  //     subTitle:
-  //       "Create intuitive and user-friendly interfaces for mobile apps.",
-  //     content: [
-  //       {
-  //         sectionTitle: "1. Understand User Needs",
-  //         sectionContent:
-  //           "Effective UI/UX design begins with understanding your users’ needs. Research your target audience to ensure the app is aligned with their preferences and pain points.",
-  //       },
-  //       {
-  //         sectionTitle: "2. Simplify Navigation",
-  //         sectionContent:
-  //           "Make navigation intuitive. Use a clear layout with easily accessible buttons, simple menus, and a logical flow to guide users through the app effortlessly.",
-  //       },
-  //       {
-  //         sectionTitle: "3. Focus on Consistency",
-  //         sectionContent:
-  //           "Consistency is key to creating a seamless user experience. Use consistent design elements like color schemes, fonts, and icons to avoid confusion and ensure usability.",
-  //       },
-  //       {
-  //         sectionTitle: "4. Prioritize Performance",
-  //         sectionContent:
-  //           "Good UI/UX design isn't just about appearance; it also affects app performance. Optimize loading times, reduce lag, and ensure smooth transitions to keep users engaged.",
-  //       },
-  //       {
-  //         sectionTitle: "5. Test Your Designs",
-  //         sectionContent:
-  //           "Conduct usability testing to gather feedback on your design. Iterate based on real user interactions to refine and improve the app's overall user experience.",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: "2",
-  //     title: "Essential Tips for Building a Secure Mobile App",
-  //     category: "Security",
-  //     cardImage: "https://via.placeholder.com/400x200.png?text=Secure+App",
-  //     description:
-  //       "In today’s digital world, security is paramount. Learn key tips to build a secure mobile app and protect user data from potential threats.",
-  //     subTitle: "Secure your app and safeguard user data from cyber threats.",
-  //     content: [
-  //       {
-  //         sectionTitle: "1. Use Strong Encryption",
-  //         sectionContent:
-  //           "Encrypt sensitive data both at rest and in transit to prevent unauthorized access. Use industry-standard encryption algorithms like AES for robust protection.",
-  //       },
-  //       {
-  //         sectionTitle: "2. Secure User Authentication",
-  //         sectionContent:
-  //           "Implement multi-factor authentication (MFA) and strong password policies to ensure only authorized users can access your app. Consider biometric authentication for added security.",
-  //       },
-  //       {
-  //         sectionTitle: "3. Regularly Update Your App",
-  //         sectionContent:
-  //           "Keep your app updated with the latest security patches. Vulnerabilities are often discovered over time, so it’s important to release updates to fix any potential security flaws.",
-  //       },
-  //       {
-  //         sectionTitle: "4. Implement Secure API Communication",
-  //         sectionContent:
-  //           "Ensure that all API endpoints used in your app are secure. Use secure communication protocols like HTTPS and authenticate API calls to prevent unauthorized access.",
-  //       },
-  //       {
-  //         sectionTitle: "5. Perform Security Audits",
-  //         sectionContent:
-  //           "Conduct regular security audits and penetration testing to identify potential vulnerabilities and address them before they can be exploited.",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: "3",
-  //     title:
-  //       "How to Optimize Mobile App Performance for Better User Experience",
-  //     category: "Performance",
-  //     cardImage: "https://via.placeholder.com/400x200.png?text=App+Performance",
-  //     description:
-  //       "A slow app can drive users away. Learn how to optimize your mobile app's performance to ensure fast load times and smooth interactions.",
-  //     subTitle:
-  //       "Optimize your app’s performance to boost user engagement and retention.",
-  //     content: [
-  //       {
-  //         sectionTitle: "1. Optimize Images and Media Files",
-  //         sectionContent:
-  //           "Reduce the size of images and media files without compromising quality. Use formats like WebP for images and compress video files to speed up loading times.",
-  //       },
-  //       {
-  //         sectionTitle: "2. Minimize HTTP Requests",
-  //         sectionContent:
-  //           "Reduce the number of HTTP requests made by your app to decrease load times. Combine scripts and stylesheets, and use caching to minimize server requests.",
-  //       },
-  //       {
-  //         sectionTitle: "3. Optimize Code and Algorithms",
-  //         sectionContent:
-  //           "Ensure your app’s code is clean and efficient. Review algorithms to optimize performance, remove redundant code, and refactor inefficient sections to improve speed.",
-  //       },
-  //       {
-  //         sectionTitle: "4. Leverage Lazy Loading",
-  //         sectionContent:
-  //           "Implement lazy loading for images, videos, and other resources. Load only what is necessary at the time and load other elements in the background to save resources.",
-  //       },
-  //       {
-  //         sectionTitle: "5. Monitor and Analyze Performance",
-  //         sectionContent:
-  //           "Use performance monitoring tools to track the app’s performance and identify areas for improvement. Regular analysis allows you to fix issues before they impact user experience.",
-  //       },
-  //     ],
-  //   },
-  // ];
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [visibleCount, setVisibleCount] = useState(3); // Default show 3 articles
 
-  const toggleVisibility = () => {
-    setIsExpanded(!isExpanded);
-    setVisibleCount(isExpanded ? 3 : 8); // Show 3 when collapsed, 8 when expanded
-  };
-  const getShortDescription = (description: string) => {
-    // Split the description into an array of words
-    const words = description.split(" ");
-    // Take the first 30 words and join them back into a string
-    const shortDescription = words.slice(0, 30).join(" ");
-    // Add "..." if the description is longer than 30 words
-    return words.length > 30 ? `${shortDescription}...` : shortDescription;
-  };
+  useEffect(() => {
+    const foundArticle = articles.find((data) => data.id == Number(params.id));
+    setArticle(foundArticle || null);
+  }, [params.id]); // Dependency on params.id to trigger only when it changes
+  console.log(params.id);
+  if (!article) {
+    return <p>Loading...</p>; // or show some fallback UI if article is not found
+  }
 
   return (
-    <main className="bg-gradient-to-bl from-[#93239d] via-[#190b34] to-[#280d42] pt-20">
-      <div className="min-h-screen text-white py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          {/* Header Section */}
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold mb-4">Blogs & News</h1>
-            <p className="text-xl">
-              Creativity is a highfalutin word for the work I have to <br /> do
-              between now and Tuesday.
-            </p>
-          </div>
-
-          {/* Main Blog Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 pt-14">
-            {/* Left Blog Section */}
-            <div className="space-y-6">
-              <div className="">
-                <p className="text-sm text-purple-300 uppercase mb-2">
-                  From the Blog
-                </p>
-                <h2 className="text-3xl font-bold mb-4">
-                  Design is intelligence <br /> made visible.
-                </h2>
-                <p className="mb-4">
-                  Responsive web design is essential for providing a seamless
-                  <br /> user experience across all devices.
-                </p>
-                <Link
-                  href="/blogSingle/6"
-                  className="py-[10px] w-36 text-center border-2 flex items-center justify-center gap-2 border-[#7272723c]  bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 rounded-md"
-                >
-                  Read more →
-                </Link>
-              </div>
-            </div>
-
-            {/* Right Blog Section */}
-            <div className="space-y-4">
-              {articles.slice(0, visibleCount).map((article) => (
-                <Link
-                  key={article.id}
-                  href={`/blogSingle/${article.id}`}
-                  className="bg-[#a545b2]/25 rounded-tl-2xl h-[170px] backdrop-blur-md p-2 flex gap-7 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
-                >
-                  <div>
-                    <img
-                      className="w-[400px] h-[150px] p-1 rounded-tl-2xl"
-                      src={article.cardImage}
-                      alt={article.title}
-                    />
-                  </div>
-                  <div className="p-1">
-                    <p className="text-sm bg-pink-400 w-20 rounded-xl text-center">
-                      {article.category}
-                    </p>
-                    <h3 className="text-lg font-semibold mt-2">
-                      {article.title}
-                    </h3>
-                  </div>
-                </Link>
-              ))}
-
-              {/* Toggle Button to Show More / Show Less */}
-              <div className="flex justify-center">
-                <button
-                  onClick={toggleVisibility}
-                  className="mt-2 py-2 px-6 bg-pink-400 text-white rounded-xl hover:bg-pink-500 transition-all duration-300"
-                >
-                  {isExpanded ? "Show Less" : "Show More"}
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom Blog Cards */}
-          <div className="mt-16 space-y-12">
-            <div className="border-b pb-16">
-              <p className="text-sm text-purple-300 uppercase mb-2">
-                From the Blog
-              </p>
-              <h2 className="text-3xl font-bold mb-4">
-                Design is intelligence made visible.
-              </h2>
-              <p className="text-sm">
-                Creativity is a highfalutin word for the work I have to do
-                between now and Tuesday.
-              </p>
-            </div>
-
-            {/* Blog Cards */}
-
-            <div className="flex gap-10">
-              {articles.slice(0, 3).map((article) => (
-                <div key={article.id} className="">
-                  <div className="relative">
-                    <span className="text-xs bg-pink-500 px-2 py-1 rounded-full uppercase">
-                      {article.category}
-                    </span>
-                    <h3 className="mt-7 text-lg font-semibold">
-                      <Link href={`/blogSingle/1${article.id}`}>
-                        <span className="text-xl font-bold">
-                          {" "}
-                          {article.subTitle}
-                        </span>
-                        <p className="mt-2 text-purple-300">
-                          {getShortDescription(article.description)}
-                          <span className="ms-5 text-blue-600">Read More</span>
-                        </p>
-                      </Link>
-                    </h3>
-
-                    {/* Display first 30 words of the description */}
-
-                    <div className="flex items-center gap-3 mt-7">
-                      <img
-                        className="w-[50px] h-[50px] rounded-full"
-                        src="https://blog.feedspot.com/wp-content/uploads/2018/04/react.jpg"
-                        alt=""
-                      />
-                      <div className=" text-xs text-purple-400">
-                        <p className="text-xl font-bold">Shakil Ahmed</p>
-                        <p>Jun 27, 2020 • 6 min read</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+    <main className="bg-gradient-to-bl from-[#93239d] via-[#190b34] to-[#280d42] min-h-screen pt-32 text-white">
+      <h1 className="text-center font-bold text-4xl">Blog Details</h1>
+      <h3 className="text-center text-2xl font-semibold pt-4">
+        {article.title || "Blog not found"}
+      </h3>
+      <div className="grid grid-cols-2 justify-items-center gap-10 pt-20 max-w-6xl mx-auto">
+        <div>
+          <img
+            src={article.cardImage}
+            alt={article.title}
+            className="w-[600px] h-auto rounded-xl"
+          />
+        </div>
+        <div>
+          <p className="text-xl">{article.description}</p>
         </div>
       </div>
-      <img
-        className="w-full pt-14"
-        src="https://i.postimg.cc/kgGNMLQ8/home14-bg4.png"
-        alt=""
-      />
+      <div className="text-center mt-10">
+        <p className="text-lg bg-pink-400 px-4 py-2 rounded-xl inline-block">
+          Category: {article.category}
+        </p>
+        <p className="mt-2 text-lg font-medium">{article.subTitle}</p>
+      </div>
+
+      {/* Display article content */}
+      <div className="py-20 px-10 max-w-7xl mx-auto">
+        <h4 className="text-2xl font-semibold">
+          {article.content.introduction}
+        </h4>
+
+        {article.content.section1 && (
+          <div className="mt-10">
+            <h5 className="text-xl font-semibold">
+              {article.content.section1.title}
+            </h5>
+            <p className="text-lg">{article.content.section1.body}</p>
+          </div>
+        )}
+
+        {article.content.section2 && (
+          <div className="mt-10">
+            <h5 className="text-xl font-semibold">
+              {article.content.section2.title}
+            </h5>
+            <p className="text-lg">{article.content.section2.body}</p>
+          </div>
+        )}
+
+        {article.content.section3 && (
+          <div className="mt-10">
+            <h5 className="text-xl font-semibold">
+              {article.content.section3.title}
+            </h5>
+            <p className="text-lg">{article.content.section3.body}</p>
+          </div>
+        )}
+
+        {article.content.section4 && (
+          <div className="mt-10">
+            <h5 className="text-xl font-semibold">
+              {article.content.section4.title}
+            </h5>
+            <p className="text-lg">{article.content.section4.body}</p>
+          </div>
+        )}
+
+        {article.content.section5 && (
+          <div className="mt-10">
+            <h5 className="text-xl font-semibold">
+              {article.content.section5.title}
+            </h5>
+            <p className="text-lg">{article.content.section5.body}</p>
+          </div>
+        )}
+
+        <div className="mt-10">
+          <h5 className="text-xl font-semibold">Conclusion</h5>
+          <p className="text-lg">{article.content.conclusion}</p>
+        </div>
+      </div>
     </main>
   );
 };
 
-export default Blogs;
+export default BlogSingle;
