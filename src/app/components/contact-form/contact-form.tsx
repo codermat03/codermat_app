@@ -1,8 +1,35 @@
-/* eslint-disable react/no-unescaped-entities */
-import React from "react";
-import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+"use client";
 
+import React, { useRef, useState } from "react";
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import emailjs from "emailjs-com";
 const ContactForm = () => {
+  const formRef = useRef(); // Reference for the form
+  const [successMessage, setSuccessMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_u0e6rrn", // Service ID
+        "template_ctk2p65", // Template ID
+        formRef.current, // Pass the form reference
+        "UANiDaV9CE5zcmzkX" // Public Key
+      )
+      .then(
+        (result) => {
+          console.log("Success:", result.text);
+          setSuccessMessage("Message sent successfully!");
+          formRef.current.reset(); // Clear the form
+        },
+        (error) => {
+          console.log("Error:", error.text);
+          setSuccessMessage("Failed to send the message. Please try again.");
+        }
+      );
+  };
+
   return (
     <section className="text-white md:py-20 py-10">
       <div className="mx-auto max-w-7xl px-4 grid md:grid-cols-2 content-center gap-8">
@@ -23,7 +50,6 @@ const ContactForm = () => {
           </div>
           <div className="flex items-center">
             <AiOutlinePhone className="text-xl mr-2" />
-
             <a href="tel:+14805550103" className="text-white">
               +8801910882903{" "}
             </a>
@@ -36,22 +62,26 @@ const ContactForm = () => {
         {/* Contact Form Section */}
         <div>
           <h3 className="text-2xl font-semibold mb-4">Send us a message</h3>
-          <form className="grid gap-4">
+          <form ref={formRef} className="grid gap-4" onSubmit={sendEmail}>
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm mb-2">Your name</label>
                 <input
                   type="text"
+                  name="user_name"
                   placeholder="John Doe"
                   className="w-full p-3 bg-[#ffffff00] border-[1px] border-[#6461616d] rounded-lg text-white focus:outline-none"
+                  required
                 />
               </div>
               <div>
                 <label className="block text-sm mb-2">Email address</label>
                 <input
                   type="email"
+                  name="user_email"
                   placeholder="john@gmail.com"
                   className="w-full p-3 bg-[#ffffff00] border-[1px] border-[#6461616d] rounded-lg text-white focus:outline-none"
+                  required
                 />
               </div>
             </div>
@@ -60,24 +90,30 @@ const ContactForm = () => {
                 <label className="block text-sm mb-2">Phone number</label>
                 <input
                   type="text"
+                  name="user_phone"
                   placeholder="20 111 2345 6789"
                   className="w-full p-3 bg-[#ffffff00] border-[1px] border-[#6461616d] rounded-lg text-white focus:outline-none"
+                  required
                 />
               </div>
               <div>
                 <label className="block text-sm mb-2">Subject</label>
                 <input
                   type="text"
+                  name="subject"
                   placeholder="Type here"
                   className="w-full p-3 bg-[#ffffff00] border-[1px] border-[#6461616d] rounded-lg text-white focus:outline-none"
+                  required
                 />
               </div>
             </div>
             <div>
               <label className="block text-sm mb-2">Message</label>
               <textarea
+                name="message"
                 placeholder="Type here"
                 className="w-full h-[150px] resize-none p-3 bg-[#ffffff00] border-[1px] border-[#6461616d] rounded-lg text-white focus:outline-none"
+                required
               ></textarea>
             </div>
             <div>
@@ -89,6 +125,11 @@ const ContactForm = () => {
               </button>
             </div>
           </form>
+
+          {/* Success/Error Message */}
+          {successMessage && (
+            <p className="mt-4 text-center text-white">{successMessage}</p>
+          )}
         </div>
       </div>
     </section>
