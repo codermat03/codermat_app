@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import Link from "next/link";
 
 export default function HeroSection() {
   const form = useRef();
@@ -31,7 +32,7 @@ export default function HeroSection() {
 
   return (
     <div>
-      <section className="pt-20 pb-10 md:pb-0 md:pt-0 min-h-screen flex items-center justify-center md:p-3 lg:p-8">
+      <section className="pt-20 pb-10 md:pb-0 md:pt-0 flex items-center justify-center md:p-3 lg:p-8">
         <div className="flex flex-col gap-2 lg:gap-0 items-center justify-center md:flex-row max-w-6xl w-full text-white">
           {/* Left Section */}
           <div className="flex-1 mb-8 md:mb-0">
@@ -47,9 +48,11 @@ export default function HeroSection() {
               and collaboration.
             </p>
             <div className="flex md:justify-start justify-center">
-              <button className="border-2 gap-2 border-[#7272723c] bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 py-2 rounded-md mt-5 bottom-5">
-                Our Services
-              </button>
+              <Link href={"/services"}>
+                <button className="border-2 gap-2 border-[#7272723c] bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 py-2 rounded-md mt-5 bottom-5">
+                  Our Services
+                </button>
+              </Link>
             </div>
           </div>
 

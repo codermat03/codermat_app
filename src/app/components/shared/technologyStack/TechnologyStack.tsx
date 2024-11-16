@@ -78,7 +78,7 @@ const TechnologyStack = () => {
         </div>
       ) : (
         // Grid of technology stack
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 mt-20 justify-items-center z-0">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 mt-20 justify-items-center z-0">
           {techStack.map((stack) => (
             <StackCard stack={stack} key={stack.id} />
           ))}

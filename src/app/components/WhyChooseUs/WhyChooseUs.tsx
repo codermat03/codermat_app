@@ -4,7 +4,7 @@ import React from "react";
 
 const WhyChooseUs = () => {
   return (
-    <div className="">
+    <div className="md:mx-auto mx-8 md:max-w-[1480px]">
       <div className="md:py-32 py-20 bg-[url('https://i.ibb.co.com/Bq50dx0/chooseusbg.png')] bg-cover">
         <h1 className="text-center font-bold md:text-4xl text-2xl">
           Why choose CoderMat?

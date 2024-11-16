@@ -488,7 +488,7 @@ const Blogs = () => {
   return (
     <main className="bg-gradient-to-bl from-[#93239d] via-[#190b34] to-[#280d42] pt-20">
       <div className="min-h-screen text-white py-16">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1480px] mx-auto px-4">
           {/* Header Section */}
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold mb-4">Blogs & News</h1>

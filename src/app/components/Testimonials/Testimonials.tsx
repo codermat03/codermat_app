@@ -3,7 +3,7 @@ import { FaStar, FaRegStar } from "react-icons/fa";
 
 const Testimonials = () => {
   return (
-    <div className="md:mx-20 mx-8">
+    <div className="md:mx-auto mx-8 md:max-w-7xl">
       <div className="md:py-20 py-10">
         <h1 className="text-center font-bold md:text-4xl text-2xl">
           What People Are Saying

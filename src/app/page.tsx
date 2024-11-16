@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="bg-gradient-to-bl from-[#93239d] via-[#190b34] to-[#280d42] border-b">
+      <section className="bg-gradient-to-bl md:pt-24 from-[#93239d] via-[#190b34] to-[#280d42] border-b">
         <HeroSection />
       </section>
 
@@ -57,15 +57,15 @@ export default function Home() {
         <WhyChooseUs />
       </section>
 
-      <section className="text-white bg-gradient-to-b from-[#181619] to-[#1F122A]">
+      <section className="text-white bg-gradient-to-b from-[#181619] to-[#240F35]">
         <Pricing />
       </section>
 
-      <section className="bg-gradient-to-t from-[#240f35] to-[#1F122A] text-white">
+      {/* <section className="bg-gradient-to-t from-[#240f35] to-[#1F122A] text-white">
         <div>
           <Testimonials />
         </div>
-      </section>
+      </section> */}
 
       <section className="bg-gradient-to-t from-[#181819] to-[#240f35] text-white">
         <Projetcs />
