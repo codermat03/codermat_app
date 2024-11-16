@@ -35,7 +35,7 @@ export default function Home() {
         <HeroSection />
       </section>
 
-      <section className="bg-gradient-to-bl from-[#190b34] via-[#280d42] to-[#280d42]">
+      <section className="bg-gradient-to-b from-[#21112E] via-[#280d42] to-[#280d42]">
         <Services />
       </section>
 
