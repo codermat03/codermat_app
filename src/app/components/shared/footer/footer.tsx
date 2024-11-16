@@ -125,48 +125,48 @@ const Footer = () => {
             <a
               target="_blank"
               href="https://www.facebook.com/codermat"
-              className="w-10 h-10 bg-cover"
+              className="w-8 h-8 rounded-full bg-cover hover:bg-[#93239d] duration-150"
             >
               {" "}
               <img
                 className=""
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png"
+                src="https://i.ibb.co.com/RTMngt9/logo-facebook.png"
                 alt=""
               />
             </a>
             <a
               target="_blank"
               href="https://x.com/tweeter?lang=en"
-              className="w-10 h-10 bg-cover"
+              className="w-8 h-8 rounded-xl bg-cover hover:bg-[#93239d] duration-150"
             >
               {" "}
               <img
                 className=""
-                src="https://freepnglogo.com/images/all_img/1691832581twitter-x-icon-png.png"
+                src="https://i.ibb.co.com/yh5pjSH/logo-twitter.png"
                 alt=""
               />
             </a>
             <a
               target="_blank"
               href="https://www.instagram.com/shake_shakx/"
-              className="w-10 h-10 bg-cover"
+              className="w-8 h-8 rounded-xl bg-cover hover:bg-[#93239d] duration-150"
             >
               {" "}
               <img
                 className=""
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"
+                src="https://i.ibb.co.com/9hkzwqC/logo-instagram.png"
                 alt=""
               />
             </a>
             <a
               target="_blank"
               href="https://github.com/codermat03"
-              className="w-10 h-10 bg-cover"
+              className="w-8 h-8 rounded-full bg-cover hover:bg-[#93239d] duration-150"
             >
               {" "}
               <img
                 className="p"
-                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                src="https://i.ibb.co.com/Zf6dH50/logo-github.png"
                 alt=""
               />
             </a>
@@ -181,8 +181,8 @@ const Footer = () => {
           rel="noopener noreferrer"
           aria-label="Open WhatsApp"
         >
-          <div className="fixed bottom-[80px] right-2">
-            <button className="rounded-full hover:bg-white hover:text-black transition-all duration-200">
+          <div className="fixed bottom-[80px] right-8">
+            <button className="rounded-full hover:bg-[#66237e] hover:text-black transition-all duration-200">
               <img
                 className="w-14"
                 src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
