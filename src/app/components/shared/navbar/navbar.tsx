@@ -40,9 +40,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`roboto-regular  md:py-3 fixed top-0 left-0 w-full transition-colors duration-300 z-30  ${
-        scrolled ? "bg-[#21112e] bg-opacity-85 shadow-2xl " : "bg-transparent "
-      }`}
+      className={`roboto-regular  md:py-3 fixed top-0 left-0 w-full transition-colors duration-300 z-30  ${scrolled ? "bg-[#21112e] bg-opacity-85 shadow-2xl " : "bg-transparent "
+        }`}
     >
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
         <div className="relative flex items-center justify-between md:h-16">
@@ -63,11 +62,10 @@ export default function Navbar() {
               <Link
                 href="/"
                 onClick={() => setActiveLink("home")}
-                className={`${
-                  activeLink === "home"
-                    ? "bg-white/20 text-white"
-                    : "text-white hover:bg-white/20 hover:text-white"
-                } px-3 py-2 rounded-md  font-medium`}
+                className={`${activeLink === "home"
+                  ? "bg-white/20 text-white"
+                  : "text-white hover:bg-white/20 hover:text-white"
+                  } px-3 py-2 rounded-md  font-medium`}
               >
                 Home
               </Link>
@@ -83,11 +81,10 @@ export default function Navbar() {
                     setActiveLink("services");
                     setDropdownOpenTech(!dropdownOpenTech);
                   }}
-                  className={`${
-                    activeLink === "services"
-                      ? "bg-white/20 text-white"
-                      : "text-white hover:bg-white/20 hover:text-white"
-                  } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
+                  className={`${activeLink === "services"
+                    ? "bg-white/20 text-white"
+                    : "text-white hover:bg-white/20 hover:text-white"
+                    } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
                 >
                   Services
                   <IoIosArrowDown></IoIosArrowDown>
@@ -285,11 +282,10 @@ export default function Navbar() {
                     setActiveLink("technologies");
                     setDropdownOpen(!dropdownOpen);
                   }}
-                  className={`${
-                    activeLink === "technologies"
-                      ? "bg-white/20 text-white"
-                      : "text-white hover:bg-white/20 hover:text-white"
-                  } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
+                  className={`${activeLink === "technologies"
+                    ? "bg-white/20 text-white"
+                    : "text-white hover:bg-white/20 hover:text-white"
+                    } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
                 >
                   Technologies
                   <IoIosArrowDown />
@@ -577,41 +573,38 @@ export default function Navbar() {
               <Link
                 href="/about"
                 onClick={() => setActiveLink("About ")}
-                className={`${
-                  activeLink === "About "
-                    ? "bg-white/20 text-white"
-                    : "text-white hover:bg-white/20 hover:text-white"
-                } px-3 py-2 rounded-md  font-medium hidden lg:block`}
+                className={`${activeLink === "About "
+                  ? "bg-white/20 text-white"
+                  : "text-white hover:bg-white/20 hover:text-white"
+                  } px-3 py-2 rounded-md  font-medium hidden lg:block`}
               >
                 About
               </Link>
               <Link
                 href="/projects"
                 onClick={() => setActiveLink("projects")}
-                className={`${
-                  activeLink === "projects"
-                    ? "bg-white/20 text-white"
-                    : "text-white hover:bg-white/20 hover:text-white"
-                } px-3 py-2 rounded-md  font-medium hidden lg:block`}
+                className={`${activeLink === "projects"
+                  ? "bg-white/20 text-white"
+                  : "text-white hover:bg-white/20 hover:text-white"
+                  } px-3 py-2 rounded-md  font-medium hidden lg:block`}
               >
                 Projects
               </Link>
               <Link
                 href="/blogs"
                 onClick={() => setActiveLink("Blogs")}
-                className={`${
-                  activeLink === "Blogs"
-                    ? "bg-white/20 text-white"
-                    : "text-white hover:bg-white/20 hover:text-white"
-                } px-3 py-2 rounded-md  font-medium hidden lg:block`}
+                className={`${activeLink === "Blogs"
+                  ? "bg-white/20 text-white"
+                  : "text-white hover:bg-white/20 hover:text-white"
+                  } px-3 py-2 rounded-md  font-medium hidden lg:block`}
               >
                 Blogs & News
               </Link>
             </div>
           </div>
 
-          {/* Add this for mid-sized devices */}
-          <div className="md:flex relative block lg:hidden">
+          {/* Add this for mid-sized (tablet) devices */}
+          <div className="md:flex relative hidden lg:hidden">
             <span
               onClick={() => setDropdownOpenNav(!dropdownOpenNav)}
               className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium cursor-pointer"
@@ -622,12 +615,8 @@ export default function Navbar() {
               <div className="absolute top-12 bg-white text-black rounded-md w-40 shadow-lg p-2">
                 <Link
                   href="/about"
-                  onClick={() => setActiveLink("About ")}
-                  className={`${
-                    activeLink === "About "
-                      ? "bg-white/20 text-white"
-                      : "text-white hover:bg-white/20 hover:text-white"
-                  } px-3 py-2 rounded-md  font-medium`}
+                  onClick={() => setActiveLink("About")}
+                  className={`block px-3 py-2 rounded-md font-medium ${activeLink === "About" ? "bg-gray-100 text-black" : "hover:bg-gray-200"}`}
                 >
                   About
                 </Link>
@@ -668,7 +657,7 @@ export default function Navbar() {
           <div className="sm:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center z-50 justify-center p-2 rounded-md hover:bg-gradient-to-l from-[#49156D] to-[#49165C] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 focus:ring-1 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded={isOpen}
             >
@@ -699,287 +688,159 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`${isOpen ? "block" : "hidden"} sm:hidden`}
-        id="mobile-menu"
+        className={`sm:hidden fixed top-0 left-0 w-full h-full bg-gradient-to-l from-[#36184bdd] to-[#49165C] text-white z-40 transition-transform ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
-        <div className=" bg-black px-2 pt-2 pb-3 space-y-1">
+        <div className="flex justify-between items-center px-4 py-3 border-b border-gray-700">
+          <h2 className="text-white text-lg font-bold">Menu</h2>
+        </div>
+        <div className="px-4 py-6 space-y-4">
           <a
             href="#"
             onClick={() => setActiveLink("home")}
-            className={`${
-              activeLink === "home"
-                ? "bg-gray-900 text-white"
-                : "text-white hover:bg-gray-700 hover:text-white"
-            } block px-3 py-2 rounded-md text-base font-medium`}
+            className={`block px-3 py-2 rounded-md text-base font-medium ${activeLink === "home" ? "bg-gradient-to-l from-[#49156D] to-[#930087] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150"
+              :
+              "hover:bg-gradient-to-l from-[#49156D] to-[#49165C] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150"}`}
           >
             Home
           </a>
-          <div
-            className=""
-            onMouseEnter={() => setDropdownOpenTech(true)}
-            onMouseLeave={() => setDropdownOpenTech(false)}
-          >
+          <div className="relative">
             <a
               href="#"
               onClick={() => {
                 setActiveLink("services");
-                setDropdownOpenTech(!dropdownOpenTech);
+                setDropdownOpenTech(!dropdownOpenTech); // Toggle services dropdown
               }}
-              className={`${
-                activeLink === "services"
-                  ? "bg-gray-900 text-white"
-                  : "text-white hover:bg-gray-700 hover:text-white"
-              } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
+              className={`px-3 py-2 rounded-md text-base font-medium flex items-center justify-between ${activeLink === "services" ? "bg-gradient-to-l from-[#49156D] to-[#930087] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150" : "hover:bg-gradient-to-l from-[#49156D] to-[#49165C] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150"}`}
             >
               Services
-              <IoIosArrowDown></IoIosArrowDown>
+              <IoIosArrowDown className={`transform transition-transform duration-300 ${dropdownOpenTech ? "rotate-180" : ""}`} />
             </a>
-            {dropdownOpenTech && (
-              <div className="w-max bg-white text-black rounded-md shadow-lg p-6">
-                <div>
-                  <ul className="font-semibold">
-                    <li>Custom Web Application Development</li>
-                    <li>Web Portal Development</li>
-                    <li>E-commerce Development</li>
-                    <li>WordPress Development</li>
-                    <li>UI & UX Design</li>
-                    <li>Front-end Web Development</li>
-                    <li> Back-end Web Development</li>
-                  </ul>
-                </div>
+
+            <div
+              className={`overflow-hidden transition-[max-height] duration-300 ease-in-out ${dropdownOpenTech ? "max-h-[500px]" : "max-h-0"}`}
+            >
+              <div className="backdrop-blur-3xl bg-[#381c4489] border-[#72006A] border-2 rounded-md text-white shadow-lg mt-2 p-4">
+                <ul className="space-y-2">
+                  <li className="cursor-pointer relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-full">
+                    Custom Web Application Development
+                  </li>
+                  <li className="cursor-pointer relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-full">
+                    Web Portal Development
+                  </li>
+                  <li className="cursor-pointer relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-full">
+                    E-commerce Development
+                  </li>
+                  <li className="cursor-pointer relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-full">
+                    WordPress Development
+                  </li>
+                  <br />
+                  <li className="cursor-pointer relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-full">
+                    UI & UX Design
+                  </li>
+                  <li className="cursor-pointer relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-full">
+                    Front-end Web Development
+                  </li>
+                  <li className="cursor-pointer relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-full">
+                    Back-end Web Development
+                  </li>
+                </ul>
               </div>
-            )}
+            </div>
           </div>
 
-          <div
-            className=""
-            onMouseEnter={() => setDropdownOpen(true)}
-            onMouseLeave={() => setDropdownOpen(false)}
-          >
+          <div className="relative">
             <a
               href="#"
               onClick={() => {
                 setActiveLink("technologies");
-                setDropdownOpen(!dropdownOpen);
+                setDropdownOpen(!dropdownOpen); // Toggle technologies dropdown
               }}
-              className={`${
-                activeLink === "technologies"
-                  ? "bg-gray-900 text-white"
-                  : "text-white hover:bg-gray-700 hover:text-white"
-              } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
+              className={`px-3 py-2 rounded-md text-base font-medium flex items-center justify-between ${activeLink === "technologies" ? "bg-gradient-to-l from-[#49156D] to-[#930087] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150" : "hover:bg-gradient-to-l from-[#49156D] to-[#49165C] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150"}`}
             >
               Technologies
-              <IoIosArrowDown />
+              <IoIosArrowDown className={`transform ${dropdownOpen ? "rotate-180" : ""}`} />
             </a>
-            {dropdownOpen && (
-              <div
-                className="backdrop-blur-3xl bg-[#381c4489] border-[#72006A] border-4 rounded-xl text-white shadow-lg p-6 grid grid-cols-3 gap-1"
-                style={{ minWidth: "300px" }} // Adjust minWidth as needed
-              >
-                {/* Technologies Dropdown Content */}
-                <div>
-                  <h3 className=" font-bold text-xl">MERN-Stack</h3>
-                  <ul>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <SiMongodb></SiMongodb>
-                        MongoDB
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <SiExpress></SiExpress>
-                        Express JS
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <FaReact></FaReact>
-                        React JS
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <FaNode />
-                        Node JS
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className=" font-bold text-xl">Front-End</h3>
-                  <ul>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <FaReact></FaReact>
-                        React JS
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <SiNextdotjs></SiNextdotjs>
-                        Next JS
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <IoLogoJavascript />
-                        JavaScript
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <SiTypescript />
-                        TypeScript
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <SiRedux />
-                        Redux
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <SiTailwindcss />
-                        Tailwind
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <FaBootstrap />
-                        Bootstrap
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <SiMui />
-                        Material UI
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className=" font-bold text-xl">Back-End</h3>
-                  <ul>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <FaNode />
-                        Node JS
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <SiExpress />
-                        Express JS
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <SiNpm />
-                        JWT
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <SiNpm />
-                        Zod
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <SiCloudinary />
-                        Cloudinary
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className=" font-bold text-xl">Database</h3>
-                  <ul>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <SiMongodb />
-                        MongoDB
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <SiNpm />
-                        Mongoose
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="py-1  flex items-center gap-2">
-                        <SiPostgresql />
-                        PostgresQL
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className=" font-bold text-xl">UI/UX Design</h3>
-                  <ul>
-                    <li>
-                      <a href="#" className="block py-1 ">
-                        Tell Us Your Requirments
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className=" font-bold text-xl">WordPress</h3>
-                  <ul>
-                    <li>
-                      <a href="#" className="block py-1 ">
-                        Tell Us Your Requirments
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+            <div
+              className={`transition-all duration-300 ease-out overflow-hidden ${dropdownOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+                } backdrop-blur-3xl bg-[#381c4489] border-[#72006A] border-2 rounded-md text-white shadow-lg`}
+            >
+              {/* Adjust grid-cols for responsiveness */}
+              <div className="px-4 pt-2">
+                <h3 className="font-bold">MERN-Stack</h3>
+                <ul>
+                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                    <SiMongodb /> MongoDB
+                  </li>
+                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                    <SiExpress /> Express JS
+                  </li>
+                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                    <FaReact /> React JS
+                  </li>
+                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                    <FaNode /> Node JS
+                  </li>
+                </ul>
               </div>
-            )}
-          </div>
 
+              <div className="mt-2 px-4 pb-2">
+                <h3 className="font-bold">Front-End</h3>
+                <ul>
+                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                    <FaReact /> React JS
+                  </li>
+                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                    <SiNextdotjs /> Next JS
+                  </li>
+                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                    <IoLogoJavascript /> JavaScript
+                  </li>
+                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                    <SiTypescript /> TypeScript
+                  </li>
+                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                    <SiRedux /> Redux
+                  </li>
+                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                    <SiTailwindcss /> Tailwind
+                  </li>
+                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                    <FaBootstrap /> Bootstrap
+                  </li>
+                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                    <SiMui /> Material UI
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <a
             href="#"
             onClick={() => setActiveLink("about")}
-            className={`${
-              activeLink === "about"
-                ? "bg-gray-900 text-white"
-                : "text-white hover:bg-gray-700 hover:text-white"
-            } block px-3 py-2 rounded-md text-base font-medium`}
+            className={`block px-3 py-2 rounded-md text-base font-medium ${activeLink === "about" ? "bg-gradient-to-l from-[#49156D] to-[#930087] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150" : "hover:bg-gradient-to-l from-[#49156D] to-[#49165C] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150"}`}
           >
             About
           </a>
           <a
             href="#"
             onClick={() => setActiveLink("projects")}
-            className={`${
-              activeLink === "projects"
-                ? "bg-gray-900 text-white"
-                : "text-white hover:bg-gray-700 hover:text-white"
-            } block px-3 py-2 rounded-md text-base font-medium`}
+            className={`block px-3 py-2 rounded-md text-base font-medium ${activeLink === "projects" ? "bg-gradient-to-l from-[#49156D] to-[#930087] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150" : "hover:bg-gradient-to-l from-[#49156D] to-[#49165C] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150"}`}
           >
             Projects
           </a>
           <a
             href="#"
-            onClick={() => setActiveLink("Blogs")}
-            className={`${
-              activeLink === "Blogs"
-                ? "bg-gray-900 text-white"
-                : "text-white hover:bg-gray-700 hover:text-white"
-            } block px-3 py-2 rounded-md text-base font-medium`}
+            onClick={() => setActiveLink("blogs")}
+            className={`block px-3 py-2 rounded-md text-base font-medium ${activeLink === "blogs" ? "bg-gradient-to-l from-[#49156D] to-[#930087] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150" : "hover:bg-gradient-to-l from-[#49156D] to-[#49165C] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150"}`}
           >
             Blogs & News
           </a>
-          <div className="flex justify-center border">
-            <button className="text-white ">Choose us</button>
+          <div className="flex justify-center">
+            <button className="text-white border-2 py-2 border-[#c1c1c13c]  bg-gradient-to-r hover:bg-gradient-to-l hover:from-[#49156D] hover:to-[#691a86] hover:border-[#a33ed2] from-[#6C00A5] to-[#6A0170] duration-150 px-5 rounded-md">Choose Us</button>
           </div>
         </div>
       </div>
+
     </nav>
   );
 }
