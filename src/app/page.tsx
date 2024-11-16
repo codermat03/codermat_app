@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useEffect, useState } from "react";
 import ContactForm from "./components/contact-form/contact-form";
 import HeroSection from "./components/hero-section/hero-section";
@@ -12,7 +12,6 @@ import Pricing from "./components/Pricing/Pricing";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import Projetcs from "./components/OurLatestProjects/Projetcs";
 import Loader from "./components/loader/Loader";
-
 
 export default function Home() {
   const [loading, setLoading] = useState(true);

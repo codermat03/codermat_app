@@ -119,33 +119,79 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-10 text-center border-t border-[#6461616d] pt-6">
+        <div className="mt-10 text-center border-t border-[#6461616d] pt-6 flex justify-between items-center pb-7">
           <p className="text-sm">© 2024 Codermat, Inc. All rights reserved</p>
           <div className="mt-4 flex justify-center space-x-6">
             <a
-              href="https://facebook.com"
-              className="w-6 h-6 bg-cover"
-              style={{ backgroundImage: `url('/icons/facebook.svg')` }}
-            ></a>
+              target="_blank"
+              href="https://www.facebook.com/codermat"
+              className="w-10 h-10 bg-cover"
+            >
+              {" "}
+              <img
+                className=""
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png"
+                alt=""
+              />
+            </a>
             <a
-              href="https://twitter.com"
-              className="w-6 h-6 bg-cover"
-              style={{ backgroundImage: `url('/icons/twitter.svg')` }}
-            ></a>
+              target="_blank"
+              href="https://x.com/tweeter?lang=en"
+              className="w-10 h-10 bg-cover"
+            >
+              {" "}
+              <img
+                className=""
+                src="https://freepnglogo.com/images/all_img/1691832581twitter-x-icon-png.png"
+                alt=""
+              />
+            </a>
             <a
-              href="https://instagram.com"
-              className="w-6 h-6 bg-cover"
-              style={{ backgroundImage: `url('/icons/instagram.svg')` }}
-            ></a>
+              target="_blank"
+              href="https://www.instagram.com/shake_shakx/"
+              className="w-10 h-10 bg-cover"
+            >
+              {" "}
+              <img
+                className=""
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"
+                alt=""
+              />
+            </a>
             <a
-              href="https://github.com"
-              className="w-6 h-6 bg-cover"
-              style={{ backgroundImage: `url('/icons/github.svg')` }}
-            ></a>
+              target="_blank"
+              href="https://github.com/codermat03"
+              className="w-10 h-10 bg-cover"
+            >
+              {" "}
+              <img
+                className="p"
+                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                alt=""
+              />
+            </a>
           </div>
         </div>
       </div>
       <div></div>
+      <div>
+        <a
+          href="https://wa.me/+8801910882903"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open WhatsApp"
+        >
+          <div className="fixed bottom-[80px] right-2">
+            <button className="rounded-full hover:bg-white hover:text-black transition-all duration-200">
+              <img
+                className="w-14"
+                src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
+                alt="WhatsApp"
+              />
+            </button>
+          </div>
+        </a>
+      </div>
     </footer>
   );
 };
