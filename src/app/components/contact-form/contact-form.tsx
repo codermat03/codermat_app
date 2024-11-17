@@ -1,37 +1,60 @@
 "use client";
-
 import React, { useRef, useState } from "react";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import emailjs from "emailjs-com";
-const ContactForm = () => {
-  const formRef = useRef(); // Reference for the form
-  const [successMessage, setSuccessMessage] = useState("");
+import { toast, Bounce, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-  const sendEmail = (e) => {
+const ContactForm = () => {
+  const formRef = useRef<HTMLFormElement>(null); // Correct type for formRef
+
+  const sendEmail = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_u0e6rrn", // Service ID
-        "template_ctk2p65", // Template ID
-        formRef.current, // Pass the form reference
-        "UANiDaV9CE5zcmzkX" // Public Key
-      )
-      .then(
-        (result) => {
-          console.log("Success:", result.text);
-          setSuccessMessage("Message sent successfully!");
-          formRef.current.reset(); // Clear the form
-        },
-        (error) => {
-          console.log("Error:", error.text);
-          setSuccessMessage("Failed to send the message. Please try again.");
-        }
-      );
+    if (formRef.current) {
+      try {
+        const result = await emailjs.sendForm(
+          "service_u0e6rrn", // Service ID
+          "template_ctk2p65", // Template ID
+          formRef.current, // Correct reference
+          "UANiDaV9CE5zcmzkX" // Public Key
+        );
+
+        // Display toast notification
+        toast.success("Message sent successfully!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
+
+        // Clear form inputs
+        formRef.current.reset();
+      } catch (error) {
+        toast.error("❌ Failed to send the message. Please try again.", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
+      }
+    } else {
+    }
   };
 
   return (
     <section className="text-white md:py-20 py-10">
+      <ToastContainer />
       <div className="mx-auto max-w-7xl px-4 grid md:grid-cols-2 content-center gap-8">
         {/* Contact Info Section */}
         <div>
@@ -39,8 +62,7 @@ const ContactForm = () => {
             Contact Info
           </h3>
           <p className="mb-6 text-[#898989]">
-            Reach Out to Us for Your Next Project or Inquiry. We're Here to
-            Help!
+            Reach Out to Us for Your Next Project or Inquiry. We're Here to Help!
           </p>
           <div className="flex items-center mb-4">
             <AiOutlineMail className="text-xl mr-2" />
@@ -51,7 +73,7 @@ const ContactForm = () => {
           <div className="flex items-center">
             <AiOutlinePhone className="text-xl mr-2" />
             <a href="tel:+14805550103" className="text-white">
-              +8801910882903{" "}
+              +8801910882903
             </a>
           </div>
           <div className="md:w-[400px]">
@@ -119,17 +141,12 @@ const ContactForm = () => {
             <div>
               <button
                 type="submit"
-                className="md:ms-auto mt-auto border-2 flex items-center gap-2 border-[#7272723c]  bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 py-2 rounded-md"
+                className="md:ms-auto mt-auto border-2 flex items-center gap-2 border-[#7272723c] bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 py-2 rounded-md"
               >
                 Submit
               </button>
             </div>
           </form>
-
-          {/* Success/Error Message */}
-          {successMessage && (
-            <p className="mt-4 text-center text-white">{successMessage}</p>
-          )}
         </div>
       </div>
     </section>
