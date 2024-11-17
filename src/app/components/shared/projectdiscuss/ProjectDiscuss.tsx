@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const ProjectDiscuss = () => {
@@ -15,7 +16,9 @@ const ProjectDiscuss = () => {
         SCHEDULE A DISCOVERY CALL
       </button>
       <p className="cursor-pointer underline">
-        Or, Use this form to tell us about your needs.
+        <Link href="/contactUs">
+          Or, Use this form to tell us about your needs.
+        </Link>
       </p>
     </div>
   );
