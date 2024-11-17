@@ -31,8 +31,6 @@ const SkeletonLoader = () => {
   );
 };
 
-
-
 const Services = () => {
   // State for services data
   const [services, setServices] = useState<service[]>([]);

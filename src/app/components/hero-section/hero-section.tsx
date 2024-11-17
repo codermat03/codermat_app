@@ -32,10 +32,39 @@ export default function HeroSection() {
 
   return (
     <div>
+      <style jsx>{`
+        @keyframes slideLeft {
+          0% {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+        @keyframes slideRight {
+          0% {
+            transform: translateX(100%);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+        .animate-left {
+          animation: slideLeft 1.5s ease-out;
+        }
+        .animate-right {
+          animation: slideRight 1.5s ease-out;
+        }
+      `}</style>
+
       <section className="pt-20 pb-10 md:pb-0 md:pt-0 flex items-center justify-center md:p-3 lg:p-8">
         <div className="flex flex-col gap-2 lg:gap-0 items-center justify-center md:flex-row max-w-6xl w-full text-white">
           {/* Left Section */}
-          <div className="flex-1 mb-8 md:mb-0">
+          <div className="flex-1 mb-8 md:mb-0 animate-left">
             <h1 className="text-2xl md:text-4xl lg:text-6xl text-center md:text-start font-bold">
               Bring Your Tech Ideas into Reality.
             </h1>
@@ -57,7 +86,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right Section */}
-          <div className="flex-1 flex justify-center items-center relative">
+          <div className="flex-1 flex justify-center items-center relative animate-right">
             {/* Back Rotated Card */}
             <div className="md:h-[530px] md:w-[390px] absolute bg-gradient-to-br from-[#350da5] via-[#7b0ea0] to-[#99058d] rounded-3xl transform -rotate-12 opacity-75"></div>
 
@@ -102,9 +131,10 @@ export default function HeroSection() {
                   />
                 </div>
                 <span className="absolute">
-                  {" "}
                   {successMessage && (
-                    <p className="text-green-400 text-center">{successMessage}</p>
+                    <p className="text-green-400 text-center">
+                      {successMessage}
+                    </p>
                   )}
                 </span>
                 <button
