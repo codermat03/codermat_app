@@ -8,6 +8,22 @@ export interface Stack {
     id: number;
     name: string;
 }
+export interface Article {
+    id: number;
+    title: string;
+    image: string;
+    description: string;
+    category: string;
+    subTitle: string;
+    cardImage: string;
+    content: {
+        introduction: string;
+        section1: { title: string; body: string };
+        section2: { title: string; body: string };
+        // Add other sections if necessary
+        conclusion: string;
+    };
+}
 export interface StackCardProps {
     stack: {
         stack: {

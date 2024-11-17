@@ -396,7 +396,7 @@ const BlogSingle = ({ params }: { params: Params }) => {
       </div>
 
       {/* Display article content */}
-      <div className="py-20 px-10 max-w-[1480px] mx-auto">
+      <div className="py-20 px-10 max-w-7xl mx-auto">
         <h4 className="text-2xl font-semibold">
           {article.content.introduction}
         </h4>
