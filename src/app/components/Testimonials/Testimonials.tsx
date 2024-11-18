@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { FaStar, FaRegStar } from "react-icons/fa";
 
@@ -15,10 +16,12 @@ const Testimonials = () => {
       <div className="grid md:grid-cols-3 gap-8 md:py-20">
         <div className="h-[300px] bg-[#5c347d41] backdrop-blur-md p-10 rounded-xl border-b-4 border-r-4 border-[#a033b1]">
           <div className="flex items-center gap-4">
-            <img
+            <Image
               className="size-16 object-cover rounded-full"
               src="https://static.vecteezy.com/system/resources/thumbnails/005/346/410/small_2x/close-up-portrait-of-smiling-handsome-young-caucasian-man-face-looking-at-camera-on-isolated-light-gray-studio-background-photo.jpg"
               alt=""
+              width={64}
+              height={64}
             />
             <div className="flex flex-col gap-3">
               <h1>
@@ -41,10 +44,12 @@ const Testimonials = () => {
         </div>
         <div className="bg-[#5c347d41] backdrop-blur-md p-10 rounded-xl border-4 border-t-0 border-[#a033b1]">
           <div className="flex items-center gap-4">
-            <img
+            <Image
               className="size-16 object-cover rounded-full"
               src="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=612x612&w=0&k=20&c=NtM9Wbs1DBiGaiowsxJY6wNCnLf0POa65rYEwnZymrM="
               alt=""
+              width={64}
+              height={64}
             />
             <div className="flex flex-col gap-3">
               <h1>
@@ -67,10 +72,12 @@ const Testimonials = () => {
         </div>
         <div className="bg-[#5c347d41] backdrop-blur-md p-10 rounded-xl border-b-4 border-l-4 border-[#a033b1]">
           <div className="flex items-center gap-4">
-            <img
+            <Image
               className="size-16 object-cover rounded-full"
               src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg"
               alt=""
+              width={64}
+              height={64}
             />
             <div className="flex flex-col gap-3">
               <h1>

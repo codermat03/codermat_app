@@ -7,6 +7,13 @@ module.exports = {
       "img.freepik.com",
       "example.com",
       "i.postimg.cc",
+      "www.infomazeelite.com",
+      "cdn.mos.cms.futurecdn.net",
+      "api.wezom.com",
+      "*",
+      "media.licdn.com",
+      "blog.feedspot.com",
+
     ],
   },
 };

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import ServiceCard from "./serviceCard";
 import { service } from "@/app/interface";
+import Image from "next/image";
 
 const SkeletonLoader = () => {
   return (
@@ -69,11 +70,12 @@ const Services = () => {
           ))}
         </div>
       )}
-
-      <img
+      <Image
         className="w-full pt-14"
         src="https://i.postimg.cc/kgGNMLQ8/home14-bg4.png"
         alt=""
+        width={1920}
+        height={1080}
       />
     </div>
   );
