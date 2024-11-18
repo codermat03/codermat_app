@@ -4,6 +4,7 @@ import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import emailjs from "emailjs-com";
 import { toast, Bounce, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Image from "next/image";
 
 const ContactForm = () => {
   const formRef = useRef<HTMLFormElement>(null); // Correct type for formRef
@@ -77,7 +78,12 @@ const ContactForm = () => {
             </a>
           </div>
           <div className="md:w-[400px]">
-            <img src="https://i.postimg.cc/BnhzgkBQ/ccccc.png" alt="" />
+            <Image
+              src="https://i.postimg.cc/BnhzgkBQ/ccccc.png"
+              alt="Image description"
+              width={500}
+              height={300}
+            />
           </div>
         </div>
 

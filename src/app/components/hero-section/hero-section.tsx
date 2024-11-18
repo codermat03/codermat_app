@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import Link from "next/link";
 import { Bounce, toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Image from "next/image";
 
 export default function HeroSection() {
   const form = useRef<HTMLFormElement | null>(null);
@@ -167,11 +168,15 @@ export default function HeroSection() {
         </div>
       </section>
 
-      <img
+      <Image
         className="w-full"
         src="https://i.postimg.cc/kgGNMLQ8/home14-bg4.png"
         alt=""
+        layout="responsive"
+        width={1200}
+        height={800}
       />
+
     </div>
   );
 }

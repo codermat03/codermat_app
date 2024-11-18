@@ -1,5 +1,6 @@
 import React from "react";
 import ContactForm from "../components/contact-form/contact-form";
+import Image from "next/image";
 
 const ContactUs = () => {
   return (
@@ -7,10 +8,13 @@ const ContactUs = () => {
       <h1 className="text-center font-bold text-4xl">Contact Us</h1>
 
       <ContactForm></ContactForm>
-      <img
+      <Image
         className="w-full pt-14"
         src="https://i.postimg.cc/kgGNMLQ8/home14-bg4.png"
         alt=""
+        layout="responsive"
+        width={1920}
+        height={1080}
       />
     </div>
   );

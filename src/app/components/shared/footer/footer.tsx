@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
@@ -128,10 +129,12 @@ const Footer = () => {
               className="w-8 h-8 rounded-full bg-cover hover:bg-[#93239d] duration-150"
             >
               {" "}
-              <img
+              <Image
                 className=""
                 src="https://i.ibb.co.com/RTMngt9/logo-facebook.png"
                 alt=""
+                width={500}
+                height={500}
               />
             </a>
             <a
@@ -140,10 +143,12 @@ const Footer = () => {
               className="w-8 h-8 rounded-xl bg-cover hover:bg-[#93239d] duration-150"
             >
               {" "}
-              <img
+              <Image
                 className=""
                 src="https://i.ibb.co.com/yh5pjSH/logo-twitter.png"
                 alt=""
+                width={500}
+                height={500}
               />
             </a>
             <a
@@ -152,10 +157,12 @@ const Footer = () => {
               className="w-8 h-8 rounded-xl bg-cover hover:bg-[#93239d] duration-150"
             >
               {" "}
-              <img
+              <Image
                 className=""
                 src="https://i.ibb.co.com/9hkzwqC/logo-instagram.png"
                 alt=""
+                width={500}
+                height={500}
               />
             </a>
             <a
@@ -164,10 +171,12 @@ const Footer = () => {
               className="w-8 h-8 rounded-full bg-cover hover:bg-[#93239d] duration-150"
             >
               {" "}
-              <img
-                className="p"
+              <Image
+                className=""
                 src="https://i.ibb.co.com/Zf6dH50/logo-github.png"
                 alt=""
+                width={500}
+                height={500}
               />
             </a>
           </div>
@@ -183,10 +192,12 @@ const Footer = () => {
         >
           <div className="fixed bottom-[80px] right-8">
             <button className="rounded-full hover:bg-[#66237e] hover:text-black transition-all duration-200">
-              <img
+              <Image
                 className="w-14"
                 src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
                 alt="WhatsApp"
+                width={56}
+                height={56}
               />
             </button>
           </div>

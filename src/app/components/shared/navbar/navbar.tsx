@@ -18,6 +18,7 @@ import {
 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,10 +49,12 @@ export default function Navbar() {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link href="/">
-                <img
+                <Image
                   className="w-28 md:w-full"
                   src="https://i.postimg.cc/pXrT6fkh/Rectangle-4.png"
                   alt="CoderMat"
+                  width={112}
+                  height={400}
                 />
               </Link>
             </div>
@@ -645,10 +648,12 @@ export default function Navbar() {
             >
               Contact Us{" "}
               <div>
-                <img
+                <Image
                   className="w-4"
                   src="https://i.ibb.co.com/gVjzd78/line-1.png"
                   alt=""
+                  width={16}
+                  height={16}
                 />
               </div>
             </Link>

@@ -3,6 +3,7 @@ import { Article } from "@/app/interface";
 import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import { useEffect, useState } from "react";
 import { articles } from "../blogData";
+import Image from "next/image";
 
 
 const BlogSingle = ({ params }: { params: Params }) => {
@@ -25,10 +26,12 @@ const BlogSingle = ({ params }: { params: Params }) => {
       </h3>
       <div className="grid grid-cols-2 justify-items-center gap-10 pt-20 max-w-6xl mx-auto">
         <div>
-          <img
+          <Image
             src={article.cardImage}
             alt={article.title}
             className="w-[600px] h-auto rounded-xl"
+            width={600}
+            height={400}
           />
         </div>
         <div>

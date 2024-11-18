@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 interface ServiceFeature {
@@ -62,10 +63,13 @@ const ServiceDetails = ({ params }: { params: Params }) => {
 
         {/* Service Image */}
         <div>
-          <img
+          <Image
             src={service?.image_url || "/default-image.jpg"}
-            alt={service?.title}
+            alt={`${service?.title}`}
             className="w-full h-auto"
+            layout="responsive"
+            width={1920}
+            height={1080}
           />
         </div>
       </div>

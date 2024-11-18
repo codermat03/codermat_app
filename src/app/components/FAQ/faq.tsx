@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
@@ -49,7 +50,12 @@ const FAQ = () => {
         </div>
         <div className="md:flex items-center justify-between">
           <div>
-            <img src="https://i.postimg.cc/pX4LyG34/FAQ.png" alt="" />
+            <Image
+              src="https://i.postimg.cc/pX4LyG34/FAQ.png"
+              alt=""
+              width={800}
+              height={400}
+            />
           </div>
 
           <div className="w-full">

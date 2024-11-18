@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Image from "next/image";
 import React from "react";
 
 const AboutUs = () => {
@@ -14,10 +15,14 @@ const AboutUs = () => {
           {/* Testimonial */}
           <div className="bg-white/10 p-6 rounded-lg max-w-md">
             <div className="flex items-center mb-4">
-              <img
+              <Image
                 src="https://www.infomazeelite.com/wp-content/uploads/2022/03/Hire-Dedicated-Development-Team.png"
-                alt="Discord Logo"
+                alt="Next Image Description"
+                width={600}
+                height={400}
+                layout="intrinsic"
               />
+
             </div>
             <p className="font-bold text-xl">
               <span className="font-bold text-xl">Nayem</span> / CEO,{" "}
@@ -170,10 +175,15 @@ const AboutUs = () => {
           </div>
           <div className="bg-white/10 p-6 rounded-lg max-w-md">
             <div className="flex items-center mb-4">
-              <img
+              <Image
                 src="https://www.infomazeelite.com/wp-content/uploads/2022/03/Hire-Dedicated-Development-Team.png"
                 alt="Discord Logo"
+                width={1200}
+                height={800}
+                className="w-full"
+                layout="intrinsic"
               />
+
             </div>
             <p className="font-bold text-xl">
               <span className="font-bold text-xl">Nayem</span> / CEO,{" "}
@@ -182,10 +192,15 @@ const AboutUs = () => {
           </div>
         </section>
       </div>
-      <img
-        className="w-full pt-14"
+      import Image from 'next/image';
+
+      <Image
         src="https://i.postimg.cc/kgGNMLQ8/home14-bg4.png"
-        alt=""
+        alt="Background Image"
+        width={1200}   // You can adjust the width as needed
+        height={800}   // You can adjust the height as needed
+        className="w-full pt-14"  // Add the same class for styling
+        layout="intrinsic"  // This will keep the aspect ratio
       />
     </main>
   );

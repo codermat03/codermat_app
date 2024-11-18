@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const OurWebDevelopmentProcess = () => {
@@ -11,7 +12,6 @@ const OurWebDevelopmentProcess = () => {
               {" "}
               Our Web Development Process
             </h1>
-
             <p className="mt-4">
               From Idea to Implementation: Our Seamless Web Development Process
               to Bring Your Vision to Life
@@ -22,10 +22,13 @@ const OurWebDevelopmentProcess = () => {
           <div className="relative">
             {/* Vertical Line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full z-0 hidden md:block">
-              <img
-                className="h-full "
+              <Image
+                className="h-full"
                 src="https://i.ibb.co.com/0mcjR09/Group-1000002433.png"
                 alt="Vertical process line"
+                layout="intrinsic"
+                width={223}
+                height={1000}
               />
             </div>
 
