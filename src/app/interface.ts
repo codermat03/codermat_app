@@ -50,3 +50,18 @@ export interface Technology {
         name: string;
     }>;
 }
+
+export interface Project {
+    id: number;
+    project_name: string;
+    image: string;
+    description: string;
+    technologies: string[];
+    requirements?: string;
+    approach?: string;
+    challenges?: string;
+    completionDate?: string;
+    liveLink?: string;
+    clientCode?: string;
+    serverCode?: string;
+}
