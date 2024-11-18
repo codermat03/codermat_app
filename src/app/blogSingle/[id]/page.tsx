@@ -1,21 +1,20 @@
 "use client";
 import { Article } from "@/app/interface";
-import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import { useEffect, useState } from "react";
 import { articles } from "../blogData";
 import Image from "next/image";
 
 
-const BlogSingle = ({ params }: { params: Params }) => {
+const BlogSingle = ({ params }: { params: any }) => {
   const [article, setArticle] = useState<Article | null>(null);
 
   useEffect(() => {
     const foundArticle = articles.find((data) => data.id == Number(params.id));
     setArticle(foundArticle || null);
-  }, [params.id]); // Dependency on params.id to trigger only when it changes
+  }, [params.id]);
   console.log(params.id);
   if (!article) {
-    return <p>Loading...</p>; // or show some fallback UI if article is not found
+    return <p>Loading...</p>;
   }
 
   return (
