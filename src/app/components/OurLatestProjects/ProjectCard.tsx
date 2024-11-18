@@ -41,7 +41,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       </div>
       <button className="mt-auto mb-5 ml-5 border-2 flex items-center gap-2 border-[#7272723c] bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 py-2 rounded-md bottom-5">
         <Link
-          href={liveLink}
+          href={`${liveLink}`}
           target="_blank"
           className="flex items-center gap-2"
         >

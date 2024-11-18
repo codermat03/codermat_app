@@ -1,7 +1,7 @@
 "use client";
-
 import Image from "next/image";
 import { useEffect, useState } from "react";
+
 
 interface ServiceFeature {
   id: number;
@@ -15,14 +15,11 @@ interface Service {
   service_details_description: string;
   image_url: string;
   service_features: ServiceFeature[];
-  short_description: string
+  short_description: string;
 }
 
-interface Params {
-  id: string;
-}
 
-const ServiceDetails = ({ params }: { params: Params }) => {
+const ServiceDetails = ({ params }: { params: any }) => {
   const [services, setServices] = useState<Service[]>([]);
 
   useEffect(() => {
@@ -30,6 +27,7 @@ const ServiceDetails = ({ params }: { params: Params }) => {
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
+
 
   const service = services.find((data) => data.id === Number(params.id));
 
