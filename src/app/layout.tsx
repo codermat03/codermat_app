@@ -18,6 +18,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+       <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-M6567X8VR1"
+        ></Script>
+        <Script id="google-analytics">
+          {`
+    window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M6567X8VR1');
+    `}
+        </Script>
+      </head>
       <body>
         <Navbar />
         <div className="min-h-screen bg-[#240D3E]">
