@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/shared/navbar/navbar";
 import Footer from "./components/shared/footer/footer";
+import Script from "next/script";
+
 
 export const metadata: Metadata = {
   title: "CodetMat",
