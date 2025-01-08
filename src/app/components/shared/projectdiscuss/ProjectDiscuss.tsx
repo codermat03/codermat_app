@@ -7,7 +7,7 @@ const ProjectDiscuss = () => {
       <h1 className="font-bold md:text-4xl text-2xl">
         Let’s Discuss Your Project
       </h1>
-      <p className="md:text-xl md:w-7/12 m-auto pt-4 text-md">
+      <p className="lg:text-xl md:w-7/12 m-auto pt-4 text-md">
         We’re ready to dive into your project goals and transform them into an
         outstanding digital product. Reach out to us for a complimentary
         consultation, and let’s make your vision a reality!

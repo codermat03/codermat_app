@@ -7,7 +7,7 @@ import { FaArrowDown } from "react-icons/fa";
 
 const ServiceCard = ({ service }: any) => {
   return (
-    <div className="transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl backdrop-blur-md bg-[#2F1748] flex flex-col items-start border-l-0 border-t-0 border-[#5C099B] border-4 p-5 rounded-xl">
+    <div className="transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl backdrop-blur-md bg-[#2F1748] flex flex-col items-start border-l-0 border-t-0 border-[#5C099B] border-4 p-5 rounded-xl w-[360px] lg:w-[390px] mx-auto">
       <Image
         className="w-14"
         src={service.image_url}

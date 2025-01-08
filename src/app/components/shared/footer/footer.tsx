@@ -190,7 +190,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           aria-label="Open WhatsApp"
         >
-          <div className="fixed bottom-[80px] right-8">
+          <div className="fixed bottom-[30px] right-1">
             <button className="rounded-full hover:bg-[#66237e] hover:text-black transition-all duration-200">
               <Image
                 className="w-14"
