@@ -22,7 +22,6 @@ const ProjectCardSkeleton = () => {
   );
 };
 
-
 const Projetcs = () => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [visibleProjects, setVisibleProjects] = useState(3); // Initial number of visible projects
@@ -50,7 +49,7 @@ const Projetcs = () => {
         src="https://i.ibb.co/9bBMgsX/Background.png"
         alt="Background"
       />
-      <div className="md:mx-20">
+      <div className="lg:mx-20">
         <div className="pt-24">
           <h1 className="text-center font-bold md:text-4xl text-2xl">
             Our Latest Projects
@@ -61,16 +60,18 @@ const Projetcs = () => {
         </div>
 
         {/* Grid of project cards */}
-        <div className="grid md:grid-cols-3 max-w-[1480px] mx-auto items-center justify-center md:gap-x-8 md:gap-y-20 gap-y-10 py-10 relative">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 max-w-[1480px] mx-auto items-center justify-center lg:gap-x-8 lg:gap-y-20 gap-y-10 py-10 relative">
           {loading
             ? // Render skeleton loader while loading
-            Array.from({ length: visibleProjects }).map((_, index) => (
-              <ProjectCardSkeleton key={index} />
-            ))
+              Array.from({ length: visibleProjects }).map((_, index) => (
+                <ProjectCardSkeleton key={index} />
+              ))
             : // Render actual project cards after data is fetched
-            projects.slice(0, visibleProjects).map((project) => (
-              <ProjectCard project={project} key={project.id} />
-            ))}
+              projects
+                .slice(0, visibleProjects)
+                .map((project) => (
+                  <ProjectCard project={project} key={project.id} />
+                ))}
         </div>
 
         {/* Show more projects button */}
