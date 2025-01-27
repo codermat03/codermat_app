@@ -32,12 +32,12 @@ const Projetcs = () => {
       .then((res) => res.json())
       .then((data) => {
         setProjects(data);
-        setLoading(false); // Set loading to false after data is fetched
+        setLoading(false);
       });
   }, []);
 
   const showMoreProjects = () => {
-    setVisibleProjects(projects.length); // Show all projects when the button is clicked
+    setVisibleProjects(projects.length);
   };
 
   return (

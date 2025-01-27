@@ -728,7 +728,7 @@ export default function Navbar() {
               href="/services"
               onClick={() => {
                 setActiveLink("services");
-                setDropdownOpenTech(!dropdownOpenTech); // Toggle services dropdown
+                setDropdownOpenTech(!dropdownOpenTech);
               }}
               className={`px-3 py-2 rounded-md text-base font-medium flex items-center justify-between ${
                 activeLink === "services"
@@ -813,6 +813,9 @@ export default function Navbar() {
                   </li>
                   <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
                     <FaReact /> React JS
+                  </li>
+                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                    <FaNode /> Node JS
                   </li>
                   <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
                     <FaNode /> Node JS
