@@ -708,50 +708,7 @@ export default function Navbar() {
           >
             Home
           </a>
-          <div className="relative">
-            <a
-              href="#"
-              onClick={() => {
-                setActiveLink("services");
-                setDropdownOpenTech(!dropdownOpenTech); // Toggle services dropdown
-              }}
-              className={`px-3 py-2 rounded-md text-base font-medium flex items-center justify-between ${activeLink === "services" ? "bg-gradient-to-l from-[#49156D] to-[#930087] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150" : "hover:bg-gradient-to-l from-[#49156D] to-[#49165C] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150"}`}
-            >
-              Services
-              <IoIosArrowDown className={`transform transition-transform duration-300 ${dropdownOpenTech ? "rotate-180" : ""}`} />
-            </a>
 
-            <div
-              className={`overflow-hidden transition-[max-height] duration-300 ease-in-out ${dropdownOpenTech ? "max-h-[500px]" : "max-h-0"}`}
-            >
-              <div className="backdrop-blur-3xl bg-[#381c4489] border-[#72006A] border-2 rounded-md text-white shadow-lg mt-2 p-4">
-                <ul className="space-y-2">
-                  <li className="cursor-pointer relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-full">
-                    Custom Web Application Development
-                  </li>
-                  <li className="cursor-pointer relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-full">
-                    Web Portal Development
-                  </li>
-                  <li className="cursor-pointer relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-full">
-                    E-commerce Development
-                  </li>
-                  <li className="cursor-pointer relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-full">
-                    WordPress Development
-                  </li>
-                  <br />
-                  <li className="cursor-pointer relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-full">
-                    UI & UX Design
-                  </li>
-                  <li className="cursor-pointer relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-full">
-                    Front-end Web Development
-                  </li>
-                  <li className="cursor-pointer relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-full">
-                    Back-end Web Development
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
 
           <div className="relative">
             <a
