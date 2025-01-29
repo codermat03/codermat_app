@@ -46,8 +46,8 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
-        <div className="relative flex items-center justify-between md:h-16">
-          <div className="flex items-center">
+        <div className="relative flex items-center  justify-between md:h-16">
+          <div className="flex items-center ">
             <div className="flex-shrink-0">
               <Link href="/">
                 <Image
@@ -62,7 +62,7 @@ export default function Navbar() {
           </div>
 
           <div className="hidden sm:flex flex-1 justify-center sm:ml-6">
-            <div className="relative flex items-center space-x-4 z-40">
+            <div className="relative flex items-center  space-x-4 z-40">
               <Link
                 href="/"
                 onClick={() => setActiveLink("home")}
@@ -90,7 +90,7 @@ export default function Navbar() {
                     activeLink === "services"
                       ? "bg-white/20 text-white"
                       : "text-white hover:bg-white/20 hover:text-white"
-                  } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
+                  } px-3 py-2 rounded-md  font-medium  flex items-center  gap-2`}
                 >
                   Services
                   <IoIosArrowDown></IoIosArrowDown>
@@ -102,8 +102,8 @@ export default function Navbar() {
                   >
                     {/* Services Dropdown Content */}
                     <div>
-                      <h3 className="font-bold text-xl mb-4">
-                        Custom Web Application <br /> Development
+                      <h3 className="font-bold  mb-4">
+                        Custom Web Development
                       </h3>
                       <ul className="space-y-2">
                         {[
@@ -116,8 +116,11 @@ export default function Navbar() {
                           "Advanced Security",
                           "Ongoing Support",
                         ].map((item, index) => (
-                          <li key={index} className="flex items-center">
-                            <span className="flex-shrink-0 w-3 h-3 bg-white rounded-full mr-3"></span>
+                          <li
+                            key={index}
+                            className="flex items-center  text-[12px]"
+                          >
+                            <span className="flex-shrink-0 w-1 h-1 bg-white rounded-full mr-2"></span>
                             <a href="#" className=" font-semibold">
                               {item}
                             </a>
@@ -127,7 +130,7 @@ export default function Navbar() {
                     </div>
 
                     <div>
-                      <h3 className="font-bold text-xl mb-4">
+                      <h3 className="font-bold  mb-4">
                         Web Portal Development
                       </h3>
                       <ul className="space-y-2">
@@ -141,8 +144,11 @@ export default function Navbar() {
                           "Advanced Search Features",
                           "Ongoing Maintenance",
                         ].map((item, index) => (
-                          <li key={index} className="flex items-center">
-                            <span className="flex-shrink-0 w-3 h-3 bg-white rounded-full mr-3"></span>
+                          <li
+                            key={index}
+                            className="flex items-center text-[12px]"
+                          >
+                            <span className="flex-shrink-0 w-1 h-1 bg-white rounded-full mr-2"></span>
                             <a href="#" className="font-semibold">
                               {item}
                             </a>
@@ -152,7 +158,7 @@ export default function Navbar() {
                     </div>
 
                     <div>
-                      <h3 className="font-bold text-xl mb-4">
+                      <h3 className="font-bold  mb-4">
                         E-commerce Development
                       </h3>
                       <ul className="space-y-2">
@@ -166,8 +172,11 @@ export default function Navbar() {
                           "SEO-Friendly Features",
                           "Order Tracking Systems",
                         ].map((item, index) => (
-                          <li key={index} className="flex items-center">
-                            <span className="flex-shrink-0 w-3 h-3 bg-white rounded-full mr-3"></span>
+                          <li
+                            key={index}
+                            className="flex items-center text-[12px]"
+                          >
+                            <span className="flex-shrink-0 w-1 h-1 bg-white rounded-full mr-2"></span>
                             <a href="#" className="font-semibold">
                               {item}
                             </a>
@@ -177,9 +186,7 @@ export default function Navbar() {
                     </div>
 
                     <div>
-                      <h3 className="font-bold text-xl mb-4">
-                        WordPress Development
-                      </h3>
+                      <h3 className="font-bold  mb-4">WordPress Development</h3>
                       <ul className="space-y-2">
                         {[
                           "Custom Themes",
@@ -191,10 +198,13 @@ export default function Navbar() {
                           "Speed Optimization",
                           "Ongoing Support",
                         ].map((item, index) => (
-                          <li key={index} className="flex items-center">
-                            <span className="flex-shrink-0 w-3 h-3 bg-white rounded-full mr-3"></span>
+                          <li
+                            key={index}
+                            className="flex items-center text-[12px]"
+                          >
+                            <span className="flex-shrink-0 w-1 h-1 bg-white rounded-full mr-2"></span>
                             <a href="#" className="font-semibold">
-                              {item}
+                              {item}t{" "}
                             </a>
                           </li>
                         ))}
@@ -202,7 +212,7 @@ export default function Navbar() {
                     </div>
 
                     <div>
-                      <h3 className="font-bold text-xl mb-4">UI & UX Design</h3>
+                      <h3 className="font-bold  mb-4">UI & UX Design</h3>
                       <ul className="space-y-2">
                         {[
                           "User-Centered Design",
@@ -214,10 +224,13 @@ export default function Navbar() {
                           "Cross-Platform Compatibility",
                           "Usability Testing",
                         ].map((item, index) => (
-                          <li key={index} className="flex items-center">
-                            <span className="flex-shrink-0 w-3 h-3 bg-white rounded-full mr-3"></span>
+                          <li
+                            key={index}
+                            className="flex items-center text-[12px]"
+                          >
+                            <span className="flex-shrink-0 w-1 h-1 bg-white rounded-full mr-2"></span>
                             <a href="#" className=" font-semibold">
-                              {item}
+                              {item}t{" "}
                             </a>
                           </li>
                         ))}
@@ -225,7 +238,7 @@ export default function Navbar() {
                     </div>
 
                     <div>
-                      <h3 className="font-bold text-xl mb-4">
+                      <h3 className="font-bold  mb-4">
                         Front-end Web Development
                       </h3>
                       <ul className="space-y-2">
@@ -239,8 +252,11 @@ export default function Navbar() {
                           "SEO-Friendly Code",
                           "User-Focused Layouts",
                         ].map((item, index) => (
-                          <li key={index} className="flex items-center">
-                            <span className="flex-shrink-0 w-3 h-3 bg-white rounded-full mr-3"></span>
+                          <li
+                            key={index}
+                            className="flex items-center text-[12px]"
+                          >
+                            <span className="flex-shrink-0 w-1 h-1 bg-white rounded-full mr-2"></span>
                             <a href="#" className="font-semibold">
                               {item}
                             </a>
@@ -250,7 +266,7 @@ export default function Navbar() {
                     </div>
 
                     <div>
-                      <h3 className="font-bold text-xl mb-4">
+                      <h3 className="font-bold  mb-4">
                         Back-end Web Development
                       </h3>
                       <ul className="space-y-2">
@@ -264,8 +280,11 @@ export default function Navbar() {
                           "Content Management Systems",
                           "Third-Party Integrations",
                         ].map((item, index) => (
-                          <li key={index} className="flex items-center">
-                            <span className="flex-shrink-0 w-3 h-3 bg-white rounded-full mr-3"></span>
+                          <li
+                            key={index}
+                            className="flex items-center text-[12px]"
+                          >
+                            <span className="flex-shrink-0 w-1 h-1 bg-white rounded-full mr-2"></span>
                             <a href="#" className="font-semibold">
                               {item}
                             </a>
@@ -292,7 +311,7 @@ export default function Navbar() {
                     activeLink === "technologies"
                       ? "bg-white/20 text-white"
                       : "text-white hover:bg-white/20 hover:text-white"
-                  } px-3 py-2 rounded-md  font-medium  flex items-center gap-2`}
+                  } px-3 py-2 rounded-md  font-medium  flex items-center  gap-2`}
                 >
                   Technologies
                   <IoIosArrowDown />
@@ -304,14 +323,14 @@ export default function Navbar() {
                   >
                     {/* MERN-Stack Dropdown Content */}
                     <div>
-                      <h3 className="font-bold text-xl">MERN-Stack</h3>
+                      <h3 className="font-bold ">MERN-Stack</h3>
                       <ul>
                         <li>
                           <a
                             href="https://www.mongodb.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <SiMongodb />
                             MongoDB
@@ -322,7 +341,7 @@ export default function Navbar() {
                             href="https://expressjs.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <SiExpress />
                             Express JS
@@ -333,7 +352,7 @@ export default function Navbar() {
                             href="https://reactjs.org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <FaReact />
                             React JS
@@ -344,7 +363,7 @@ export default function Navbar() {
                             href="https://nodejs.org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <FaNode />
                             Node JS
@@ -355,14 +374,14 @@ export default function Navbar() {
 
                     {/* Front-End Dropdown Content */}
                     <div>
-                      <h3 className="font-bold text-xl">Front-End</h3>
+                      <h3 className="font-bold ">Front-End</h3>
                       <ul>
                         <li>
                           <a
                             href="https://reactjs.org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <FaReact />
                             React JS
@@ -373,7 +392,7 @@ export default function Navbar() {
                             href="https://nextjs.org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <SiNextdotjs />
                             Next JS
@@ -384,7 +403,7 @@ export default function Navbar() {
                             href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <IoLogoJavascript />
                             JavaScript
@@ -395,7 +414,7 @@ export default function Navbar() {
                             href="https://www.typescriptlang.org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <SiTypescript />
                             TypeScript
@@ -406,7 +425,7 @@ export default function Navbar() {
                             href="https://redux.js.org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <SiRedux />
                             Redux
@@ -417,7 +436,7 @@ export default function Navbar() {
                             href="https://tailwindcss.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <SiTailwindcss />
                             Tailwind
@@ -428,7 +447,7 @@ export default function Navbar() {
                             href="https://getbootstrap.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <FaBootstrap />
                             Bootstrap
@@ -439,7 +458,7 @@ export default function Navbar() {
                             href="https://mui.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <SiMui />
                             Material UI
@@ -450,14 +469,14 @@ export default function Navbar() {
 
                     {/* Back-End Dropdown Content */}
                     <div>
-                      <h3 className="font-bold text-xl">Back-End</h3>
+                      <h3 className="font-bold ">Back-End</h3>
                       <ul>
                         <li>
                           <a
                             href="https://nodejs.org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <FaNode />
                             Node JS
@@ -468,7 +487,7 @@ export default function Navbar() {
                             href="https://expressjs.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <SiExpress />
                             Express JS
@@ -479,7 +498,7 @@ export default function Navbar() {
                             href="https://jwt.io"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <SiNpm />
                             JWT
@@ -490,7 +509,7 @@ export default function Navbar() {
                             href="https://zod.dev"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <SiNpm />
                             Zod
@@ -501,7 +520,7 @@ export default function Navbar() {
                             href="https://cloudinary.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <SiCloudinary />
                             Cloudinary
@@ -512,14 +531,14 @@ export default function Navbar() {
 
                     {/* Database Dropdown Content */}
                     <div>
-                      <h3 className="font-bold text-xl">Database</h3>
+                      <h3 className="font-bold ">Database</h3>
                       <ul>
                         <li>
                           <a
                             href="https://www.mongodb.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <SiMongodb />
                             MongoDB
@@ -530,7 +549,7 @@ export default function Navbar() {
                             href="https://mongoosejs.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <SiNpm />
                             Mongoose
@@ -541,7 +560,7 @@ export default function Navbar() {
                             href="https://www.postgresql.org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="py-1  flex items-center gap-2"
+                            className="py-1  flex items-center  gap-2"
                           >
                             <SiPostgresql />
                             PostgresQL
@@ -552,7 +571,7 @@ export default function Navbar() {
 
                     {/* UI/UX Design Dropdown Content */}
                     <div>
-                      <h3 className="font-bold text-xl">UI/UX Design</h3>
+                      <h3 className="font-bold ">UI/UX Design</h3>
                       <ul>
                         <li>
                           <a href="#" className="block py-1 ">
@@ -564,11 +583,11 @@ export default function Navbar() {
 
                     {/* WordPress Dropdown Content */}
                     <div>
-                      <h3 className="font-bold text-xl">WordPress</h3>
+                      <h3 className="font-bold ">WordPress</h3>
                       <ul>
                         <li>
                           <a href="#" className="block py-1 ">
-                            Tell Us Your Requirements
+                            t Tell Us Your Requirements
                           </a>
                         </li>
                       </ul>
@@ -652,10 +671,10 @@ export default function Navbar() {
             )}
           </div>
 
-          <div className="hidden sm:flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <div className="hidden sm:flex items-center  sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <Link
               href={`/contactUs`}
-              className="flex items-center text-base py-2 gap-2 text-white mt-auto ml-5 border-2 border-[#c1c1c13c]  bg-gradient-to-r hover:bg-gradient-to-l hover:from-[#49156D] hover:to-[#691a86] hover:border-[#a33ed2] from-[#6C00A5] to-[#6A0170] duration-150 px-5 rounded-md"
+              className="flex items-center  text-base py-2 gap-2 text-white mt-auto ml-5 border-2 border-[#c1c1c13c]  bg-gradient-to-r hover:bg-gradient-to-l hover:from-[#49156D] hover:to-[#691a86] hover:border-[#a33ed2] from-[#6C00A5] to-[#6A0170] duration-150 px-5 rounded-md"
             >
               Contact Us{" "}
               <div>
@@ -670,10 +689,10 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div className="sm:hidden flex items-center">
+          <div className="sm:hidden flex items-center ">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center z-50 justify-center p-2 rounded-md hover:bg-gradient-to-l from-[#49156D] to-[#49165C] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 focus:ring-1 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center  z-50 justify-center p-2 rounded-md hover:bg-gradient-to-l from-[#49156D] to-[#49165C] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 focus:ring-1 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded={isOpen}
             >
@@ -730,7 +749,7 @@ export default function Navbar() {
                 setActiveLink("services");
                 setDropdownOpenTech(!dropdownOpenTech); // Toggle services dropdown
               }}
-              className={`px-3 py-2 rounded-md text-base font-medium flex items-center justify-between ${
+              className={`px-3 py-2 rounded-md text-base font-medium flex items-center  justify-between ${
                 activeLink === "services"
                   ? "bg-gradient-to-l from-[#49156D] to-[#930087] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150"
                   : "hover:bg-gradient-to-l from-[#49156D] to-[#49165C] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150"
@@ -785,7 +804,7 @@ export default function Navbar() {
                 setActiveLink("technologies");
                 setDropdownOpen(!dropdownOpen); // Toggle technologies dropdown
               }}
-              className={`px-3 py-2 rounded-md text-base font-medium flex items-center justify-between ${
+              className={`px-3 py-2 rounded-md text-base font-medium flex items-center  justify-between ${
                 activeLink === "technologies"
                   ? "bg-gradient-to-l from-[#49156D] to-[#930087] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150"
                   : "hover:bg-gradient-to-l from-[#49156D] to-[#49165C] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150"
@@ -805,16 +824,16 @@ export default function Navbar() {
               <div className="px-4 pt-2">
                 <h3 className="font-bold">MERN-Stack</h3>
                 <ul>
-                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                  <li className="flex items-center  gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
                     <SiMongodb /> MongoDB
                   </li>
-                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                  <li className="flex items-center  gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
                     <SiExpress /> Express JS
                   </li>
-                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                  <li className="flex items-center  gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
                     <FaReact /> React JS
                   </li>
-                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                  <li className="flex items-center  gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
                     <FaNode /> Node JS
                   </li>
                 </ul>
@@ -823,28 +842,28 @@ export default function Navbar() {
               <div className="mt-2 px-4 pb-2">
                 <h3 className="font-bold">Front-End</h3>
                 <ul>
-                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                  <li className="flex items-center  gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
                     <FaReact /> React JS
                   </li>
-                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                  <li className="flex items-center  gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
                     <SiNextdotjs /> Next JS
                   </li>
-                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                  <li className="flex items-center  gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
                     <IoLogoJavascript /> JavaScript
                   </li>
-                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                  <li className="flex items-center  gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
                     <SiTypescript /> TypeScript
                   </li>
-                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                  <li className="flex items-center  gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
                     <SiRedux /> Redux
                   </li>
-                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                  <li className="flex items-center  gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
                     <SiTailwindcss /> Tailwind
                   </li>
-                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                  <li className="flex items-center  gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
                     <FaBootstrap /> Bootstrap
                   </li>
-                  <li className="flex items-center gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
+                  <li className="flex items-center  gap-2 relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#942b8d] after:transition-all after:duration-300 hover:after:w-1/2">
                     <SiMui /> Material UI
                   </li>
                 </ul>

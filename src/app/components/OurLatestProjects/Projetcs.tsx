@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard";
 import { Project } from "@/app/interface";
 import PrimaryBtn from "../shared/customized-component/PrimaryBtn";
 import Image from "next/image";
+import Link from "next/link";
 
 // Skeleton Loader
 const ProjectCardSkeleton = () => {
@@ -75,7 +76,8 @@ const Projetcs = () => {
         </div>
 
         {/* Show more projects button */}
-        {visibleProjects < projects.length && (
+
+        <Link href="/projects">
           <div className="text-center pb-20">
             <PrimaryBtn
               className="px-6 py-2 rounded-xl"
@@ -84,7 +86,7 @@ const Projetcs = () => {
               Show More
             </PrimaryBtn>
           </div>
-        )}
+        </Link>
       </div>
     </div>
   );

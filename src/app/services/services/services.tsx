@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import ServiceCard from "./serviceCard";
 import { service } from "@/app/interface";
 import Image from "next/image";
+import ProjectDiscuss from "@/app/components/shared/projectdiscuss/ProjectDiscuss";
 
 const SkeletonLoader = () => {
   return (

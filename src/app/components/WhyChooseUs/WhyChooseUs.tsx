@@ -4,13 +4,14 @@ import React from "react";
 
 const WhyChooseUs = () => {
   return (
-    <div className="md:mx-auto md:mx-8 md:max-w-[1480px]">
+    <div className="md:mx-auto md:max-w-[1480px]">
       <div className="md:py-20 py-10 bg-[url('https://i.ibb.co.com/Bq50dx0/chooseusbg.png')] bg-cover">
-        <h1 className="text-center font-bold md:text-4xl text-2xl">
+        <h1 className="text-center font-bold md:text-4xl text-2xl animate-fade-in">
           Why choose CoderMat?
         </h1>
-        <div className="grid lg:grid-cols-3 items-center justify-center md:my-28 my-10 md:mx-20 mx-5 md:mx-10 gap-5 lg:gap-20">
-          <div className="relative self-center">
+        <div className="grid lg:grid-cols-3 items-center justify-center md:my-28 my-10 gap-5 lg:gap-20 md:mx-20 mx-5">
+          {/* Image Section */}
+          <div className="relative self-center animate-zoom-in">
             <Image
               className="rounded-xl"
               width={350}
@@ -19,14 +20,16 @@ const WhyChooseUs = () => {
               alt="Background"
             />
             <Image
-              className="absolute top-44 -right-6"
+              className="absolute top-44 -right-6 animate-bounce-slow"
               width={200}
               height={200}
               src="https://i.ibb.co.com/FqsS3dH/Untitled-design-1.png"
               alt="Background"
             />
           </div>
-          <div className="flex flex-col items-center self-center gap-5 lg:gap-10">
+
+          {/* Text Section 1 */}
+          <div className="flex flex-col items-center self-center gap-5 lg:gap-10 animate-slide-up">
             <div>
               <h1 className="text-lg font-bold py-2">
                 Team’s Seniority & Loyalty
@@ -47,7 +50,9 @@ const WhyChooseUs = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-5 lg:gap-10 items-center self-center">
+
+          {/* Text Section 2 */}
+          <div className="flex flex-col items-center self-center gap-5 lg:gap-10 animate-slide-up-delayed">
             <div>
               <h1 className="text-lg font-bold py-2">Versatility</h1>
               <p>

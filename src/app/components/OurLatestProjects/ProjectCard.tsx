@@ -12,13 +12,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     project; // Ensure liveLink is available
 
   return (
-    <div className="md:w-[380px] md:h-[660px] w-[360px] mx-auto backdrop-blur-md bg-[#2b1d3469] flex flex-col items-start rounded-2xl text-white">
+    <div className="md:w-[350px] md:h-[580px] w-[360px] mx-auto backdrop-blur-md bg-[#2b1d3469] flex flex-col items-start rounded-2xl text-white">
       <Image
         src={image}
         alt={project_name}
         width={390}
         height={260}
-        className="rounded-t-2xl"
+        className="rounded-t-2xl h-[230px]"
         objectFit="cover"
         priority
       />
@@ -39,7 +39,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </p>
         </div>
       </div>
-      <button className="mt-auto mb-5 ml-5 border-2 flex items-center gap-2 border-[#7272723c] bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 py-2 rounded-md bottom-5">
+      <button className="mt-auto mb-5 ml-5 border-2 flex items-center gap-2 border-[#7272723c] bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 py-2 rounded-md absolute -bottom-3">
         <Link
           href={`${liveLink}`}
           target="_blank"
