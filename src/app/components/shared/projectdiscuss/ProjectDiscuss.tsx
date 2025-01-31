@@ -3,7 +3,7 @@ import React from "react";
 
 const ProjectDiscuss = () => {
   return (
-    <div className="text-center z-10 pb-24 text-white">
+    <div className="text-center z-10 py-20 text-white">
       <h1 className="font-bold md:text-4xl text-2xl">
         Let’s Discuss Your Project
       </h1>

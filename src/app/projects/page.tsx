@@ -6,6 +6,7 @@ import Link from "next/link";
 import ProjectCard from "../components/OurLatestProjects/ProjectCard";
 import PrimaryBtn from "../components/shared/customized-component/PrimaryBtn";
 import FAQ from "../components/FAQ/faq";
+import ProjectDiscuss from "../components/shared/projectdiscuss/ProjectDiscuss";
 
 // Skeleton Loader
 const ProjectCardSkeleton = () => {
@@ -51,18 +52,18 @@ const Projetcs = () => {
         src="https://i.ibb.co/9bBMgsX/Background.png"
         alt="Background"
       />
-      <div className="lg:mx-20">
-        <div className="pt-24">
+      <div className="lg:mx-10 max-w-7xl mx-auto pb-20">
+        <div className="pt-28 pb-16">
           <h1 className="text-center font-bold md:text-4xl text-2xl">
             Our Latest Projects
           </h1>
-          <p className="text-center text-xl md:w-1/2 m-auto pt-4">
+          <p className="text-center text-xl md:w-1/2 mx-auto pt-4">
             Explore Our Successful Projects: See How We Bring Ideas to Life!!!!
           </p>
         </div>
 
         {/* Grid of project cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 max-w-[1480px] mx-auto items-center justify-center lg:gap-x-8 lg:gap-y-20 gap-y-10 py-10 relative">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-3 mr-10 items-center justify-center gap-20 relative">
           {loading
             ? // Render skeleton loader while loading
               Array.from({ length: visibleProjects }).map((_, index) => (
@@ -76,7 +77,12 @@ const Projetcs = () => {
                 ))}
         </div>
       </div>
-      <FAQ></FAQ>
+      <div className="border-t">
+        <ProjectDiscuss></ProjectDiscuss>
+      </div>
+      <div className="border-t">
+        <FAQ></FAQ>
+      </div>
     </div>
   );
 };

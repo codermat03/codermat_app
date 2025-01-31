@@ -1,32 +1,41 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { secondarticles } from "../blogSingle/blogData";
 
 const Blogs = () => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [visibleCount, setVisibleCount] = useState(3); // Default show 3 articles
+  const [visibleCount, setVisibleCount] = useState(3);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    setVisibleCount(isExpanded ? 8 : 3);
+  }, [isExpanded]);
 
   const toggleVisibility = () => {
     setIsExpanded(!isExpanded);
-    setVisibleCount(isExpanded ? 3 : 8); // Show 3 when collapsed, 8 when expanded
-  };
-  const getShortDescription = (description: string) => {
-    // Split the description into an array of words
-    const words = description.split(" ");
-    // Take the first 30 words and join them back into a string
-    const shortDescription = words.slice(0, 30).join(" ");
-    // Add "..." if the description is longer than 30 words
-    return words.length > 30 ? `${shortDescription}...` : shortDescription;
   };
 
+  const getShortDescription = (description: string) => {
+    const words = description.split(" ");
+    return words.length > 30
+      ? `${words.slice(0, 30).join(" ")}...`
+      : description;
+  };
+
+  if (!mounted) {
+    return <div className="text-white text-center py-10">Loading...</div>;
+  }
+
   return (
-    <main className="bg-gradient-to-bl from-[#93239d] via-[#190b34] to-[#280d42] pt-20">
-      <div className="min-h-screen text-white py-16">
-        <div className="max-w-[1480px] mx-auto px-4">
-          {/* Header Section */}
+    <main className="bg-gradient-to-bl from-[#93239d] via-[#190b34] to-[#280d42] pt-28">
+      <div className="min-h-screen text-white">
+        <div className="max-w-7xl mx-auto px-10">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold mb-4">Blogs & News</h1>
             <p className="text-xl">
@@ -35,9 +44,7 @@ const Blogs = () => {
             </p>
           </div>
 
-          {/* Main Blog Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 pt-14">
-            {/* Left Blog Section */}
             <div className="space-y-6">
               <div className="">
                 <p className="text-sm text-purple-300 uppercase mb-2">
@@ -52,14 +59,13 @@ const Blogs = () => {
                 </p>
                 <Link
                   href="/blogSingle/6"
-                  className="py-[10px] w-36 text-center border-2 flex items-center justify-center gap-2 border-[#7272723c]  bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 rounded-md"
+                  className="py-[10px] w-36 text-center border-2 flex items-center justify-center gap-2 border-[#7272723c] bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 rounded-md"
                 >
-                  Read more →
+                  Read more
                 </Link>
               </div>
             </div>
 
-            {/* Right Blog Section */}
             <div className="space-y-4">
               {secondarticles.slice(0, visibleCount).map((article) => (
                 <Link
@@ -87,19 +93,17 @@ const Blogs = () => {
                 </Link>
               ))}
 
-              {/* Toggle Button to Show More / Show Less */}
-              <div className="flex justify-center">
+              {/* <div className="flex justify-center">
                 <button
                   onClick={toggleVisibility}
                   className="mt-2 py-2 px-6 bg-pink-400 text-white rounded-xl hover:bg-pink-500 transition-all duration-300"
                 >
                   {isExpanded ? "Show Less" : "Show More"}
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
-          {/* Bottom Blog Cards */}
           <div className="mt-16 space-y-12">
             <div className="border-b pb-16">
               <p className="text-sm text-purple-300 uppercase mb-2">
@@ -114,8 +118,6 @@ const Blogs = () => {
               </p>
             </div>
 
-            {/* Blog Cards */}
-
             <div className="flex gap-10">
               {secondarticles.slice(0, 3).map((article) => (
                 <div key={article.id} className="">
@@ -124,9 +126,8 @@ const Blogs = () => {
                       {article.category}
                     </span>
                     <h3 className="mt-7 text-lg font-semibold">
-                      <Link href={`/blogSingle/1${article.id}`}>
+                      <Link href={`/blogSingle/${article.id}`}>
                         <span className="text-xl font-bold">
-                          {" "}
                           {article.subTitle}
                         </span>
                         <p className="mt-2 text-purple-300">
@@ -135,9 +136,6 @@ const Blogs = () => {
                         </p>
                       </Link>
                     </h3>
-
-                    {/* Display first 30 words of the description */}
-
                     <div className="flex items-center gap-3 mt-7">
                       <Image
                         className="w-[50px] h-[50px] rounded-full"

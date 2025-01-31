@@ -7,7 +7,7 @@ import ProjectDiscuss from "@/app/components/shared/projectdiscuss/ProjectDiscus
 
 const SkeletonLoader = () => {
   return (
-    <div className="max-w-7xl mx-auto grid grid-cols-3 gap-y-8 mt-20">
+    <div className="max-w-7xl mx-auto grid grid-cols-3 gap-y-8 m-20">
       {Array.from({ length: 6 }).map((_, index) => (
         <div
           key={index}
@@ -52,7 +52,7 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="pt-20 text-white">
+    <div className="py-20 text-white">
       <h1 className="text-center font-bold md:text-4xl text-2xl">
         Services We Provide
       </h1>
@@ -71,13 +71,13 @@ const Services = () => {
           ))}
         </div>
       )}
-      <Image
+      {/* <Image
         className="w-full pt-14"
         src="https://i.postimg.cc/kgGNMLQ8/home14-bg4.png"
         alt=""
         width={1920}
         height={1080}
-      />
+      /> */}
     </div>
   );
 };

@@ -50,8 +50,8 @@ const Projetcs = () => {
         src="https://i.ibb.co/9bBMgsX/Background.png"
         alt="Background"
       />
-      <div className="lg:mx-20">
-        <div className="pt-24">
+      <div className="lg:mx-12">
+        <div className="py-20">
           <h1 className="text-center font-bold md:text-4xl text-2xl">
             Our Latest Projects
           </h1>
@@ -61,7 +61,7 @@ const Projetcs = () => {
         </div>
 
         {/* Grid of project cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 max-w-[1480px] mx-auto items-center justify-center lg:gap-x-8 lg:gap-y-20 gap-y-10 py-10 relative">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto items-center justify-center lg:gap-x-8 lg:gap-y-10 gap-y-10 relative">
           {loading
             ? // Render skeleton loader while loading
               Array.from({ length: visibleProjects }).map((_, index) => (
@@ -78,7 +78,7 @@ const Projetcs = () => {
         {/* Show more projects button */}
 
         <Link href="/projects">
-          <div className="text-center pb-20">
+          <div className="text-center py-16">
             <PrimaryBtn
               className="px-6 py-2 rounded-xl"
               onClick={showMoreProjects}

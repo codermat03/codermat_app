@@ -5,28 +5,28 @@ import React from "react";
 const AboutUs = () => {
   return (
     <main className="text-white  bg-gradient-to-bl from-[#93239d] via-[#190b34] to-[#280d42]">
-      <h1 className="text-center font-bold text-4xl pt-32">
+      <h1 className="text-center font-bold text-4xl pt-28">
         Our Story: Connecting Global Technology <br /> Needs with Expertise
       </h1>
-
-      <div className=" py-20 px-8 max-w-7xl mx-auto">
+      <div className=" py-20 px-8 max-w-6xl mx-auto">
         {/* Top section */}
         <section className="flex flex-col lg:flex-row justify-between items-start gap-10 mb-16">
           {/* Testimonial */}
-          <div className="bg-white/10 p-6 rounded-lg max-w-md">
+          <div className=" p-6 rounded-lg max-w-md">
             <div className="flex items-center mb-4">
               <Image
-                src="https://www.infomazeelite.com/wp-content/uploads/2022/03/Hire-Dedicated-Development-Team.png"
+                src="https://i.postimg.cc/gJC17YhH/formal_done.png"
+                className="bg-white/10 pt-10 rounded-xl transform scale-x-[-1]"
                 alt="Next Image Description"
                 width={600}
                 height={400}
                 layout="intrinsic"
               />
-
             </div>
-            <p className="font-bold text-xl">
-              <span className="font-bold text-xl">Nayem</span> / CEO,{" "}
-              <span className="font-bold text-xl">CoderMat</span>
+
+            <p className="font-semibold text-xl text-center">
+              <span className="text-2xl font-bold">Shakil Ahmed</span>{" "}
+              <span className="text-sm font-medium">Co-founder & CEO</span>
             </p>
           </div>
 
@@ -183,7 +183,6 @@ const AboutUs = () => {
                 className="w-full"
                 layout="intrinsic"
               />
-
             </div>
             <p className="font-bold text-xl">
               <span className="font-bold text-xl">Nayem</span> / CEO,{" "}
@@ -192,15 +191,13 @@ const AboutUs = () => {
           </div>
         </section>
       </div>
-      import Image from 'next/image';
-
       <Image
         src="https://i.postimg.cc/kgGNMLQ8/home14-bg4.png"
         alt="Background Image"
-        width={1200}   // You can adjust the width as needed
-        height={800}   // You can adjust the height as needed
-        className="w-full pt-14"  // Add the same class for styling
-        layout="intrinsic"  // This will keep the aspect ratio
+        width={1200} // You can adjust the width as needed
+        height={800} // You can adjust the height as needed
+        className="w-full" // Add the same class for styling
+        layout="intrinsic" // This will keep the aspect ratio
       />
     </main>
   );

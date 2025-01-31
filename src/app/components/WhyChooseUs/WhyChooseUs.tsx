@@ -4,12 +4,12 @@ import React from "react";
 
 const WhyChooseUs = () => {
   return (
-    <div className="md:mx-auto md:max-w-[1480px]">
-      <div className="md:py-20 py-10 bg-[url('https://i.ibb.co.com/Bq50dx0/chooseusbg.png')] bg-cover">
+    <div className="max-w-7xl mx-auto px-10">
+      <div className="md:pt-20 pt-10 bg-[url('https://i.ibb.co.com/Bq50dx0/chooseusbg.png')] bg-cover ">
         <h1 className="text-center font-bold md:text-4xl text-2xl animate-fade-in">
           Why choose CoderMat?
         </h1>
-        <div className="grid lg:grid-cols-3 items-center justify-center md:my-28 my-10 gap-5 lg:gap-20 md:mx-20 mx-5">
+        <div className="grid lg:grid-cols-3 items-center justify-center md:my-20 my-10 gap-5 lg:gap-20">
           {/* Image Section */}
           <div className="relative self-center animate-zoom-in">
             <Image

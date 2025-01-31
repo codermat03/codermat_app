@@ -56,14 +56,15 @@ const ContactForm = () => {
   return (
     <section className="text-white md:py-20 py-10">
       <ToastContainer />
-      <div className="mx-auto max-w-7xl px-4 grid md:grid-cols-2 content-center gap-8">
+      <div className="mx-auto max-w-7xl px-10 grid md:grid-cols-2 content-center gap-8">
         {/* Contact Info Section */}
         <div>
-          <h3 className="md:text-left text-center text-2xl font-semibold mb-4">
+          <h3 className="md:text-left text-center text-2xl lg:text-4xl font-semibold mb-4">
             Contact Info
           </h3>
           <p className="mb-6 text-[#898989]">
-            Reach Out to Us for Your Next Project or Inquiry. We're Here to Help!
+            Reach Out to Us for Your Next Project or Inquiry. We're Here to
+            Help!
           </p>
           <div className="flex items-center mb-4">
             <AiOutlineMail className="text-xl mr-2" />

@@ -12,7 +12,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     project; // Ensure liveLink is available
 
   return (
-    <div className="md:w-[350px] md:h-[580px] w-[360px] mx-auto backdrop-blur-md bg-[#2b1d3469] flex flex-col items-start rounded-2xl text-white">
+    <div className="md:w-[380px] md:h-[580px] w-[360px] mx-auto backdrop-blur-md bg-[#2b1d3469] flex flex-col items-start rounded-2xl text-white">
       <Image
         src={image}
         alt={project_name}
