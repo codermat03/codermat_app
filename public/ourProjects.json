@@ -17,7 +17,7 @@
     "id": 2,
     "project_name": "Kicken - Football Academy",
     "image": "https://i.postimg.cc/43mFQL3N/Kicken_website_home_page.png",
-    "description": "A local football academy website designed to provide details about training programs, and coaches.",
+    "description": "A local football academy website designed to provide details about training programs, coaches, and events.",
     "technologies": ["Next.js", "Tailwind CSS", "Netlify"],
     "requirements": "Create a responsive website showcasing the football academy's offerings, including registration and program details.",
     "approach": "Built with Next.js and Tailwind CSS for a sleek and modern design, with easy navigation and interactive features.",
