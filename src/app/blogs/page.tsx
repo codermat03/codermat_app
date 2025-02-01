@@ -40,7 +40,7 @@ const Blogs = () => {
             <h1 className="text-2xl md:text-4xl font-bold mb-4">
               Blogs & News
             </h1>
-            <p className="md:text-xl">
+            <p className="">
               Creativity is a highfalutin word for the work I have to{" "}
               <br className="hidden md:block" /> do between now and Tuesday.
             </p>

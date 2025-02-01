@@ -44,7 +44,7 @@ const Projetcs = () => {
   };
 
   return (
-    <div className="text-white min-h-screen">
+    <div className="text-white min-h-screen ">
       <Image
         className="absolute py-52"
         width={500}
@@ -57,13 +57,13 @@ const Projetcs = () => {
           <h1 className="text-center font-bold md:text-4xl text-2xl">
             Our Latest Projects
           </h1>
-          <p className="text-center md:text-xl px-5 md:w-1/2 mx-auto pt-2 md:pt-4">
+          <p className="text-center px-5 md:w-1/2 mx-auto pt-2 md:pt-4">
             Explore Our Successful Projects: See How We Bring Ideas to Life!!!!
           </p>
         </div>
 
         {/* Grid of project cards */}
-        <div className=" grid md:grid-cols-2 lg:grid-cols-3 md:mr-10 items-center justify-center gap-20 relative">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-3 lg:mr-16 items-center justify-center gap-4 lg:gap-20 relative px-4">
           {loading
             ? // Render skeleton loader while loading
               Array.from({ length: visibleProjects }).map((_, index) => (

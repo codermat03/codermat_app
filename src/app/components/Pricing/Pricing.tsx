@@ -53,7 +53,7 @@ const Pricing = () => {
       <h1 className="text-center font-bold md:text-4xl text-2xl md:px-0 px-4">
         Pricing Options for Our Services
       </h1>
-      <p className="text-center lg:text-xl md:px-0 px-4 md:w-1/2 m-auto pt-2 md:pt-4">
+      <p className="text-center md:px-0 px-4 md:w-1/2 m-auto pt-2 md:pt-4">
         Affordable Plans Customized for Your Business Needs: Select the Right
         Package for Your Success.
       </p>

@@ -11,10 +11,10 @@ const AboutUs = () => {
       </h1>
       <div className=" md:py-20 max-w-6xl mx-auto">
         {/* Top section */}
-        <section className="flex flex-col lg:flex-row justify-between items-start gap-10 mb-16">
+        <section className="flex flex-col md:flex-row justify-between items-start gap-10 mb-16">
           {/* Testimonial */}
           <div className=" p-6 rounded-lg max-w-md">
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-4 md:w-[300px] lg:w-full">
               <Image
                 src="https://i.postimg.cc/gJC17YhH/formal_done.png"
                 className="bg-white/10 pt-10 rounded-xl md:transform md:scale-x-[-1]"
@@ -87,7 +87,7 @@ const AboutUs = () => {
         </section>
 
         {/* Bottom section */}
-        <section className="flex flex-col lg:flex-row items-start justify-items-end gap-10">
+        <section className="flex flex-col md:flex-row items-start justify-items-end gap-10">
           <div className="max-w-xl">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -178,7 +178,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="bg-white/10 p-6 rounded-lg max-w-md">
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-4 md:w-[300px] lg:w-full">
               <Image
                 src="https://www.infomazeelite.com/wp-content/uploads/2022/03/Hire-Dedicated-Development-Team.png"
                 alt="Discord Logo"

@@ -40,7 +40,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="md:py-20 py-10 px-2 md:px-0">
+    <div className="md:py-20 py-10 px-2 md:px-10 lg:px-0">
       <div className="max-w-6xl mx-auto">
         <div className="mb-5 md:mb-14 text-center">
           <h2 className="md:text-3xl text-2xl font-bold ">
@@ -48,11 +48,12 @@ const FAQ = () => {
           </h2>
           <p className="mt-2 md:mt-4">Got Questions? We've Got Answers!</p>
         </div>
-        <div className="md:flex items-center justify-between">
+        <div className="lg:flex items-center justify-between">
           <div>
             <Image
               src="https://i.postimg.cc/pX4LyG34/FAQ.png"
               alt=""
+              className="md:w-[350px] lg:w-[700px] mx-auto"
               width={800}
               height={400}
             />

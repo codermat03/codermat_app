@@ -9,6 +9,9 @@ const WhyChooseUs = () => {
         <h1 className="text-center font-bold md:text-4xl text-2xl animate-fade-in">
           Why choose CoderMat?
         </h1>
+        <h3 className="text-center mt-2 md:mt-4">
+          Empowering Your Digital Vision with Experts.
+        </h3>
         <div className="grid lg:grid-cols-3 items-center justify-center md:my-20 my-10 gap-5 lg:gap-20">
           {/* Image Section */}
           <div className="relative self-center animate-zoom-in">
