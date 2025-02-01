@@ -51,11 +51,11 @@ const Projetcs = () => {
         alt="Background"
       />
       <div className="lg:mx-12">
-        <div className="py-20">
+        <div className="py-10 md:py-20 px-5 md:px-0">
           <h1 className="text-center font-bold md:text-4xl text-2xl">
             Our Latest Projects
           </h1>
-          <p className="text-center text-xl md:w-1/2 m-auto pt-4">
+          <p className="text-center md:w-1/2 m-auto pt-2 md:pt-4">
             Explore Our Successful Projects: See How We Bring Ideas to Life!!!!
           </p>
         </div>

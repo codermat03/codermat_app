@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Pricing = () => {
@@ -48,11 +49,11 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="pt-8 md:py-20 md:mx-auto md:max-w-[1480px]">
+    <div className="py-8 md:py-20 md:mx-auto md:max-w-[1480px] animate-fade-in">
       <h1 className="text-center font-bold md:text-4xl text-2xl md:px-0 px-4">
         Pricing Options for Our Services
       </h1>
-      <p className="text-center lg:text-xl md:px-0 px-4 md:w-1/2 m-auto pt-4">
+      <p className="text-center lg:text-xl md:px-0 px-4 md:w-1/2 m-auto pt-2 md:pt-4">
         Affordable Plans Customized for Your Business Needs: Select the Right
         Package for Your Success.
       </p>
@@ -61,7 +62,7 @@ const Pricing = () => {
           {pricingPlans.map((plan, index) => (
             <div
               key={index}
-              className={`relative grid gap-3 mx-auto bg-[#2D1B38] p-8 rounded-3xl md:w-[360px] md:h-[580px] w-[360px] ${
+              className={`relative grid gap-3 mx-auto bg-[#2D1B38] p-8 rounded-3xl md:w-[350px] md:h-[580px] w-[360px] hover:scale-105 hover:bg-[#1E1227] transition-all duration-300 ${
                 plan.recommended ? "border-t-4 border-[#7D1A8D]" : ""
               }`}
             >
@@ -78,7 +79,7 @@ const Pricing = () => {
               <p>{plan.description}</p>
               <div className="grid gap-5">
                 <button className="mb-2 mt-auto border-2 text-lg gap-2 border-[#ffffff5e] bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-4 py-2 rounded-xl">
-                  Try for free
+                  <Link href={`/contactUs`}> Try for free</Link>
                 </button>
                 <div className="w-full border-t border-dashed border-white"></div>
                 <div className="flex flex-col gap-1">

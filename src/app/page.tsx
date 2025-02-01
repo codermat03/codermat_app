@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="bg-gradient-to-t from-[#21122F] to-[#181819] text-white">
+      <section className="bg-gradient-to-t from-[#21122F] to-[#181819] text-white border-b">
         <FAQ />
       </section>
 

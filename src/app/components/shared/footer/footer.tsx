@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <footer className="bg-[#22102F] text-white">
       <div className="bg-[#6461616d] p-[1px] md:mb-12 mb-8" />
-      <div className="max-w-7xl mx-auto px-10">
+      <div className="max-w-7xl mx-auto px-5 md:px-10">
         <div className="md:flex justify-between">
           <div>
-            <h3 className="text-lg font-semibold">
+            <h3 className="text-2xl font-semibold">
               SUBSCRIBE TO OUR NEWSLETTER
             </h3>
             <p className="text-sm mt-2 mb-4">
@@ -20,9 +20,9 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-72 resize-none px-3 py-[10px] bg-[#ffffff00] border-[1px] border-[#6461616d] rounded-lg text-white focus:outline-none"
+              className="w-full md:w-72 resize-none px-2 py-[10px] bg-[#ffffff00] border-[1px] border-[#6461616d] rounded-lg text-white focus:outline-none"
             />
-            <button className="py-[10px] border-2 flex items-center gap-2 border-[#7272723c]  bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 rounded-md">
+            <button className="py-[10px] border-2 flex items-center gap-2 border-[#7272723c]  bg-gradient-to-r from-[#49156D] to-[#49165C] hover:border-[#a33ed2] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-2 md:px-5 rounded-md">
               Subscribe
             </button>
           </div>
@@ -120,19 +120,22 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-10 text-center border-t border-[#6461616d] pt-6 flex justify-between items-center pb-7">
-          <p className="text-sm">© 2024 Codermat, Inc. All rights reserved</p>
-          <div className="mt-4 flex justify-center space-x-6">
+        <div className="mt-10 text-center border-t border-[#6461616d] pt-6 flex flex-col md:flex-row justify-between items-center pb-7">
+          {/* Copyright Text (Should Be Below on Small Devices, Right on Large Devices) */}
+          <p className="text-sm order-2 md:order-1 mt-5 md:mt-0">
+            © 2024 Codermat, Inc. All rights reserved
+          </p>
+
+          {/* Social Links (Should Be Above on Small Devices, Left on Large Devices) */}
+          <div className="mt-4 flex justify-center space-x-6 order-1 md:order-2">
             <a
               target="_blank"
               href="https://www.facebook.com/codermat"
               className="w-8 h-8 rounded-full bg-cover hover:bg-[#93239d] duration-150"
             >
-              {" "}
               <Image
-                className=""
                 src="https://i.ibb.co.com/RTMngt9/logo-facebook.png"
-                alt=""
+                alt="Facebook"
                 width={500}
                 height={500}
               />
@@ -142,11 +145,9 @@ const Footer = () => {
               href="https://x.com/tweeter?lang=en"
               className="w-8 h-8 rounded-xl bg-cover hover:bg-[#93239d] duration-150"
             >
-              {" "}
               <Image
-                className=""
                 src="https://i.ibb.co.com/yh5pjSH/logo-twitter.png"
-                alt=""
+                alt="Twitter"
                 width={500}
                 height={500}
               />
@@ -156,11 +157,9 @@ const Footer = () => {
               href="https://www.instagram.com/shake_shakx/"
               className="w-8 h-8 rounded-xl bg-cover hover:bg-[#93239d] duration-150"
             >
-              {" "}
               <Image
-                className=""
                 src="https://i.ibb.co.com/9hkzwqC/logo-instagram.png"
-                alt=""
+                alt="Instagram"
                 width={500}
                 height={500}
               />
@@ -170,11 +169,9 @@ const Footer = () => {
               href="https://github.com/codermat03"
               className="w-8 h-8 rounded-full bg-cover hover:bg-[#93239d] duration-150"
             >
-              {" "}
               <Image
-                className=""
                 src="https://i.ibb.co.com/Zf6dH50/logo-github.png"
-                alt=""
+                alt="GitHub"
                 width={500}
                 height={500}
               />
@@ -193,7 +190,7 @@ const Footer = () => {
           <div className="fixed bottom-[30px] right-1">
             <button className="rounded-full hover:bg-[#66237e] hover:text-black transition-all duration-200">
               <Image
-                className="w-14"
+                className="w-10 md:w-14"
                 src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
                 alt="WhatsApp"
                 width={56}

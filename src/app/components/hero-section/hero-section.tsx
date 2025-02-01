@@ -92,11 +92,11 @@ export default function HeroSection() {
         <div className="flex flex-col gap-2 lg:gap-0 items-center justify-center md:flex-row max-w-5xl mx-auto w-full text-white md:pt-20 lg:pt-0">
           {/* Left Section */}
           <div className="flex-1 mb-8 md:mb-0 animate-bottom">
-            <h1 className="text-2xl md:text-4xl lg:text-5xl text-center md:text-start font-bold">
+            <h1 className="text-3xl mx-5 md:mx-0 md:text-4xl lg:text-5xl text-center md:text-start font-bold">
               Bring Your Tech Ideas into Reality.
             </h1>
             <p className="mt-2 md:mt-4 text-sm md:text-xl text-center md:text-start md:max-w-md md:px-0 px-7 py-2">
-              <span className="font-bold text-2xl">
+              <span className="font-semibold text-xl">
                 Your Vision, Our Expertise
               </span>{" "}
               — CoderMat connects your vision with expert web development

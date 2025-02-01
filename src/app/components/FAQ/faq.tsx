@@ -40,13 +40,13 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="md:py-20 py-10">
+    <div className="md:py-20 py-10 px-2 md:px-0">
       <div className="max-w-6xl mx-auto">
-        <div className="mb-14 text-center">
+        <div className="mb-5 md:mb-14 text-center">
           <h2 className="md:text-3xl text-2xl font-bold ">
             Frequently asked questions
           </h2>
-          <p className="mt-4 text-xl">Got Questions? We've Got Answers!</p>
+          <p className="mt-2 md:mt-4">Got Questions? We've Got Answers!</p>
         </div>
         <div className="md:flex items-center justify-between">
           <div>

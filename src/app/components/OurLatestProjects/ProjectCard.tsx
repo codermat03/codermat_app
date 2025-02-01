@@ -12,16 +12,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     project; // Ensure liveLink is available
 
   return (
-    <div className="md:w-[380px] md:h-[580px] w-[360px] mx-auto backdrop-blur-md bg-[#2b1d3469] flex flex-col items-start rounded-2xl text-white">
-      <Image
-        src={image}
-        alt={project_name}
-        width={390}
-        height={260}
-        className="rounded-t-2xl h-[230px]"
-        objectFit="cover"
-        priority
-      />
+    <div className="md:w-[380px] h-[580px] w-[360px] mx-auto backdrop-blur-md bg-[#2b1d3469] flex flex-col items-start rounded-2xl text-white hover:scale-105 transition-transform duration-300 animate-fade-in">
+      {/* Image container with hover zoom effect */}
+      <div className="overflow-hidden rounded-t-2xl">
+        <Image
+          src={image}
+          alt={project_name}
+          width={390}
+          height={260}
+          className="rounded-t-2xl h-[230px] object-cover hover:scale-110 transition-transform duration-300"
+          priority
+        />
+      </div>
       <div className="p-7">
         <h2 className="py-4 text-xl font-bold">{project_name}</h2>
         <div>
