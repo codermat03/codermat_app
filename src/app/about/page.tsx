@@ -30,7 +30,7 @@ const AboutUs = () => {
             </p>
           </div>
 
-          {/* Mission */}
+          {/* Mission Extrream*/}
           <div className="max-w-xl">
             <h1 className="text-4xl font-bold mb-6">
               On a mission to empower teams
