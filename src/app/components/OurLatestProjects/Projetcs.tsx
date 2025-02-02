@@ -51,7 +51,7 @@ const Projetcs = () => {
         alt="Background"
       />
       <div className="lg:mx-12">
-        <div className="py-10 md:py-20 px-5 md:px-0">
+        <div className="py-10 md:py-20 px-5  md:px-0">
           <h1 className="text-center font-bold md:text-4xl text-2xl">
             Our Latest Projects
           </h1>
@@ -61,7 +61,7 @@ const Projetcs = () => {
         </div>
 
         {/* Grid of project cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto items-center justify-center lg:gap-x-8 lg:gap-y-10 gap-y-10 relative">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto items-center justify-center lg:gap-x-8 lg:gap-y-10 gap-y-10 relative px-5 md:px-8 lg:px-0">
           {loading
             ? // Render skeleton loader while loading
               Array.from({ length: visibleProjects }).map((_, index) => (

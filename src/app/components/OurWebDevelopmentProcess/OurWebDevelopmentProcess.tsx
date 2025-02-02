@@ -18,11 +18,11 @@ const OurWebDevelopmentProcess = () => {
           </div>
 
           {/* Process Steps */}
-          <div className="relative">
+          <div className="relative md:mx-10 lg:mx-0">
             {/* Vertical Line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full z-0 hidden md:block">
               <Image
-                className="h-full"
+                className="h-full md:w-[160px] lg:w-[223px]"
                 src="https://i.ibb.co.com/0mcjR09/Group-1000002433.png"
                 alt="Vertical process line"
                 layout="intrinsic"
@@ -32,15 +32,15 @@ const OurWebDevelopmentProcess = () => {
             </div>
 
             {/* Step 1 */}
-            <div className="relative md:flex items-center  mb-5 md:mb-16 z-10">
+            <div className="relative md:flex items-center  mb-5 lg:mb-16 z-10">
               <div className="md:w-1/2 md:pr-20 md:text-right mt-10">
-                <div className="bg-[#2d1b39] p-6 rounded-lg shadow-lg relative hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-[#2d1b39] p-6 rounded-lg shadow-lg relative hover:shadow-xl transition-shadow duration-300 md:-mt-3 lg:mt-0">
                   <div className="hidden md:block absolute -right-3 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-[#2d1b39] rotate-45 -z-10"></div>
 
-                  <h2 className="text-lg font-semibold">
+                  <h2 className="text-lg font-semibold ">
                     1. Discovery and Business Analysis
                   </h2>
-                  <p className="text-gray-300 text-sm">
+                  <p className="text-gray-300 text-sm md:hidden lg:block">
                     The initial research efforts in the project definition start
                     with the project discovery phase, where our business
                     analysts understand the project’s purpose.
@@ -62,7 +62,7 @@ const OurWebDevelopmentProcess = () => {
                   <h2 className="text-lg font-semibold">
                     2. Front-end design and development
                   </h2>
-                  <p className="text-gray-300 text-sm">
+                  <p className="text-gray-300 text-sm md:hidden lg:block">
                     After understanding user audience needs, our web designers
                     incorporate these requirements in UI design.
                   </p>
@@ -73,13 +73,13 @@ const OurWebDevelopmentProcess = () => {
             {/* Step 3 */}
             <div className="relative md:flex items-center  mb-5 md:mb-16 z-10">
               <div className="md:w-1/2 md:pr-20 md:text-right mt-5">
-                <div className="bg-[#2d1b39] p-6 rounded-lg shadow-lg relative hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-[#2d1b39] p-6 rounded-lg shadow-lg relative hover:shadow-xl transition-shadow duration-300 md:-mt-11 lg:-mt-0">
                   <div className="hidden md:block absolute -right-3 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-[#2d1b39] rotate-45 -z-10"></div>
 
                   <h2 className="text-lg font-semibold">
                     3. Back-end development
                   </h2>
-                  <p className="text-gray-300 text-sm">
+                  <p className="text-gray-300 text-sm md:hidden lg:block">
                     In this stage, we implement the application logic on the
                     back end using proven frameworks.
                   </p>
@@ -94,11 +94,11 @@ const OurWebDevelopmentProcess = () => {
               <div className="md:w-1/2"></div>{" "}
               {/* Empty spacer for alignment */}
               <div className="md:w-1/2 md:pl-20 mt-4">
-                <div className="bg-[#2d1b39] p-6 rounded-lg shadow-lg relative hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-[#2d1b39] p-6 rounded-lg shadow-lg relative hover:shadow-xl transition-shadow duration-300 md:-mt-7 lg:-mt-0">
                   <div className="hidden md:block absolute -left-3 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-[#2d1b39] rotate-45 -z-10"></div>
 
                   <h2 className="text-lg font-semibold">4. Integration</h2>
-                  <p className="text-gray-300 text-sm">
+                  <p className="text-gray-300 text-sm md:hidden lg:block">
                     We set up APIs for web app integration to ensure seamless
                     data synchronization.
                   </p>
@@ -109,12 +109,12 @@ const OurWebDevelopmentProcess = () => {
             {/* Step 5 */}
             <div className="relative md:flex items-center  mb-5 md:mb-16 z-10">
               <div className="md:w-1/2 md:pr-20 md:text-right mt-4">
-                <div className="bg-[#2d1b39] p-6 rounded-lg shadow-lg relative hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-[#2d1b39] p-6 rounded-lg shadow-lg relative hover:shadow-xl transition-shadow duration-300 md:-mt-7 lg:-mt-0">
                   <div className="hidden md:block absolute -right-3 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-[#2d1b39] rotate-45 -z-10"></div>
                   <h2 className="text-lg font-semibold">
                     5. Testing and Hot Fixes
                   </h2>
-                  <p className="text-gray-300 text-sm">
+                  <p className="text-gray-300 text-sm md:hidden lg:block">
                     We extend hot fixes within 24 hours to resolve any issues in
                     the functionality of your application.
                   </p>
@@ -129,14 +129,14 @@ const OurWebDevelopmentProcess = () => {
               <div className="md:w-1/2"></div>{" "}
               {/* Empty spacer for alignment */}
               <div className="md:w-1/2 md:pl-20 mt-5">
-                <div className="bg-[#2d1b39] p-6 rounded-lg shadow-lg relative hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-[#2d1b39] p-6 rounded-lg shadow-lg relative hover:shadow-xl transition-shadow duration-300 md:-mt-11 lg:-mt-0">
                   <div className="hidden md:block absolute -left-3 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-[#2d1b39] rotate-45 -z-10"></div>
                   <div className="flex items-center mb-2">
                     <h2 className="text-lg font-semibold">
                       6. Support and Evolution
                     </h2>
                   </div>
-                  <p className="text-gray-300 text-sm">
+                  <p className="text-gray-300 text-sm md:hidden lg:block">
                     We continually support and advance your software by adding
                     new features to align with your business needs.
                   </p>

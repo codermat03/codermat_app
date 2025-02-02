@@ -57,7 +57,7 @@ const Pricing = () => {
         Affordable Plans Customized for Your Business Needs: Select the Right
         Package for Your Success.
       </p>
-      <div className="lg:mx-20 pt-8 md:pt-20">
+      <div className="lg:mx-20 pt-8 md:pt-20 md:px-8 lg:px-0 ">
         <div className="grid md:mx-auto md:grid-cols-2 lg:grid-cols-3 md:gap-0 md:gap-y-10 gap-y-6 justify-center">
           {pricingPlans.map((plan, index) => (
             <div
