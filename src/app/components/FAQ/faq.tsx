@@ -40,19 +40,20 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="md:py-20 py-10 px-7 md:px-20">
-      <div className="max-w-[1480px] mx-auto">
-        <div className="mb-14 text-center">
+    <div className="md:py-20 py-10 px-2 md:px-10 lg:px-0">
+      <div className="max-w-6xl mx-auto">
+        <div className="mb-5 md:mb-14 text-center">
           <h2 className="md:text-3xl text-2xl font-bold ">
             Frequently asked questions
           </h2>
-          <p className="mt-4 text-xl">Got Questions? We've Got Answers!</p>
+          <p className="mt-2 md:mt-4">Got Questions? We've Got Answers!</p>
         </div>
-        <div className="md:flex items-center justify-between">
+        <div className="lg:flex items-center justify-between">
           <div>
             <Image
               src="https://i.postimg.cc/pX4LyG34/FAQ.png"
               alt=""
+              className="md:w-[350px] lg:w-[700px] mx-auto"
               width={800}
               height={400}
             />
@@ -73,8 +74,9 @@ const FAQ = () => {
                   </span>
                 </div>
                 <div
-                  className={`overflow-hidden transition-[max-height] duration-700 ${openFAQ === index ? "max-h-screen" : "max-h-0"
-                    }`}
+                  className={`overflow-hidden transition-[max-height] duration-700 ${
+                    openFAQ === index ? "max-h-screen" : "max-h-0"
+                  }`}
                 >
                   <div className="p-4 pt-1 mt-0 text-[#919191] rounded-lg text-sm leading-relaxed">
                     {faq.answer}

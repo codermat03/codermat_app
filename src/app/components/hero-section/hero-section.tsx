@@ -89,14 +89,14 @@ export default function HeroSection() {
       `}</style>
 
       <section className="pt-20 pb-10 md:pb-0 md:pt-0 flex items-center justify-center md:p-3 lg:p-8">
-        <div className="flex flex-col gap-2 lg:gap-0 items-center justify-center md:flex-row max-w-6xl w-full text-white md:pt-20 lg:pt-0">
+        <div className="flex flex-col gap-2 lg:gap-0 items-center justify-center md:flex-row max-w-5xl mx-auto w-full text-white md:pt-20 lg:pt-0 md:px-10 lg:px-0">
           {/* Left Section */}
           <div className="flex-1 mb-8 md:mb-0 animate-bottom">
-            <h1 className="text-2xl md:text-4xl lg:text-6xl text-center md:text-start font-bold">
+            <h1 className="text-3xl mx-5 md:mx-0 md:text-4xl lg:text-5xl text-center md:text-start font-bold">
               Bring Your Tech Ideas into Reality.
             </h1>
             <p className="mt-2 md:mt-4 text-sm md:text-xl text-center md:text-start md:max-w-md md:px-0 px-7 py-2">
-              <span className="font-bold text-2xl">
+              <span className="font-semibold text-xl">
                 Your Vision, Our Expertise
               </span>{" "}
               — CoderMat connects your vision with expert web development
@@ -115,10 +115,10 @@ export default function HeroSection() {
           {/* Right Section */}
           <div className="flex-1 flex justify-center items-center relative animate-top">
             {/* Back Rotated Card */}
-            <div className="md:h-[450px] lg:h-[530px] md:w-[320px] lg:w-[390px] absolute bg-gradient-to-br from-[#350da5] via-[#7b0ea0] to-[#99058d] rounded-3xl transform -rotate-12 opacity-75"></div>
+            <div className="md:h-[450px] lg:h-[530px] md:w-[320px] lg:w-[390px] absolute bg-gradient-to-br from-[#350da5] via-[#7b0ea0] to-[#99058d] rounded-3xl transform -rotate-12 opacity-75 hidden lg:block"></div>
 
             {/* Front Static Card */}
-            <div className="relative bg-gradient-to-br from-[#350da5] via-[#7b0ea0] to-[#99058d] opacity-80 p-8 rounded-3xl shadow-lg w-[370px] md:h-[450px] lg:h-[530px] md:w-[320px] lg:w-[390px] max-w-md">
+            <div className="relative bg-gradient-to-br from-[#350da5] via-[#7b0ea0] to-[#99058d] opacity-80 p-8 rounded-3xl shadow-lg w-[370px] md:h-[500px] lg:h-[530px] md:w-[340px] lg:w-[390px] max-w-md">
               <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">
                 Let’s start a <br /> Project Together
               </h2>
@@ -159,7 +159,7 @@ export default function HeroSection() {
                 </div>
                 <button
                   type="submit"
-                  className="mt-6 border-2 gap-2 border-[#ffffff] hover:bg-gradient-to-l from-[#49156D] to-[#49165C] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 py-2 rounded-md bottom-5"
+                  className="mt-6 border-2 gap-2 border-[#ffffff] hover:bg-gradient-to-l from-[#49156D] to-[#49165C] text-white hover:border-[#c445ff] hover:from-[#6C00A5] hover:to-[#6A0170] duration-150 px-5 py-2 rounded-md bottom-[13px] md:absolute lg:static"
                 >
                   Let’s Talk
                 </button>

@@ -39,26 +39,30 @@ export default function Home() {
         <Services />
       </section>
 
-      <section className="bg-gradient-to-t from-[#321544] to-[#20112E] border-b">
-        <ProjectDiscuss />
+      <section className="text-white bg-gradient-to-b from-[#181819] to-[#1F122A] border-b">
+        <WhyChooseUs />
+      </section>
+
+      <section className="bg-gradient-to-t from-[#181819] to-[#21122F]">
+        <div>
+          <OurWebDevelopmentProcess />
+        </div>
       </section>
 
       <section className="bg-gradient-to-t from-[#21122F] to-[#321544] border-b">
         <TechnologyStack />
       </section>
 
-      <section className="bg-gradient-to-t from-[#181819] to-[#21122F] border-b">
-        <div>
-          <OurWebDevelopmentProcess />
-        </div>
+      <section className="bg-gradient-to-t from-[#181819] to-[#240f35] text-white border-b">
+        <Projetcs />
       </section>
 
-      <section className="text-white bg-gradient-to-b from-[#181819] to-[#1F122A]">
-        <WhyChooseUs />
-      </section>
-
-      <section className="text-white bg-gradient-to-b from-[#181619] to-[#240F35]">
+      <section className="text-white bg-gradient-to-b from-[#181619] to-[#240F35] border-b">
         <Pricing />
+      </section>
+
+      <section className="bg-gradient-to-t from-[#321544] to-[#20112E] border-b">
+        <ProjectDiscuss />
       </section>
 
       {/* <section className="bg-gradient-to-t from-[#240f35] to-[#1F122A] text-white">
@@ -67,11 +71,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="bg-gradient-to-t from-[#181819] to-[#240f35] text-white">
-        <Projetcs />
-      </section>
-
-      <section className="bg-gradient-to-t from-[#21122F] to-[#181819] text-white">
+      <section className="bg-gradient-to-t from-[#21122F] to-[#181819] text-white border-b">
         <FAQ />
       </section>
 
