@@ -62,7 +62,7 @@ const Pricing = () => {
           {pricingPlans.map((plan, index) => (
             <div
               key={index}
-              className={`relative grid gap-3 mx-auto bg-[#2D1B38] p-8 rounded-3xl md:w-[350px] md:h-[580px] w-[360px] hover:scale-105 hover:bg-[#1E1227] transition-all duration-300 ${
+              className={`relative grid gap-3 mx-auto bg-[#2D1B38] p-8 rounded-3xl md:w-[350px] md:h-[580px] w-[330px] hover:scale-105 hover:bg-[#1E1227] transition-all duration-300 ${
                 plan.recommended ? "border-t-4 border-[#7D1A8D]" : ""
               }`}
             >

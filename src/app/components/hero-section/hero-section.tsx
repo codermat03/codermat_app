@@ -118,7 +118,7 @@ export default function HeroSection() {
             <div className="md:h-[450px] lg:h-[530px] md:w-[320px] lg:w-[390px] absolute bg-gradient-to-br from-[#350da5] via-[#7b0ea0] to-[#99058d] rounded-3xl transform -rotate-12 opacity-75 hidden lg:block"></div>
 
             {/* Front Static Card */}
-            <div className="relative bg-gradient-to-br from-[#350da5] via-[#7b0ea0] to-[#99058d] opacity-80 p-8 rounded-3xl shadow-lg w-[370px] md:h-[500px] lg:h-[530px] md:w-[340px] lg:w-[390px] max-w-md">
+            <div className=" relative bg-gradient-to-br from-[#350da5] via-[#7b0ea0] to-[#99058d] opacity-80 p-8 rounded-3xl shadow-lg w-[330px] md:h-[500px] lg:h-[530px] md:w-[340px] lg:w-[390px] max-w-md">
               <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">
                 Let’s start a <br /> Project Together
               </h2>

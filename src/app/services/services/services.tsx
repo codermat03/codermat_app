@@ -11,7 +11,7 @@ const SkeletonLoader = () => {
       {Array.from({ length: 6 }).map((_, index) => (
         <div
           key={index}
-          className="w-[350px] md:w-[390px]  h-auto backdrop-blur-md bg-[#2F1748] flex flex-col items-start border-l-0 border-t-0 border-[#5C099B] border-4 p-8 rounded-xl"
+          className="w-[340px] md:w-[390px]  h-auto backdrop-blur-md bg-[#2F1748] flex flex-col items-start border-l-0 border-t-0 border-[#5C099B] border-4 p-8 rounded-xl"
         >
           <div className="animate-pulse flex flex-col space-y-4 w-full">
             {/* Skeleton for the image */}
